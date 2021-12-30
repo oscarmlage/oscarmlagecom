@@ -1,0 +1,16 @@
+version: "3.1"
+
+services:
+
+  build:
+    image: klakegg/hugo:0.88.0-alpine
+    volumes:
+      - "${PWD}/src:/src"
+
+  serve:
+    image: klakegg/hugo:0.88.0-alpine
+    command: server
+    volumes:
+      - "${PWD}/src:/src"
+    ports:
+      - 1313:1313

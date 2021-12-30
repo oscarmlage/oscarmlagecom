@@ -1,0 +1,24 @@
+{{ define "main" }}
+
+<main>
+    <h1>Single: Post</h1>
+
+    <div class="post">
+        {{ partial "posts/info.html" . }}
+        {{ partial "posts/title.html" . }}
+        {{ partial "posts/header.html" . }}
+
+        <!-- raw html -->
+        {{ .Content }}
+
+        {{ partial "posts/footer.html" . }}
+    </div>
+
+    <div class="pagination">
+        {{ partial "posts/pagination.html" . }}
+        <a href="#" class="top">Top</a>
+    </div>
+</main>
+
+{{ end }}
+

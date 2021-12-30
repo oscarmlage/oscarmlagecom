@@ -1,0 +1,15 @@
+{{ define "main" }}
+
+<main>
+Listado de proyectos.....
+
+<div class="catalogue">
+    {{ range (.Paginate (where .Pages "Type" "projects")).Pages }}
+        {{ .Render "summary" }}
+    {{ end }}
+</div>
+
+
+</main>
+
+{{ end }}

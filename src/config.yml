@@ -1,0 +1,44 @@
+baseURL: 'https://oscarmlage.com'
+languageCode: 'en-us'
+title: 'oscarmlage'
+theme: 'tale'
+pygmentsStyle: "monokai"
+canonifyurls: true
+paginate: 15
+summarylength: 30
+
+defaultContentLanguage: "en"
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+
+author:
+  name: "oscarmlage"
+
+permalinks:
+  sections: "/:slug/"
+
+menu:
+  main:
+    - identifier: "about"
+      name: "About"
+      title: "About"
+      url: "/about/"
+      weight: 0
+    - identifier: "archive"
+      name: "Archive"
+      title: "Archive"
+      url: "/archive/"
+      weight: 0
+    - identifier: "projects"
+      name: "Projects"
+      title: "Projects"
+      url: "/projects/"
+      weight: 0
+    - identifier: "colophon"
+      name: "Colophon"
+      title: "Colophon"
+      url: "/colophon/"
+      weight: 0
