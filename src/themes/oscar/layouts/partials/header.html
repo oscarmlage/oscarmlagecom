@@ -1,0 +1,23 @@
+		<nav class="nav">
+			<div class="nav-container">
+				<a href="{{ "/" | relURL }}">
+					{{ if .IsPage }}
+						<h2 class="nav-title">{{ .Site.Title }}</h2>
+					{{ else }}
+						<h1 class="nav-title">{{ .Site.Title }}</h1>
+					{{ end }}
+				</a>
+                <ul>
+                    {{ $currentPage := . }}
+                    {{ range .Site.Menus.main }}
+                    <li>
+                        <a href="{{ .URL }}">
+                            {{ .Pre }}
+                            <span>{{ .Name }}</span>
+                            {{ .Post }}
+                        </a>
+                    </li>
+                    {{ end }}
+                </ul>
+			</div>
+		</nav>

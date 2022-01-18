@@ -1,0 +1,17 @@
+{{ define "main" }}
+
+<main>
+    <h1>List: Posts</h1>
+	<div class="catalogue">
+		{{ range (.Paginate .Pages).Pages }}
+			{{ .Render "summary" }}
+		{{ end }}
+	</div>
+
+	<div class="pagination">
+        {{ partial "pagination.html" . }}
+	</div>
+</main>
+
+{{ end }}
+
