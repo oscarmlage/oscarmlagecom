@@ -15,7 +15,7 @@
 
    /* Brand
       ========================================================================== */
-   --brand: #0249FF;
+   --background-main: #292929;
 
 
 /* ==========================================================================
@@ -32,6 +32,12 @@
    --font-body: var(--font-size-2) / 1.38 var(--font-brand);
    --font-caption: var(--font-size-1) / 1.37 var(--font-brand);
 
+}
+/* Dark theme */
+@media (prefers-color-scheme: dark) {
+   :root {
+      --background-main: #f0f0f0;
+   }
 }
 
 
