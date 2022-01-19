@@ -1,23 +1,26 @@
-		<nav class="nav">
-			<div class="nav-container">
-				<a href="{{ "/" | relURL }}">
-					{{ if .IsPage }}
-						<h2 class="nav-title">{{ .Site.Title }}</h2>
-					{{ else }}
-						<h1 class="nav-title">{{ .Site.Title }}</h1>
-					{{ end }}
-				</a>
-                <ul>
-                    {{ $currentPage := . }}
-                    {{ range .Site.Menus.main }}
-                    <li>
-                        <a href="{{ .URL }}">
-                            {{ .Pre }}
-                            <span>{{ .Name }}</span>
-                            {{ .Post }}
-                        </a>
-                    </li>
-                    {{ end }}
-                </ul>
-			</div>
+	<header>
+        <h1>
+            <a href="{{ "/" | relURL }}">
+                <svg width="85" height="25" viewBox="0 0 85 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="28" width="26" height="25" fill="black"/>
+                    <path d="M60 0L85 25H60V0Z" fill="black"/>
+                    <rect width="26" height="25" rx="12.5" fill="black"/>
+                </svg>
+                <span>{{ .Site.Title }}</span>
+            </a>
+        </h1>
+        <nav>
+            <ul>
+                {{ $currentPage := . }}
+                {{ range .Site.Menus.main }}
+                <li>
+                    <a href="{{ .URL }}">
+                        {{ .Pre }}
+                        <span>{{ .Name }}</span>
+                        {{ .Post }}
+                    </a>
+                </li>
+                {{ end }}
+            </ul>
 		</nav>
+    </header>
