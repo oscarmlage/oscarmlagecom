@@ -1,0 +1,53 @@
+:root {
+/* ==========================================================================
+   Fonts
+   ========================================================================== */
+   --font-brand: 'Overpass Mono', monospace;
+
+   /* Fonts weights */
+   --fw-regular: 400;
+   --fw-bold: 700;
+
+
+   /* ==========================================================================
+      Colors
+      ========================================================================== */
+
+   /* Brand
+      ========================================================================== */
+   --brand: #0249FF;
+
+
+/* ==========================================================================
+   Font sizes
+   ========================================================================== */
+
+   /* Font sizes */
+   --font-size-1: 14px;
+   --font-size-2: 16px;
+   --font-size-3: 26px;
+
+   /* Font sizes names */
+   --font-heading: var(--fw-bold) var(--font-size-3) / 1.25 var(--font-brand);
+   --font-body: var(--font-size-2) / 1.38 var(--font-brand);
+   --font-caption: var(--font-size-1) / 1.37 var(--font-brand);
+
+}
+
+
+/* ==========================================================================
+   Breakpoints
+   ========================================================================== */
+   @custom-media --screen-xxs (min-width: 320px);
+   @custom-media --screen-xs (min-width: 480px);
+   @custom-media --screen-s (min-width: 768px);
+   @custom-media --screen-m (min-width: 960px);
+   @custom-media --screen-ml (min-width: 1024px);
+   @custom-media --screen-l (min-width: 1281px);
+   @custom-media --screen-xl (min-width: 1441px);
+   @custom-media --screen-xxl (min-width: 1920px);
+
+
+   @custom-media --max-screen-s (max-width: 769px);
+   @custom-media --max-screen-m (max-width: 960px);
+   @custom-media --max-screen-ml (max-width: 1024px);
