@@ -1,9 +1,9 @@
 @charset "UTF-8";
 /* Basic  */
-@import https://fonts.googleapis.com/css2?family=Overpass+Mono:wght@400;700&display=swap;
-@import url(/src/themes/oscar/assets/css/normalize.css);
-@import url(/src/themes/oscar/assets/css/variables.css);
-@import url(/src/themes/oscar/assets/css/common.css);
+/* @import 'https://fonts.googleapis.com/css2?family=Overpass+Mono:wght@400;700&display=swap';
+@import 'normalize.css';
+@import 'variables.css';
+@import 'common.css'; */
 /* Layout */
 /* Components */
 /* Modules */
@@ -16,5 +16,9 @@
     - postcss-custom-media
     - postcss-nested (I think this is working by default, so probably we don´t need this plugin)
  */
+body {
+  background-color: var(--background-main); }
+  body a {
+    color: orange; }
 
 /*# sourceMappingURL=style.css.map */

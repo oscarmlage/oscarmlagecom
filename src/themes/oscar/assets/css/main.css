@@ -1,8 +1,8 @@
 /* Basic  */
-@import 'https://fonts.googleapis.com/css2?family=Overpass+Mono:wght@400;700&display=swap';
+/* @import 'https://fonts.googleapis.com/css2?family=Overpass+Mono:wght@400;700&display=swap';
 @import 'normalize.css';
 @import 'variables.css';
-@import 'common.css';
+@import 'common.css'; */
 
 /* Layout */
 
@@ -22,3 +22,12 @@
     - postcss-custom-media
     - postcss-nested (I think this is working by default, so probably we don´t need this plugin)
  */
+
+
+body {
+     background-color: var(--background-main);
+     a {
+         color: orange;
+     }
+}
+

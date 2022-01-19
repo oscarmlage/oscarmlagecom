@@ -15,7 +15,15 @@
 
    /* Brand
       ========================================================================== */
-   --background-main: #292929;
+   --background-main: #F0F0F0;
+
+
+/* Dark theme */
+@media (prefers-color-scheme: dark) {
+   :root {
+      --background-main: #000000;
+   }
+}
 
 
 /* ==========================================================================
@@ -33,13 +41,6 @@
    --font-caption: var(--font-size-1) / 1.37 var(--font-brand);
 
 }
-/* Dark theme */
-@media (prefers-color-scheme: dark) {
-   :root {
-      --background-main: #f0f0f0;
-   }
-}
-
 
 /* ==========================================================================
    Breakpoints
