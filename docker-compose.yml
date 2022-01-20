@@ -3,14 +3,18 @@ version: "3.1"
 services:
 
   build:
-    image: klakegg/hugo:0.88.0-ext-alpine
+    # image: klakegg/hugo:0.88.0-ext-alpine
+    image: oscarmlage/hugo:0.88.0-ext-alpine
     volumes:
       - "${PWD}/src:/src"
 
   serve:
-    image: klakegg/hugo:0.88.0-ext-alpine
+    # image: klakegg/hugo:0.88.0-ext-alpine
+    image: oscarmlage/hugo:0.88.0-ext-alpine
     command: server -vv
     volumes:
       - "${PWD}/src:/src"
     ports:
       - 1313:1313
+    stdin_open: true # -i
+    tty: true # -t
