@@ -15,7 +15,9 @@
 
    /* Brand
       ========================================================================== */
+   --color-brand: #0161f0;
    --background-main: #F0F0F0;
+   --color-main: #292929;
 
 
 /* ==========================================================================
@@ -38,7 +40,9 @@
 /* Dark theme */
 @media (prefers-color-scheme: dark) {
    :root {
-      --background-main: #000000;
+      --color-brand: #02A4FF;
+      --background-main: #292929;
+      --color-main: #F0F0F0;
    }
 }
 

@@ -5,8 +5,15 @@
 }
 
 body {
+    background-color: var(--background-main);
     font-family: var(--font-brand);
     text-rendering: auto;
+    color: var(--color-main);
+    font: var(--font-body);
+    a {
+        color: var(--color-brand);
+        text-decoration: none;
+    }
 }
 h1, h2, h3, h4, h5, h6,
 b, strong {
