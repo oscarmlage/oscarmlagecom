@@ -30,6 +30,7 @@ Then the site will be available in `http://localhost:1313`
 ## Other commands
 
 - `make build`: Builds the static site into `public/` directory
+- `make serve`: Launches a server in `http://localhost:1313`
 - `make shell`: Enters in the container in order to create new contents, etc....
   Once inside the container you can run some other `hugo` commands:
   - `hugo new posts/slugified-title`: Create a new post.
