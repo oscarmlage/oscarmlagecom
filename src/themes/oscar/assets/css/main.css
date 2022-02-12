@@ -9,9 +9,12 @@
 /* Components */
 
 /* Modules */
+@import 'assets/css/modules/header.css';
+@import 'assets/css/modules/footer.css';
 
 /* Specific pages */
 
 /* Utilities */
+@import 'assets/css/utilities/visibility.css';
 
 /* Vendors */

@@ -1,0 +1,32 @@
+.header {
+    padding: var(--spacing-3);
+    @media (--screen-xs) {
+        display: flex;
+        align-items: end;
+        position: sticky;
+        top: 0;
+        z-index: 1;
+        background: var(--background-main);
+    }
+}
+.logo {
+    margin: 0;
+    svg {
+        vertical-align: middle;
+        > * {
+            stroke: currentColor;
+        }
+    }
+}
+.main-nav {
+    @media (--screen-xs) {
+        margin-left: 20vw;
+    }
+    ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        gap: var(--spacing-2);
+    }
+}

@@ -5,14 +5,17 @@
 }
 
 body {
-    background-color: var(--background-main);
     font-family: var(--font-brand);
-    text-rendering: auto;
-    color: var(--color-main);
     font: var(--font-body);
+    text-rendering: auto;
+    background-color: var(--background-main);
+    color: var(--color-main);
     a {
-        color: var(--color-brand);
+        color: var(--color-link);
         text-decoration: none;
+        &:hover {
+            color: var(--color-link-hover);
+        }
     }
 }
 h1, h2, h3, h4, h5, h6,
@@ -22,4 +25,17 @@ b, strong {
 
 i, em {
     font-style: italic;
+}
+
+/* TODO: move this  */
+.wrapper {
+    max-width: 768px;
+    @media (--screen-xs) {
+        margin-left: calc(20vw + var(--logo-width));
+    }
+}
+
+.main {
+    margin-top: var(--spacing-6);
+    padding: var(--spacing-3);
 }
