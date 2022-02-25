@@ -1,11 +1,17 @@
 baseURL: 'https://oscarmlage.com'
 languageCode: 'en-us'
 title: 'oscarmlage'
-theme: 'oscar'
+theme: 
+  - 'oscar'
+  - 'hugo-shortcode-gallery'
 pygmentsStyle: "monokai"
 canonifyurls: true
 paginate: 15
 summarylength: 30
+
+timeout: 60000
+params:
+  galleryLoadJQuery: true
 
 defaultContentLanguage: "en"
 
