@@ -2,12 +2,11 @@
 
 <main class="main wrapper">
 
-	<section class="catalogue">
-		<h2>List: Index</h2>
+	<div class="posts-container">
 		{{ range (.Paginate (where .Site.RegularPages "Type" "posts")).Pages }}
 			{{ .Render "summary" }}
 		{{ end }}
-	</section>
+	</div>
 
 	<div class="pagination">
         {{ partial "pagination.html" . }}

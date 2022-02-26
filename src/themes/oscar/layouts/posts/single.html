@@ -1,11 +1,9 @@
 {{ define "main" }}
 
-<main>
-    <h1>Single one: Post</h1>
-
-    <div class="post">
-        {{ partial "posts/info.html" . }}
+<main class="main wrapper">
+    <div class="post-detail">
         {{ partial "posts/title.html" . }}
+        {{ partial "posts/info.html" . }}
         {{ partial "posts/header.html" . }}
 
         <!-- raw html -->
