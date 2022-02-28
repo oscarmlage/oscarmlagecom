@@ -2,15 +2,26 @@
 
 <main class="main wrapper">
 
+    <div class="hero">
+        {{ range (where .Site.Pages "Type" "heros") }}
+        <div {{ if .Params.current }}class="active"{{ end }}>
+            {{ if .Params.link }}<a href="{{ .Params.link }}">{{ end }}
+            {{ if .Params.image }}
+            <img src="heros/{{ .Params.image }}"
+                 alt="{{ .Content | plainify | htmlUnescape | truncate 10 }}" />
+            {{ end }}
+            {{ .Content }}
+            {{ if .Params.link }}</a>{{ end }}
+        </div>
+        {{ end }}
+    </div>
+
 	<div class="posts-container">
 		{{ range (.Paginate (where .Site.RegularPages "Type" "posts")).Pages }}
 			{{ .Render "summary" }}
 		{{ end }}
 	</div>
 
-	<div class="pagination">
-        {{ partial "pagination.html" . }}
-	</div>
 </main>
 
 {{ end }}
