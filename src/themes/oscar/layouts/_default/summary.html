@@ -3,7 +3,7 @@
         <h3 class="post-item-title">{{ .Title }}</h3>
         <time datetime="{{ .PublishDate }}" class="post-item-date">{{ i18n "publishdate" . }}</time>
         <p class="post-item-summary">
-            {{ if isset .Params "summary" }}{{ .Params.Summary | markdownify }}{{ else }}{{ .Summary }}{{ end }}
+            {{ if isset .Params "summary" }}{{ .Params.Summary | markdownify }}{{ else }}{{ .Summary | plainify | htmlUnescape }}{{ end }}
         </p>
     </a>
 </article>
