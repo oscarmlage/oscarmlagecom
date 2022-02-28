@@ -1,0 +1,23 @@
+{{ define "main" }}
+
+<main class="main wrapper">
+    <h1>Archive</h1>
+    <div class="post">
+
+        {{ .Content }}
+
+        {{ range (where .Site.RegularPages "Type" "posts").GroupByDate "2006" }}
+        <h2>{{ .Key }}</h2>
+        <p>{{ len .Pages }} posts</p>
+            <ul>
+                {{ range .Pages }}
+                <li><a href="{{ .Permalink }}">{{ .Title }}</a> - {{ .Date.Format "January 2" }}</li>
+                {{ end }}
+            </ul>
+        {{ end }}
+
+    </div>
+</main>
+
+{{ end }}
+
