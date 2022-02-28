@@ -6,7 +6,7 @@ theme:
   - 'hugo-shortcode-gallery'
 pygmentsStyle: "monokai"
 canonifyurls: true
-paginate: 15
+paginate: 10
 summarylength: 30
 
 timeout: 60000
