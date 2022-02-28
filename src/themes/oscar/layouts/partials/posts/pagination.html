@@ -1,7 +1,7 @@
 
-		{{- if .PrevPage }}
-        <a href="{{ .PrevPage.RelPermalink }}" class="left arrow">&#8592; {{ .PrevPage.Title }}</a>
+		{{- if .NextInSection }}
+        <a href="{{ .NextInSection.RelPermalink }}" class="left arrow">&#8592; {{ .NextInSection.Title }}</a>
 		{{- end }}
-		{{- if .NextPage }}
-        | <a href="{{ .NextPage.RelPermalink }}" class="right arrow">{{ .NextPage.Title }} &#8594;</a>
+		{{- if .PrevInSection }}
+        | <a href="{{ .PrevInSection.RelPermalink }}" class="right arrow">{{ .PrevInSection.Title }} &#8594;</a>
 		{{- end }}
