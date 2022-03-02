@@ -5,10 +5,17 @@
 .post-item {
     display: block;
     margin-bottom: var(--spacing-7);
+    &::after {
+        display: block;
+        content: "";
+        width: var(--spacing-3);
+        height: 1px;
+        background-color: var(--color-main-medium);
+    }
     .post-item-title {
         transition: ease-in-out 200ms;
         font-size: clamp(var(--font-size-2), 2.5vw, var(--font-size-3));
-        margin-left: 0;
+        margin-bottom: var(--spacing-1);
         &::before {
             content: "»";
             margin-right: var(--spacing-1);
@@ -20,7 +27,8 @@
         display: block;
         font: var(--font-caption);
         color: var(--color-main);
-        margin-top: calc(var(--spacing-1) / 2);
+        margin-top: 0;
+        /* margin-top: calc(var(--spacing-1) / 2); */
     }
     .post-item-summary {
         font: var(--font-body);

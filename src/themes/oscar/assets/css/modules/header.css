@@ -2,7 +2,7 @@
     padding: var(--spacing-3);
     @media (--screen-xs) {
         display: flex;
-        align-items: end;
+        align-items: flex-end;
         position: sticky;
         top: 0;
         z-index: 1;
