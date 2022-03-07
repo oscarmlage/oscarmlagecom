@@ -2,9 +2,9 @@
 title: "Hero1"
 date: 2022-02-28T22:25:30Z
 draft: false
-image:
-link:
+image: anon.png
 current: false
 ---
 
-1. Este es el primer texto dinámico del hero
+Este es el primer texto dinámico del hero y mejor con el [enlace a twich aquí](https://twitch.tv/oscarmlage), no global ⚡.
+

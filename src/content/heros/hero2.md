@@ -1,9 +1,8 @@
 ---
 title: "Hero2"
 date: 2022-02-28T22:25:56Z
-draft: false
+draft: true
 image:
-link:
 current: false
 ---
 

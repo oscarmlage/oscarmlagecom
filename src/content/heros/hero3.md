@@ -1,9 +1,8 @@
 ---
 title: "Hero3"
 date: 2022-02-28T22:26:26Z
-draft: false
+draft: true
 image: anon.png
-link: https://twitch.tv/oscarmlage
 current: true
 ---
 
