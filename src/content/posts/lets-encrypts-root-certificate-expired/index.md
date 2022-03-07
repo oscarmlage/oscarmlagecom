@@ -10,7 +10,7 @@ image: letsencrypt.png
 <p>In my case I've a <em>Debian7</em> using and comsuming some <abbr title="Lets Encrypt">LE</abbr> certs in both ways so I woke up this morning with the smell of alert in the atmosphere. After reading some literature&nbsp;<a href="https://scotthelme.co.uk/lets-encrypt-old-root-expiration/">here</a> and <a href="https://letsencrypt.org/certificates/">there</a> and talked about it with some mates, decided to manually update the certificate. I was forced to proceed in that way because the package updates for <code>deb7</code><span> are totally out of date (or even closed I'd say).</span></p>
 <p>We can see the error here:</p>
 
-```
+```bash
 $ openssl s_client -host oscarmlage.com -port 443 -showcerts
 CONNECTED(00000003)
 depth=2 C = US, O = Internet Security Research Group, CN = ISRG Root X1
@@ -28,13 +28,13 @@ verify return:0
 </ul>
 <p>Now that we already have them handy, we need to copy the good one, remove the older other in the affected machine and refresh the certificates:</p>
 
-```
+```bash
 $ scp user@newerhost:/usr/share/ca-certificates/mozilla/ISRG_Root_X1.crt /usr/share/ca-certificates/mozilla/
 $ mv /usr/share/ca-certificates/mozilla/DST_Root_CA_X3.crt /tmp/
 ```
 
 
-```
+```bash
 $ echo "/usr/share/ca-certificates/mozilla/ISRG_Root_X1.crt" &gt;&gt; /etc/ca-certificates.conf
 $ vim /etc/ca-certificates.conf
   # remove the /usr/share/ca-certificates/mozilla/DST_Root_CA_X3.crt line
@@ -46,7 +46,7 @@ Running hooks in /etc/ca-certificates/update.d....done.
 
 <p>And we can test if it works now:</p>
 
-```
+```bash
 $ openssl s_client -host oscarmlage.com -port 443 -showcerts
 CONNECTED(00000003)
 depth=2 C = US, O = Internet Security Research Group, CN = ISRG Root X1

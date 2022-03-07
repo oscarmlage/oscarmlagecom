@@ -13,7 +13,7 @@ image: vuedotjs.jpg
 <p>Tengo que definir el m&eacute;todo como as&iacute;ncrono para poder hacer que unas peticiones esperen por el resultado de la anterior, hasta donde he le&iacute;do ning&uacute;n problema por definir <code>async mounted()</code> y jugar con <code>await</code> y <code>Promises</code>, pero &iquest;qu&eacute; opin&aacute;is de esa tercera llamada en bucle?.</p>
 <p>Entiendo que si dentro del bucle <code>forEach</code> de rounds defino el m&eacute;todo como as&iacute;ncrono podr&eacute; hacer las llamadas correspondientes esperando su ejecuci&oacute;n con <code>await</code>, tal que as&iacute;:</p>
 
-```
+```js
 Array.from(this.rounds).forEach( async round =&gt; {
     await this.get_competitors_list(round.round_id);
     [...]
@@ -22,7 +22,7 @@ Array.from(this.rounds).forEach( async round =&gt; {
 
 <p>Error, <code>forEach</code> no va a esperar a que hayan acabado los elementos marcados como tal, simplemente ejecuta y sigue. As&iacute; que, leyendo un poco de <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Iteration_protocols">Iteration protocols</a> veo que en su lugar podemos usar <code>for..of</code>, que es una versi&oacute;n moderna del "for loop" de forma que, simplemente cambiando forEach y adaptando la sintaxis al nuevo bucle haremos que funcione adecuadamente:</p>
 
-```
+```js
 for(let round of this.rounds) {
     await this.get_competitors_list(round.round_id);
     [...]

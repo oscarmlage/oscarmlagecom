@@ -12,7 +12,7 @@ image: bash-ps1-and-long-commands00.jpg
 <p><img style="width: 100%; height: auto;" src="gallery/bash-ps1-and-long-commands-02.gif" alt="" /></p>
 <p>In my case it was exactly like that:</p>
 
-```
+```sh
 export PS1="033[1;30m]&raquo; [e[0;33m]mbp033[1;30m]╺─╸[033[1;30m][[033[0m]W[033[1;30m]][033[1;34m]:[033[0m] "
 export PS1="[033[1;30m]&raquo; [e[0;33m]mbp[033[1;30m]╺─╸[033[1;30m][[033[0m]W[033[1;30m]][033[1;34m]:[033[0m] "
 ```

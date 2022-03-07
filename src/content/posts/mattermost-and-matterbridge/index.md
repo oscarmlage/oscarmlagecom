@@ -31,7 +31,7 @@ image: mattermost-matterbridge.JPG
 <p><strong>Install a Mattermost server</strong></p>
 <p>As slackers, laziness is the strength that moves us so we are going to use docker for both (mattermost and matterbridge) directly in command line (we should prepare our database before, I told you I was old-school so I don't go for a db-container this time):</p>
 
-```
+```bash
 docker run -d 
     -p 8000:8000 
     -e MM_SERVICESETTINGS_SITEURL="&lt;https://mymattermost.domain.com&gt;" 
@@ -54,7 +54,7 @@ docker run -d
 <p><strong>Install Matterbridge</strong></p>
 <p>For installing matterbridge we should have a configuration file that says to the binary where to connect and what to do with the messages, so first of all we will create our <code>matterbridge.toml</code> file:</p>
 
-```
+```bash
 [irc]
     [irc.freenode]
     Server="irc.freenode.net:6667"
@@ -88,7 +88,7 @@ enable=true
 </ul>
 <p>So, it's time to run the bridge:</p>
 
-```
+```bash
 docker run -d 
     -v /home/docker/matterbridge/matterbridge.toml:/matterbridge.toml 
     -h matterbridge01 

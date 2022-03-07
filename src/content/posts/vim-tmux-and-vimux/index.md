@@ -12,7 +12,7 @@ image: tmux-vim-vimux.png
 <p style="text-align: center;"><img style="width: 100%; height: 100%;" src="gallery/tmux-vim-vimux.gif" alt="tmux, vim, vimux" /></p>
 <p>You can <a href="gallery/vimux">Vimux</a> and it just opens a tmux pane (or window), execute the command you want, and go back to vim. The configuration I wrote (<code>~/.vimrc</code>):</p>
 
-```
+```vim
 "---------------------------------------------------------
 "------------- Vimux
 "---------------------------------------------------------

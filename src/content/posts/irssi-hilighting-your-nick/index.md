@@ -12,13 +12,13 @@ image: irssi-hilighting-your-nick.jpg
 <p>What was the problem then? It seems that irssi was highlighting only when someone mentioned me at the beginning of the phrase like this&nbsp;<code>r0sk:&nbsp;</code>but it wasn't doing it in a normal nick mention in the middle of a sentence like <code>hey r0sk sup there!?</code> or similar.</p>
 <p>I knew that something like this could be configured so reading a bit about <a href="https://irssi.org/documentation/help/hilight/">irssi hilight</a> found the way to be alerted even if they are shouting <code>r000ssskkk!!</code> to me, the solution can be applied in two ways, in the irssi command line:</p>
 
-```
+```sh
 /hilight -regexp r0+s+k+
 ```
 
 <p>And, of course, in the <code>.irssi/config</code> file, because if you have put it in the command line and the setting is not saved to the config file, it won't work in case of restart:</p>
 
-```
+```python
 hilights = (
   { text = "r0+s+k+"; nick = "yes"; word = "yes"; regexp = "yes"; }
 )
