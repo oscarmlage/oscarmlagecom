@@ -17,6 +17,7 @@
     ========================================================================== */
     --background-main: #F0F0F0;
     --color-main: #292929;
+    --color-main-dark: #3d3d3d;
     --color-main-medium: #535353;
     --color-link: #0161f0;
     --color-link-hover:#575757;
@@ -65,6 +66,7 @@
         --background-main: #292929;
         --color-main: #F0F0F0;
         --color-main-medium: #a3a3a3;
+        --color-main-dark: #4e4e4e;
         --color-link: #02A4FF;
         --color-link-hover:#9e9e9e;
     }

@@ -15,9 +15,9 @@
                 {{ $currentPage := . }}
                 {{ range .Site.Menus.main }}
                 <li>
-                    <a href="{{ .URL }}" {{ if eq $currentPage.RelPermalink .URL }}class="active"{{ end }}>
+                    <a href="{{ .URL }}" {{ if eq $currentPage.RelPermalink .URL }}class="is-active"{{ end }}>
                         {{ .Pre }}
-                        <span>{{ .Name }}</span>
+                            {{ .Name }}
                         {{ .Post }}
                     </a>
                 </li>

@@ -10,12 +10,12 @@ body {
     text-rendering: auto;
     background-color: var(--background-main);
     color: var(--color-main);
-    a {
-        color: var(--color-link);
-        text-decoration: none;
-        &:hover {
-            color: var(--color-link-hover);
-        }
+}
+a {
+    color: var(--color-link);
+    text-decoration: none;
+    &:hover {
+        color: var(--color-link-hover);
     }
 }
 h1, h2, h3, h4, h5, h6,

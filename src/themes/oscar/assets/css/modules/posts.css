@@ -5,6 +5,7 @@
 .post-item {
     display: block;
     margin-bottom: var(--spacing-7);
+
     &::after {
         display: block;
         content: "";
@@ -68,5 +69,39 @@
         color: var(--color-link);
         font-size: clamp(var(--font-size-3), 2.5vw, var(--font-size-4));
         margin-bottom: 0;
+    }
+    p, li {
+        margin-bottom: var(--spacing-3);
+    }
+}
+
+/* Archive */
+.post {
+    h2 {
+        font: var(--font-heading);
+        margin: 0;
+        display: flex;
+        aling-items: center;
+        border-bottom: 1px solid var(--color-main-dark);
+        padding-bottom: var(--spacing-1);
+        span {
+            font: var(--font-heading);
+            color: var(--color-main-medium);
+            vertical-align: middle;
+            &:first-child {
+                margin-right: var(--spacing-2);
+                color: var(--color-main);
+            }
+        }
+        &:first-child {
+            margin-top: var(--spacing-7);
+        }
+    }
+    ul {
+        padding-left: 1rem;
+        &:not(:last-child) {
+            margin-bottom: var(--spacing-6);
+
+        }
     }
 }

@@ -4,7 +4,7 @@
 
     <div class="hero">
         {{ range (where .Site.Pages "Type" "heros") }}
-        <div {{ if .Params.current }}class="active"{{ end }}>
+        <div {{ if .Params.current }}class="is-active"{{ end }}>
             {{ if .Params.link }}<a href="{{ .Params.link }}">{{ end }}
             {{ if .Params.image }}
             <img src="heros/{{ .Params.image }}"
@@ -14,6 +14,18 @@
             {{ if .Params.link }}</a>{{ end }}
         </div>
         {{ end }}
+
+        <!--  PROVISIONAL PROMO -  @todo: change this -->
+        {{ range (where .Site.Pages "Type" "heros") }}
+        {{ if .Params.image }}
+        <div class="hero-img" >
+            <img src="heros/{{ .Params.image }}"
+                alt="{{ .Content | plainify | htmlUnescape | truncate 10 }}" />
+        </div>
+        {{ end }}
+        {{ end }}
+        <h2 class="hero-title">Este es el primer texto dinámico del hero y mejor con el <a href="">enlace a twich aquí</a>, no global ⚡.</h2>
+        <!--  / PROVISIONAL PROMO -  @todo: change this -->
     </div>
 
 	<div class="posts-container">
@@ -25,3 +37,4 @@
 </main>
 
 {{ end }}
+

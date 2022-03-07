@@ -1,7 +1,7 @@
 
 		{{- if .NextInSection }}
-        <a href="{{ .NextInSection.RelPermalink }}" class="left arrow">&#8592; {{ .NextInSection.Title }}</a>
+        <a href="{{ .NextInSection.RelPermalink }}" class="left arrow">⇠ <span>{{ .NextInSection.Title }}</span></a>
 		{{- end }}
 		{{- if .PrevInSection }}
-        | <a href="{{ .PrevInSection.RelPermalink }}" class="right arrow">{{ .PrevInSection.Title }} &#8594;</a>
+        | <a href="{{ .PrevInSection.RelPermalink }}" class="right arrow"><span>{{ .PrevInSection.Title }}</span> ⇢</a>
 		{{- end }}
