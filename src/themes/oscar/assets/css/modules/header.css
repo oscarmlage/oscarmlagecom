@@ -1,12 +1,16 @@
 .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
     padding: var(--spacing-3);
-    @media (--screen-xs) {
-        display: flex;
-        align-items: flex-end;
+    @media (--screen-s) {
         position: sticky;
         top: 0;
         z-index: 1;
         background: var(--background-main);
+    }
+    @media (--screen-m) {
+        justify-content: flex-start;
     }
 }
 .logo {
@@ -19,7 +23,7 @@
     }
 }
 .main-nav {
-    @media (--screen-xs) {
+    @media (--screen-m) {
         margin-left: 20vw;
     }
     ul {
@@ -42,7 +46,7 @@
         display: none;
     }
     .hero-title {
-        font: var(--font-title);
+        font-size: clamp(var(--font-size-3), 2.5vw, var(--font-size-4));
         color: var(--color-main);
         margin-bottom: calc(var(--spacing-8) * 2);
     }

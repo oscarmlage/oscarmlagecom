@@ -10,6 +10,7 @@ body {
     text-rendering: auto;
     background-color: var(--background-main);
     color: var(--color-main);
+    overflow: hidden;
 }
 a {
     color: var(--color-link);
@@ -30,7 +31,7 @@ i, em {
 /* TODO: move this  */
 .wrapper {
     max-width: 768px;
-    @media (--screen-xs) {
+    @media (--screen-m) {
         margin-left: calc(20vw + var(--logo-width));
     }
 }
@@ -38,4 +39,32 @@ i, em {
 .main {
     margin-top: var(--spacing-6);
     padding: var(--spacing-3);
+}
+
+.back-circle {
+    position: absolute;
+    left: 80vw;
+    opacity:  .02;
+    z-index: -1;
+    fill: var(--color-main);
+    animation: back-circle 65s infinite linear;
+}
+
+@keyframes back-circle{
+    0% {
+        transform: translateY(-20vh);
+        transform-origin: center center;
+    }
+    25% {
+        transform: translateX(-45vw) translateY(50vh);
+    }
+    50% {
+        transform: translateX(35vw) translateY(30vh);
+    }
+    75% {
+        transform: translateX(5vw) translateY(20vh);
+    }
+    100% {
+        transform: translateY(-20vh);
+    }
 }
