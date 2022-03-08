@@ -108,10 +108,10 @@
         vertical-align: middle;
         margin: 0 auto;
         > * {
-            fill: var(--background-main);
+            fill: none;
             stroke: var(--color-link);
             transition: all ease-in-out 250ms;
-            stroke-width: 2px;
+            stroke-width: 1px;
         }
     }
 }
