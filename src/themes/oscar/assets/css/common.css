@@ -49,7 +49,9 @@ i, em {
 .back-circle {
     left: 80vw;
     opacity:  .02;
-    fill: var(--color-main);
+    > * {
+        fill: var(--color-main);
+    }
     animation: back-circle 65s infinite linear;
 }
 

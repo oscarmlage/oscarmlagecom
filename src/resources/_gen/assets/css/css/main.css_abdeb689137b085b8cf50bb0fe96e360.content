@@ -398,7 +398,11 @@ i, em {
 .back-circle {
     left: 80vw;
     opacity:  .02;
-    fill: var(--color-main);
+}
+.back-circle > * {
+        fill: var(--color-main);
+    }
+.back-circle{
     animation: back-circle 65s infinite linear;
 }
 @keyframes back-circle{
