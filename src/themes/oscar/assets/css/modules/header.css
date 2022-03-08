@@ -48,7 +48,6 @@
     .hero-title {
         font-size: clamp(var(--font-size-3), 2.5vw, var(--font-size-4));
         color: var(--color-main);
-        margin-bottom: calc(var(--spacing-8) * 2);
     }
     .hero-img {
         display: inline-block;
@@ -62,6 +61,57 @@
         img {
             width: 100%;
             mix-blend-mode: overlay;
+        }
+    }
+}
+
+.social {
+    margin-top: var(--spacing-7);
+    margin-bottom: calc(var(--spacing-8) * 2);
+    ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        flex-wrap: wrap;
+        gap: var(--spacing-3);
+        li {
+            flex-shrink: 0;
+        }
+    }
+    span {
+        /* position:absolute;
+        left:-10000px;
+        top:auto;
+        width:1px;
+        height:1px;
+        overflow: hidden; */
+        display: block;
+        font: var(--font-caption);
+        margin-top: var(--spacing-1);
+        width: min-content;
+        margin-inline: auto;
+    }
+    a {
+        display: block;
+        text-align: center;
+        &:hover {
+            svg > * {
+                fill: var(--color-main);
+                stroke: var(--color-main);
+                stroke-width: 1px;
+            }
+        }
+    }
+    svg {
+        vertical-align: middle;
+        vertical-align: middle;
+        margin: 0 auto;
+        > * {
+            fill: var(--background-main);
+            stroke: var(--color-link);
+            transition: all ease-in-out 250ms;
+            stroke-width: 2px;
         }
     }
 }
