@@ -92,6 +92,6 @@ If you would like to get in touch, you can send an email to **x@x.x**.
         </li>
         </ul>
 </div>
-## Colophon
 
+## Colophon
 *This page is under construction for ever. Some data may be outdated*.
