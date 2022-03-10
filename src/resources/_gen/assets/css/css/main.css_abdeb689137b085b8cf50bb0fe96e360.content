@@ -649,7 +649,7 @@ i, em {
         /* box-shadow: 3px 3px 15px 5px rgba(0, 0, 0, 0.3); */
         padding: var(--spacing-3);
         border-radius: 4px;
-        background-color: red;
+        background-color: #111111 !important;
     }
 .post-detail ul {
         padding-left: 1rem;
