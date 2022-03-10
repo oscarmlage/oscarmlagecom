@@ -542,13 +542,16 @@ i, em {
     }
 .hero .hero-img img {
             width: 100%;
+            aspect-ratio: 1;
+            border-radius: 50%;
             mix-blend-mode: overlay;
         }
+.post .social,
 .social {
     margin-top: var(--spacing-7);
     margin-bottom: calc(var(--spacing-8) * 2);
 }
-.social ul {
+.post .social ul, .social ul {
         list-style-type: none;
         padding: 0;
         margin: 0;
@@ -556,10 +559,10 @@ i, em {
         flex-wrap: wrap;
         gap: var(--spacing-3);
     }
-.social ul li {
+.post .social ul li, .social ul li {
             flex-shrink: 0;
         }
-.social span {
+.post .social span, .social span {
         /* position:absolute;
         left:-10000px;
         top:auto;
@@ -572,22 +575,21 @@ i, em {
         width: min-content;
         margin-inline: auto;
     }
-.social a {
+.post .social a, .social a {
         display: block;
         text-align: center;
     }
-.social a:hover svg > * {
+.post .social a:hover svg > *, .social a:hover svg > * {
                 fill: var(--color-main);
                 stroke: var(--color-main);
                 stroke-width: 1px;
             }
-.social svg {
+.post .social svg, .social svg {
         vertical-align: middle;
-        transition: all ease-in-out 250ms;
         vertical-align: middle;
         margin: 0 auto;
     }
-.social svg > * {
+.post .social svg > *, .social svg > * {
             fill: none;
             stroke: var(--color-link);
             stroke-width: 1px;
@@ -643,9 +645,11 @@ i, em {
     }
 .post-detail pre {
         overflow-x: scroll;
-        border: 1px solid var(--color-main-medium);
+        /* border: 1px solid var(--color-main-medium); */
+        /* box-shadow: 3px 3px 15px 5px rgba(0, 0, 0, 0.3); */
         padding: var(--spacing-3);
         border-radius: 4px;
+        background-color: red;
     }
 .post-detail ul {
         padding-left: 1rem;
@@ -660,24 +664,27 @@ i, em {
         font-size: clamp(var(--font-size-3), 2.5vw, var(--font-size-4));
         margin-bottom: 0;
     }
-.post-detail p, .post-detail li {
+.post-detail p{
         margin-bottom: var(--spacing-3);
+    }
+.post-detail li {
+        margin-bottom: var(--spacing-1);
     }
 /* Archive */
 .post h2 {
-        font: var(--font-heading);
         margin: 0;
         display: flex;
-        aling-items: center;
+        align-items: center;
         border-bottom: 1px solid var(--color-main-dark);
         padding-bottom: var(--spacing-1);
     }
 .post h2 span {
-            font: var(--font-heading);
+            font: var(--font-body);
             color: var(--color-main-medium);
             vertical-align: middle;
         }
 .post h2 span:first-child {
+                font: var(--font-heading);
                 margin-right: var(--spacing-2);
                 color: var(--color-main);
             }
@@ -698,7 +705,7 @@ i, em {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
-    gap: var(--spacing-3);
+    gap: 0 var(--spacing-3);
 }
 .pagination a {
         font: var(--font-heading);

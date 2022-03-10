@@ -53,9 +53,11 @@
     }
     pre {
         overflow-x: scroll;
-        border: 1px solid var(--color-main-medium);
+        /* border: 1px solid var(--color-main-medium); */
+        /* box-shadow: 3px 3px 15px 5px rgba(0, 0, 0, 0.3); */
         padding: var(--spacing-3);
         border-radius: 4px;
+        background-color: red;
     }
     ul {
         padding-left: 1rem;
@@ -70,25 +72,28 @@
         font-size: clamp(var(--font-size-3), 2.5vw, var(--font-size-4));
         margin-bottom: 0;
     }
-    p, li {
+    p{
         margin-bottom: var(--spacing-3);
+    }
+    li {
+        margin-bottom: var(--spacing-1);
     }
 }
 
 /* Archive */
 .post {
     h2 {
-        font: var(--font-heading);
         margin: 0;
         display: flex;
-        aling-items: center;
+        align-items: center;
         border-bottom: 1px solid var(--color-main-dark);
         padding-bottom: var(--spacing-1);
         span {
-            font: var(--font-heading);
+            font: var(--font-body);
             color: var(--color-main-medium);
             vertical-align: middle;
             &:first-child {
+                font: var(--font-heading);
                 margin-right: var(--spacing-2);
                 color: var(--color-main);
             }

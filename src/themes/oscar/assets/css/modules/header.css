@@ -60,11 +60,13 @@
         overflow: hidden;
         img {
             width: 100%;
+            aspect-ratio: 1;
+            border-radius: 50%;
             mix-blend-mode: overlay;
         }
     }
 }
-
+.post .social,
 .social {
     margin-top: var(--spacing-7);
     margin-bottom: calc(var(--spacing-8) * 2);
