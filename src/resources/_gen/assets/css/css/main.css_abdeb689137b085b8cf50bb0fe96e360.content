@@ -378,7 +378,8 @@ i, em {
 }
 /* TODO: move this  */
 .wrapper {
-    max-width: 768px;
+    max-width: 800px;
+    margin-inline: auto;
 }
 @media (min-width: 960px) {
 .wrapper {

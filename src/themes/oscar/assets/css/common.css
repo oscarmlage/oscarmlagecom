@@ -29,7 +29,8 @@ i, em {
 
 /* TODO: move this  */
 .wrapper {
-    max-width: 768px;
+    max-width: 800px;
+    margin-inline: auto;
     @media (--screen-m) {
         margin-left: calc(20vw + var(--logo-width));
     }
