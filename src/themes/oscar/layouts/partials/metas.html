@@ -23,4 +23,31 @@
 
 		<!-- RSS -->
 		<link href="{{ with .OutputFormats.Get "RSS" }}{{ .RelPermalink }}{{ end }}" rel="alternate" type="application/rss+xml" title="{{ .Site.Title }}" />
+
+        <!-- Metas -->
+        <meta itemprop="description" content="{{ .Content | plainify | htmlUnescape | truncate 100 }}">
+        <meta name="description" content="{{ .Content | plainify | htmlUnescape | truncate 100 }}">
+        <meta itemprop="name" content="{{ .Title }}">
+        <meta itemprop="url" content="{{ .URL | absURL }}">
+        <meta itemprop="datePublished" content="{{ .PublishDate }}">
+        <meta itemprop="dateModified" content=" {{ .Lastmod }}">
+        {{- if .Params.image }}
+        <meta itemprop="image" content="{{ .URL | absURL }}{{ .Params.image }}">
+        {{- end }}
+
+        <!-- Open Graph -->
+        <meta property="og:type" content="website">
+        <meta property="og:site_name" content="{{ .Site.Title }}">
+        <meta property="og:title" content="{{ .Title }}">
+        <meta property="og:description" content="{{ .Content | plainify | htmlUnescape | truncate 100 }}">
+        <meta property="og:url" content="{{ .URL | absURL }}">
+        <meta property="og:image" content="{{ .URL | absURL }}{{ .Params.image }}">
+
+        <!-- Twitter card -->
+        <meta name="twitter:card" content="summary">
+        <meta name="twitter:url" content="{{ .URL | absURL }}">
+        <meta name="twitter:site" content="{{ .Site.Title }}">
+        <meta name="twitter:title" content="{{ .Title }}">
+        <meta name="twitter:description" content="{{ .Content | plainify | htmlUnescape | truncate 100 }}">
+        <meta name="twitter:image" content="{{ .URL | absURL }}{{ .Params.image }}">
 	</head>
