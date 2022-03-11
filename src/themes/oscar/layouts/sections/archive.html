@@ -1,7 +1,7 @@
 {{ define "main" }}
 
 <main class="main wrapper">
-    <h1>Archive</h1>
+    <h1>Logbook</h1>
     {{ .Content }}
     <div class="post">
         {{ range (where .Site.RegularPages "Type" "posts").GroupByDate "2006" }}

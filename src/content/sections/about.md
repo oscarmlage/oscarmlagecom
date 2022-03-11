@@ -2,9 +2,12 @@
 title: "About"
 date: 2021-10-22T10:44:54Z
 draft: false
+layout: about
 ---
 
-Hola!, I'm **Óscar**, a software developer living in Lugo, a small city in the Northwest of Spain.
+# ¡Hola!, I'm Óscar
+
+A software developer living in Lugo, a small and beautiful city in the *Northwest* of Spain.
 
 I've been working in different areas: sysadmin, web development, front-end and back-end... At the moment I'm writing a lot of back-end Python.
 
