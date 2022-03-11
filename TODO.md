@@ -3,12 +3,13 @@
 - [x] Take a look to the li margin-bottom
 - [x] About, social section, maybe something similar to the index page could fit better
 - [x] Review <link rel="stylesheet" href="{{ "css/fonts.css" | relURL }}"> in metas.html. It´s necessary?
+- [x] og + twitter card
+- [x] Index, 5 posts
+- [x] Archive + About: Change title
 - [ ] Emphasize `<code>`
 - [ ] Favicon
-- [ ] og + twitter card
-- [x] Index, 5 posts
+- [ ] Index call2action that leads you to "posts"
 - [ ] Change paginators (no vertical separator |)
-- [ ] Archive + About: Change title
 - [ ] Fonts, use one font for the title and another one (more readable) for the post text
 - [ ] Some images contains a `<p>`, get rid of it.
     - Images with p in the post content (as it is html now)
@@ -16,7 +17,7 @@
 - [ ] There is a `<h2>` that contains a `<p>` too. Try to get rid of it
     - ## -> <h2><p>Whatever</p></h2>
 - [ ] Different sizes for the images (full-width, mid, normal, narrow...)
-- [ ] Review pending texts
+- [ ] Review pending texts (off-screen)
     - [ ] Index
     - [ ] About, Colophon, CV... (add Setup info?)
 - [ ] Remove `tale` theme and clean some stuff here and there
