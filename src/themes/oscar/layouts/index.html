@@ -96,11 +96,11 @@
          </ul>
     </div>
 
-	<div class="posts-container">
-		{{ range (.Paginate (where .Site.RegularPages "Type" "posts")).Pages }}
-			{{ .Render "summary" }}
-		{{ end }}
-	</div>
+    <div class="posts-container">
+        {{ range first 5 (where .Site.RegularPages "Type" "posts") }}
+            {{ .Render "summary" }}
+        {{ end }}
+    </div>
 
 </main>
 

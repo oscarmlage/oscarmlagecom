@@ -6,7 +6,7 @@
 - [ ] Emphasize `<code>`
 - [ ] Favicon
 - [ ] og + twitter card
-- [ ] Index, 5 posts + call2action
+- [x] Index, 5 posts
 - [ ] Change paginators (no vertical separator |)
 - [ ] Archive + About: Change title
 - [ ] Fonts, use one font for the title and another one (more readable) for the post text
