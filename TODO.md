@@ -1,6 +1,24 @@
 # TODO
-
-- [ ] Emphasize <code>
-- [X] Take a look to the li margin-bottom
-- [ ] About, social section, maybe something similar to the index page could fit better
-- [ ] Review <link rel="stylesheet" href="{{ "css/fonts.css" | relURL }}"> in metas.html. It´s necessary?
+> List of things to do
+- [x] Take a look to the li margin-bottom
+- [x] About, social section, maybe something similar to the index page could fit better
+- [x] Review <link rel="stylesheet" href="{{ "css/fonts.css" | relURL }}"> in metas.html. It´s necessary?
+- [ ] Emphasize `<code>`
+- [ ] Favicon
+- [ ] og + twitter card
+- [ ] Index, 5 posts + call2action
+- [ ] Change paginators (no vertical separator |)
+- [ ] Archive + About: Change title
+- [ ] Fonts, use one font for the title and another one (more readable) for the post text
+- [ ] Some images contains a `<p>`, get rid of it.
+    - Images with p in the post content (as it is html now)
+    - ![image.png](path/to/image.png) -> <p><img src=""></p>
+- [ ] There is a `<h2>` that contains a `<p>` too. Try to get rid of it
+    - ## -> <h2><p>Whatever</p></h2>
+- [ ] Different sizes for the images (full-width, mid, normal, narrow...)
+- [ ] Review pending texts
+    - [ ] Index
+    - [ ] About, Colophon, CV... (add Setup info?)
+- [ ] Remove `tale` theme and clean some stuff here and there
+- [ ] Import some other posts from other years
+- [ ] Support something like microposting (as bebu does)
