@@ -93,5 +93,33 @@ If you would like to get in touch, you can send an email to **x@x.x**.
         </ul>
 </div>
 
+## Skills
+
+```yaml
+name: Óscar M. Lage Guitián
+age: "now()-1978"
+
+works:
+    - 2014:
+        - work1: "Whatever Company & Bros"
+          skills:
+            - php
+            - javascript
+            - html
+            - css
+    - 2011:
+        - work2: "CISCO"
+          skills:
+            - sysadmin
+            - routing
+            - ios
+
+hobbies:
+    - sports:
+        - name: "Brazilian Jiu Jitsu"
+        - range: NaN
+```
+
+
 ## Colophon
 *This page is under construction for ever. Some data may be outdated*.
