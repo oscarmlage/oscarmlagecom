@@ -591,7 +591,7 @@ i, em {
     }
 .post .social svg > *, .social svg > * {
             fill: none;
-            stroke: var(--color-main);
+            stroke: var(--color-link);
             stroke-width: 1.25px;
         }
 /* POST LIST  */
