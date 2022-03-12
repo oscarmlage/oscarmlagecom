@@ -6,11 +6,13 @@
 - [x] og + twitter card
 - [x] Index, 5 posts
 - [x] Archive + About: Change title
-- [ ] Emphasize `<code>`
-- [ ] Favicon
+- [x] Emphasize `<code>`
+- [x] Favicon (Added)*
+- [ ] *Review the favicon imgs directory. Not sure if the images are in the right directory.
 - [ ] Index call2action that leads you to "posts"
-- [ ] Change paginators (no vertical separator |)
-- [ ] Fonts, use one font for the title and another one (more readable) for the post text
+- [x] Change paginators (no vertical separator |)
+- [x] Fonts, use one font for the title and another one (more readable) for the post text
+- [x] Remove background pre on about
 - [ ] Some images contains a `<p>`, get rid of it.
     - Images with p in the post content (as it is html now)
     - ![image.png](path/to/image.png) -> <p><img src=""></p>

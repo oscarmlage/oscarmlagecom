@@ -5,8 +5,6 @@
 }
 
 body {
-    font-family: var(--font-brand);
-    font: var(--font-body);
     text-rendering: auto;
     background-color: var(--background-main);
     color: var(--color-main);
@@ -21,6 +19,21 @@ a {
 h1, h2, h3, h4, h5, h6,
 b, strong {
     font-weight: var(--fw-bold);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-brand);
+}
+p, ul, ol, dl, dd {
+        font: var(--font-body);
+}
+
+li code,
+p code {
+    font: var(--font-caption);
+    padding: 4px;
+    color: rgb(0, 180, 0);
+    font-family: var(--font-brand);
 }
 
 i, em {

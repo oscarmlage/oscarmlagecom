@@ -281,6 +281,7 @@ template {
     Fonts
     ========================================================================== */
     --font-brand: 'Overpass Mono', monospace;
+    --font-ui: -apple-system, system-ui, sans-serif;
 
     /* Fonts weights */
     --fw-regular: 400;
@@ -307,7 +308,7 @@ template {
 
     /* Font sizes  https://www.modularscale.com/?16,14&px&1.5 */
     --font-size-1: 14px;
-    --font-size-2: 16px;
+    --font-size-2: 17px;
     --font-size-3: 24px;
     --font-size-4: 36px;
     --font-size-5: 54px;
@@ -315,8 +316,8 @@ template {
     /* Font sizes names */
     --font-title: var(--fw-bold) var(--font-size-4) / 1.25 var(--font-brand);
     --font-heading: var(--fw-bold) var(--font-size-3) / 1.25 var(--font-brand);
-    --font-body: var(--font-size-2) / 1.46 var(--font-brand);
-    --font-caption: var(--font-size-1) / 1.37 var(--font-brand);
+    --font-body: var(--font-size-2) / 1.6 var(--font-ui);
+    --font-caption: var(--font-size-1) / 1.5 var(--font-brand);
 
  /* ==========================================================================
     Spacing
@@ -356,8 +357,6 @@ template {
     box-sizing: border-box;
 }
 body {
-    font-family: var(--font-brand);
-    font: var(--font-body);
     text-rendering: auto;
     background-color: var(--background-main);
     color: var(--color-main);
@@ -372,6 +371,19 @@ a:hover {
 h1, h2, h3, h4, h5, h6,
 b, strong {
     font-weight: var(--fw-bold);
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-brand);
+}
+p, ul, ol, dl, dd {
+        font: var(--font-body);
+}
+li code,
+p code {
+    font: var(--font-caption);
+    padding: 4px;
+    color: rgb(0, 180, 0);
+    font-family: var(--font-brand);
 }
 i, em {
     font-style: italic;
@@ -517,6 +529,7 @@ i, em {
         margin: 0;
         display: flex;
         gap: var(--spacing-2);
+        font-family: var(--font-brand);
     }
 .main-nav a.is-active {
         color: var(--color-main);
@@ -564,12 +577,6 @@ i, em {
             flex-shrink: 0;
         }
 .post .social span, .social span {
-        /* position:absolute;
-        left:-10000px;
-        top:auto;
-        width:1px;
-        height:1px;
-        overflow: hidden; */
         display: block;
         font: var(--font-caption);
         margin-top: var(--spacing-1);
@@ -627,6 +634,7 @@ i, em {
         /* margin-top: calc(var(--spacing-1) / 2); */
     }
 .post-item .post-item-summary {
+        font-family: var(--font-ui);
         font: var(--font-body);
         color: var(--color-main-medium);
     }
@@ -644,6 +652,7 @@ i, em {
         width: auto;
     }
 .post-detail pre {
+        font: var(--font-caption);
         overflow-x: scroll;
         /* border: 1px solid var(--color-main-medium); */
         /* box-shadow: 3px 3px 15px 5px rgba(0, 0, 0, 0.3); */
@@ -679,7 +688,7 @@ i, em {
         padding-bottom: var(--spacing-1);
     }
 .post h2 span {
-            font: var(--font-body);
+            font: var(--font-caption);
             color: var(--color-main-medium);
             vertical-align: middle;
         }
@@ -698,25 +707,57 @@ i, em {
             margin-bottom: var(--spacing-6);
 
         }
+.about .highlight {
+        margin-bottom: var(--spacing-8);
+    }
+.about .highlight pre {
+            background-color: transparent !important;
+        }
 .pagination {
     border-top: 1px solid var(--color-main-medium);
     border-bottom: 1px solid var(--color-main-medium);
     padding-block: var(--spacing-3);
+    font: var(--font-caption);
     display: flex;
     align-items: center;
-    flex-wrap: wrap;
+    justify-content: space-between;
+    flex-wrap: nowrap;
     gap: 0 var(--spacing-3);
+    color: var(--color-main-medium);
 }
-.pagination a {
-        font: var(--font-heading);
+.pagination .center {
+        display: flex;
+        align-items: center;
+        gap: 0 var(--spacing-3);
     }
-.pagination span {
-        font: var(--font-body);
+.pagination .left,
+    .pagination .right {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
     }
+.pagination .left::before,
+        .pagination .left::after,
+        .pagination .right::before,
+        .pagination .right::after {
+            vertical-align: middle;
+            font-size: var(--font-size-3);
+        }
+.pagination .left::before {
+            content: "⇠ ";
+        }
+.pagination .right {
+        direction: rtl;
+        text-align: left;
+    }
+.pagination .right::before {
+            content: "⇢ ";
+        }
 .footer {
     padding: var(--spacing-6) var(--spacing-3);
     font: var(--font-caption);
     display: flex;
+    align-items: center;
     gap: var(--spacing-1);
     flex-wrap: wrap;
 }
@@ -725,6 +766,7 @@ i, em {
             opacity: .4;
         }
 .footer-contact {
+    font: var(--font-caption);
     list-style-type: none;
     padding: 0;
     margin: 0;

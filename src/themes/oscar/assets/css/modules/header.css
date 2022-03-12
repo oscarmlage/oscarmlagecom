@@ -32,6 +32,7 @@
         margin: 0;
         display: flex;
         gap: var(--spacing-2);
+        font-family: var(--font-brand);
     }
     a.is-active {
         color: var(--color-main);
@@ -82,12 +83,6 @@
         }
     }
     span {
-        /* position:absolute;
-        left:-10000px;
-        top:auto;
-        width:1px;
-        height:1px;
-        overflow: hidden; */
         display: block;
         font: var(--font-caption);
         margin-top: var(--spacing-1);

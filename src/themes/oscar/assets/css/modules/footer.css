@@ -2,6 +2,7 @@
     padding: var(--spacing-6) var(--spacing-3);
     font: var(--font-caption);
     display: flex;
+    align-items: center;
     gap: var(--spacing-1);
     flex-wrap: wrap;
     span {
@@ -12,6 +13,7 @@
     }
 }
 .footer-contact {
+    font: var(--font-caption);
     list-style-type: none;
     padding: 0;
     margin: 0;
