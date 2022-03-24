@@ -7,7 +7,9 @@ image: letsencrypt.png
 ---
 
 <p>And it happened, yesterday (30th September, 2021), the root certificate that <abbr title="Lets Encrypt">LE</abbr> was using expired. How should I deal with this?. Well, it depends. If your OS is recent probably you just need to update the package where the <code>ca-certificates</code> are, but total different story if your OS is as old as WW1.</p>
+
 <p>In my case I've a <em>Debian7</em> using and comsuming some <abbr title="Lets Encrypt">LE</abbr> certs in both ways so I woke up this morning with the smell of alert in the atmosphere. After reading some literature&nbsp;<a href="https://scotthelme.co.uk/lets-encrypt-old-root-expiration/">here</a> and <a href="https://letsencrypt.org/certificates/">there</a> and talked about it with some mates, decided to manually update the certificate. I was forced to proceed in that way because the package updates for <code>deb7</code><span> are totally out of date (or even closed I'd say).</span></p>
+
 <p>We can see the error here:</p>
 
 ```bash

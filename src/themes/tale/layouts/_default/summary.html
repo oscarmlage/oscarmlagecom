@@ -1,7 +1,0 @@
-<a href="{{ .Permalink }}" class="post-item">
-    <h2 class="post-item-title">{{ .Title }}</h2>
-    <time datetime="{{ .PublishDate }}" class="post-item-date ">{{ i18n "publishdate" . }}</time>
-    <p class="post-item-summary">
-        {{ if isset .Params "summary" }}{{ .Params.Summary | markdownify }}{{ else }}{{ .Summary }}{{ end }}
-    </p>
-</a>
