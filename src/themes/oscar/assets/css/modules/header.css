@@ -1,0 +1,112 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: var(--spacing-3);
+    @media (--screen-s) {
+        position: sticky;
+        top: 0;
+        z-index: 1;
+        background: var(--background-main);
+    }
+    @media (--screen-m) {
+        justify-content: flex-start;
+    }
+}
+.logo {
+    margin: 0;
+    svg {
+        vertical-align: middle;
+        > * {
+            stroke: currentColor;
+        }
+    }
+}
+.main-nav {
+    @media (--screen-m) {
+        margin-left: 20vw;
+    }
+    ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        gap: var(--spacing-2);
+        font-family: var(--font-brand);
+    }
+    a.is-active {
+        color: var(--color-main);
+        border-bottom: 1px solid var(--color-main);
+    }
+}
+
+/* promo hero */
+.hero {
+    .is-active,
+    div {
+        display: none;
+    }
+    .hero-title {
+        font-size: clamp(var(--font-size-3), 2.5vw, var(--font-size-4));
+        color: var(--color-main);
+    }
+    .hero-img {
+        display: inline-block;
+        width: 100%;
+        height: 100%;
+        max-width: 250px;
+        background-color: var(--color-link);
+        border-radius: 50%;
+        aspect-ratio: 1;
+        overflow: hidden;
+        img {
+            width: 100%;
+            aspect-ratio: 1;
+            border-radius: 50%;
+            mix-blend-mode: overlay;
+        }
+    }
+}
+.post .social,
+.social {
+    margin-top: var(--spacing-7);
+    margin-bottom: calc(var(--spacing-8) * 2);
+    ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        flex-wrap: wrap;
+        gap: var(--spacing-3);
+        li {
+            flex-shrink: 0;
+        }
+    }
+    span {
+        display: block;
+        font: var(--font-caption);
+        margin-top: var(--spacing-1);
+        width: min-content;
+        margin-inline: auto;
+    }
+    a {
+        display: block;
+        text-align: center;
+        &:hover {
+            svg > * {
+                fill: var(--color-link);
+                stroke-width: 0px;
+            }
+        }
+    }
+    svg {
+        vertical-align: middle;
+        vertical-align: middle;
+        margin: 0 auto;
+        > * {
+            fill: none;
+            stroke: var(--color-link);
+            stroke-width: 1.25px;
+        }
+    }
+}

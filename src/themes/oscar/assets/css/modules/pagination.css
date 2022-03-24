@@ -1,0 +1,40 @@
+.pagination {
+    border-top: 1px solid var(--color-main-medium);
+    border-bottom: 1px solid var(--color-main-medium);
+    padding-block: var(--spacing-3);
+    font: var(--font-caption);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    gap: 0 var(--spacing-3);
+    color: var(--color-main-medium);
+    .center {
+        display: flex;
+        align-items: center;
+        gap: 0 var(--spacing-3);
+    }
+    .left,
+    .right {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        &::before,
+        &::after {
+            vertical-align: middle;
+            font-size: var(--font-size-3);
+        }
+    }
+    .left {
+        &::before {
+            content: "⇠ ";
+        }
+    }
+    .right {
+        direction: rtl;
+        text-align: left;
+        &::before {
+            content: "⇢ ";
+        }
+    }
+}

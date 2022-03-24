@@ -1,0 +1,59 @@
+<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		{{- if .IsHome }}
+			<meta name="description" content="{{ .Site.Params.Description }}">
+		{{- else if .Description }}
+			<meta name="description" content="{{ .Description }}">
+		{{- end }}
+
+		<title>{{- if .IsHome }}{{ .Site.Title }}{{- else }}{{ .Title }} &middot; {{ .Site.Title }}{{- end }}</title>
+
+		<!-- CSS -->
+		{{- $inServerMode := .Site.IsServer }}
+        {{ $options := dict "config" "assets/css/postcss.config.js" }}
+		{{ $style := resources.Get "css/main.css" | resources.PostCSS $options }}
+		<link rel="stylesheet" href="{{ $style.RelPermalink }}">
+		{{ range .Site.Params.css -}}
+			<link rel="stylesheet" href="{{ . | relURL }}">
+		{{ end -}}
+
+		<!-- Favicon -->
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+        <link rel="manifest" href="/site.webmanifest">
+        <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+        <meta name="msapplication-TileColor" content="#da532c">
+        <meta name="theme-color" content="#ffffff">
+
+		<!-- RSS -->
+		<link href="{{ with .OutputFormats.Get "RSS" }}{{ .RelPermalink }}{{ end }}" rel="alternate" type="application/rss+xml" title="{{ .Site.Title }}" />
+
+        <!-- Metas -->
+        <meta itemprop="description" content="{{ .Content | plainify | htmlUnescape | truncate 100 }}">
+        <meta name="description" content="{{ .Content | plainify | htmlUnescape | truncate 100 }}">
+        <meta itemprop="name" content="{{ .Title }}">
+        <meta itemprop="url" content="{{ .URL | absURL }}">
+        <meta itemprop="datePublished" content="{{ .PublishDate }}">
+        <meta itemprop="dateModified" content=" {{ .Lastmod }}">
+        {{- if .Params.image }}
+        <meta itemprop="image" content="{{ .URL | absURL }}{{ .Params.image }}">
+        {{- end }}
+
+        <!-- Open Graph -->
+        <meta property="og:type" content="website">
+        <meta property="og:site_name" content="{{ .Site.Title }}">
+        <meta property="og:title" content="{{ .Title }}">
+        <meta property="og:description" content="{{ .Content | plainify | htmlUnescape | truncate 100 }}">
+        <meta property="og:url" content="{{ .URL | absURL }}">
+        <meta property="og:image" content="{{ .URL | absURL }}{{ .Params.image }}">
+
+        <!-- Twitter card -->
+        <meta name="twitter:card" content="summary">
+        <meta name="twitter:url" content="{{ .URL | absURL }}">
+        <meta name="twitter:site" content="{{ .Site.Title }}">
+        <meta name="twitter:title" content="{{ .Title }}">
+        <meta name="twitter:description" content="{{ .Content | plainify | htmlUnescape | truncate 100 }}">
+        <meta name="twitter:image" content="{{ .URL | absURL }}{{ .Params.image }}">
+	</head>

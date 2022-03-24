@@ -1,0 +1,16 @@
+{{ define "main" }}
+
+<main class="main wrapper">
+
+    <div class="posts-container">
+        {{ range (.Paginate (where .Site.RegularPages "Type" "posts")).Pages }}
+            {{ .Render "summary" }}
+        {{ end }}
+    </div>
+
+    <div class="pagination">
+        {{ partial "pagination.html" . }}
+    </div>
+</main>
+
+{{ end }}

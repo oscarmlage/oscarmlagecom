@@ -1,0 +1,137 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    text-rendering: auto;
+    background-color: var(--background-main);
+    color: var(--color-main);
+}
+a {
+    color: var(--color-link);
+    text-decoration: none;
+    &:hover {
+        color: var(--color-link-hover);
+    }
+}
+h1, h2, h3, h4, h5, h6,
+b, strong {
+    font-weight: var(--fw-bold);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-brand);
+}
+p, ul, ol, dl, dd {
+        font: var(--font-body);
+}
+
+li code,
+p code {
+    font: var(--font-caption);
+    padding: 4px;
+    color: rgb(0, 180, 0);
+    font-family: var(--font-brand);
+}
+
+i, em {
+    font-style: italic;
+}
+
+/* TODO: move this  */
+.wrapper {
+    max-width: 800px;
+    margin-inline: auto;
+    @media (--screen-m) {
+        margin-left: calc(20vw + var(--logo-width));
+    }
+}
+
+.main {
+    margin-top: var(--spacing-6);
+    padding: var(--spacing-3);
+}
+
+.back-forms {
+    position: fixed;
+    inset: 0 0 0 0;
+    z-index: -1;
+    overflow: hidden;
+}
+
+.back-circle {
+    opacity:  .02;
+    > * {
+        fill: var(--color-main);
+    }
+    animation: back-circle 85s infinite linear;
+}
+.back-triangle {
+    opacity:  .02;
+    > * {
+        fill: var(--color-main);
+    }
+    animation: back-triangle 45s infinite linear;
+}
+.back-square {
+    opacity:  .02;
+    > * {
+        fill: var(--color-main);
+    }
+    animation: back-square 65s infinite linear;
+}
+
+@keyframes back-circle {
+    0% {
+        transform: translateY(-20vh);
+        transform-origin: center center;
+    }
+    25% {
+        transform: translateX(45vw) translateY(50vh);
+    }
+    50% {
+        transform: translateX(105vw) translateY(30vh);
+    }
+    75% {
+        transform: translateX(-15vw) translateY(20vh);
+    }
+    100% {
+        transform: translateY(-20vh);
+    }
+}
+@keyframes back-triangle {
+    0% {
+        transform: translateX(45vw) translateY(-20vh);
+        transform-origin: center center;
+    }
+    25% {
+        transform: translateX(15vw) translateY(50vh) rotate(45deg);
+    }
+    50% {
+        transform: translateX(-20vw) translateY(40vh) rotate(-45deg);
+    }
+    75% {
+    }
+    100% {
+        transform: translateX(45vw) translateY(-20vh);
+    }
+}
+@keyframes back-square {
+    0% {
+        transform: translateX(-45vw) translateY(120vh);
+        transform-origin: center center;
+    }
+    25% {
+        transform: translateX(15vw) translateY(30vh) rotate(45deg);
+    }
+    50% {
+        transform: translateX(-20vw) translateY(40vh) rotate(-185deg);
+    }
+    75% {
+    }
+    100% {
+        transform: translateX(-45vw) translateY(120vh);
+    }
+}

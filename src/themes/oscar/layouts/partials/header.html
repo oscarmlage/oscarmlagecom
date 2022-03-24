@@ -1,0 +1,27 @@
+	<header class="header">
+        <h1 class="logo">
+            <a href="{{ "/" | relURL }}">
+                <svg width="102" height="32" viewBox="0 0 102 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <title>{{ .Site.Title }}</title>
+                    <rect x="0.5" y="0.5" width="31" height="31" rx="15.5" stroke="black"/>
+                    <path d="M51.2957 12.4032L65.5 1.9867V30.5H36.5V1.9867L50.7043 12.4032L51 12.62L51.2957 12.4032Z" stroke="black"/>
+                    <path d="M72.5 2.20711L100.793 30.5H72.5V2.20711Z" stroke="black"/>
+                </svg>
+                <span class="sr-only">{{ .Site.Title }}</span>
+            </a>
+        </h1>
+        <nav class="main-nav" role="navigation" aria-label="Main">
+            <ul>
+                {{ $currentPage := . }}
+                {{ range .Site.Menus.main }}
+                <li>
+                    <a href="{{ .URL }}" {{ if eq $currentPage.RelPermalink .URL }}class="is-active"{{ end }}>
+                        {{ .Pre }}
+                            {{ .Name }}
+                        {{ .Post }}
+                    </a>
+                </li>
+                {{ end }}
+            </ul>
+		</nav>
+    </header>
