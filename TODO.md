@@ -19,9 +19,9 @@
 - [x] Remove `tale` theme
 - [ ] Some images contains a `<p>`, get rid of it.
     - Images with p in the post content (as it is html now)
-    - ![image.png](path/to/image.png) -> <p><img src=""></p>
+    - `![image.png](path/to/image.png)` -> `<p><img src=""></p>`
 - [ ] There is a `<h2>` that contains a `<p>` too. Try to get rid of it
-    - ## -> <h2><p>Whatever</p></h2>
+    - `##` -> `<h2><p>Whatever</p></h2>`
 - [ ] Review pending texts (off-screen)
     - [ ] Index
     - [ ] About, Colophon, CV... (add Setup info?)
