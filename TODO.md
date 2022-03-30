@@ -17,15 +17,15 @@
 - [x] Fonts, use one font for the title and another one (more readable) for the post text
 - [x] Remove background pre on about
 - [x] Remove `tale` theme
+- [x] Review pending texts (off-screen)
+    - [x] Index
+    - [x] About, Colophon, CV...
+- [ ] General review + Clean some stuff here and there
 - [ ] Some images contains a `<p>`, get rid of it.
     - Images with p in the post content (as it is html now)
     - `![image.png](path/to/image.png)` -> `<p><img src=""></p>`
 - [ ] There is a `<h2>` that contains a `<p>` too. Try to get rid of it
     - `##` -> `<h2><p>Whatever</p></h2>`
-- [ ] Review pending texts (off-screen)
-    - [ ] Index
-    - [ ] About, Colophon, CV... (add Setup info?)
-- [ ] Clean some stuff here and there
 
 ## For the future
 > List of wanna-have things for the future
@@ -36,3 +36,4 @@
 - [ ] Different sizes for the images (full-width, mid, normal, narrow...)
 - [ ] Import some other posts from other years
 - [ ] Support some thing like microposting (as bebu does)
+- [ ] Setup info?
