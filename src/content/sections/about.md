@@ -11,7 +11,7 @@ A software developer living in Lugo, a small and beautiful city in the *Northwes
 
 I've been working in different areas: sysadmin, web development, front-end and back-end... At the moment I'm writing a lot of back-end Python.
 
-If you would like to get in touch, you can send an email to **x@x.x**.
+If you would like to get in touch, you can use any of those:
 
  <div class="social">
     <ul>
@@ -38,7 +38,7 @@ If you would like to get in touch, you can send an email to **x@x.x**.
             </a>
         </li>
         <li>
-            <a href="https://twitch.tv/oscarmlag">
+            <a href="https://twitch.tv/oscarmlage">
                 <svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <mask id="path-1-inside-1_1284_31" fill="white"></mask>
                     <path fill-rule="evenodd" clip-rule="evenodd" d="M62 32C62 48.5685 48.5685 62 32 62C15.4315 62 2 48.5685 2 32C2 15.4315 15.4315 2 32 2C48.5685 2 62 15.4315 62 32ZM15.0661 22.261L17.4139 16H49.4939V37.9147L40.1032 47.302H33.0616L28.3685 52H23.6707V47.302H15.0661V22.261Z"/>
@@ -85,42 +85,134 @@ If you would like to get in touch, you can send an email to **x@x.x**.
                 <span>Instagram</span>
             </a>
         </li>
-        <li>
+        <!--<li>
             <a href="https://oscarmlage.com">
                 <svg width="66" height="66" viewBox="0 0 66 66" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path fill-rule="evenodd" clip-rule="evenodd" d="M32.4024 2.99792V6.58456C32.4024 7.13685 32.8501 7.58456 33.4024 7.58456C33.9547 7.58456 34.4024 7.13685 34.4024 6.58456V3.02426C41.9773 3.37267 48.8194 6.52954 53.9113 11.4778L51.6569 13.7322C51.2663 14.1228 51.2663 14.7559 51.6569 15.1465C52.0474 15.537 52.6805 15.537 53.0711 15.1465L55.2989 12.9186C59.9673 18.099 62.8562 24.9146 63.0025 32.4022H60.2199C59.6676 32.4022 59.2199 32.8499 59.2199 33.4022C59.2199 33.9545 59.6676 34.4022 60.2199 34.4022H62.9762C62.637 41.7757 59.6369 48.4547 54.9138 53.5011L53.071 51.6583C52.6805 51.2678 52.0473 51.2678 51.6568 51.6583C51.2662 52.0489 51.2662 52.682 51.6568 53.0725L53.4995 54.9153C48.4533 59.6374 41.775 62.6369 34.4024 62.976V60.22C34.4024 59.6677 33.9547 59.22 33.4024 59.22C32.8501 59.22 32.4024 59.6677 32.4024 60.22V63.0024C24.9146 62.8561 18.099 59.9671 12.9185 55.2986L15.1446 53.0725C15.5351 52.682 15.5351 52.0489 15.1446 51.6583C14.7541 51.2678 14.1209 51.2678 13.7304 51.6583L11.4777 53.911C6.52957 48.819 3.37277 41.9771 3.02438 34.4022H6.58463C7.13691 34.4022 7.58463 33.9545 7.58463 33.4022C7.58463 32.8499 7.13691 32.4022 6.58463 32.4022H2.99805C3.14836 24.7116 6.19191 17.73 11.0852 12.5009L13.7308 15.1465C14.1213 15.537 14.7545 15.537 15.145 15.1465C15.5356 14.7559 15.5356 14.1228 15.145 13.7322L12.4994 11.0866C17.7287 6.19239 24.7109 3.14824 32.4024 2.99792ZM44.4775 17.9058C45.5796 17.1376 47.0738 17.27 48.0238 18.2199C48.9737 19.1699 49.1061 20.6641 48.3379 21.7662L37.9741 36.6351C37.7543 36.9505 37.5059 37.2318 37.2352 37.4786C36.9856 37.7544 36.7003 38.0073 36.3798 38.2306L21.5109 48.5944C20.4088 49.3626 18.9146 49.2302 17.9646 48.2803C17.0147 47.3303 16.8823 45.8361 17.6505 44.734L28.0143 29.8651C28.2341 29.5497 28.4825 29.2684 28.7532 29.0216C29.0028 28.7458 29.2882 28.4929 29.6086 28.2696L44.4775 17.9058ZM36.0007 32.9999C36.0007 34.6572 34.6572 36.0007 33 36.0007C31.3427 36.0007 29.9992 34.6572 29.9992 32.9999C29.9992 31.3426 31.3427 29.9992 33 29.9992C34.6572 29.9992 36.0007 31.3426 36.0007 32.9999Z" fill="black"/>
                 </svg>
                 <span>Web</span>
             </a>
-        </li>
+        </li>-->
         </ul>
 </div>
 
 ## Skills
 
 ```yaml
-name: Óscar M. Lage Guitián
-age: "now()-1978"
+about_me:
+    - profile:
+      name: "Óscar M. Lage Guitián"
+      location: "Lugo, Galicia, ES."
+      date-of-bird: "now()-1978"
+      links:
+        - https://oscarmlage.com
+        - https://github.com/oscarmlage
+        - https://twitch.tv/oscarmlage
 
-works:
-    - 2014:
-        - work1: "Whatever Company & Bros"
-          skills:
+experience:
+    - 2012-now():
+        - company: "Freelance"
+          roles:
+            - "Analyst"
+            - "Developer"
+            - "Sysadmin"
+          competences:
+            - frontend-dev
+            - backend-dev
+            - python
+            - django
+            - pyramid
+            - zodb
+            - vuejs
             - php
-            - javascript
-            - html
-            - css
-    - 2011:
-        - work2: "CISCO"
-          skills:
-            - sysadmin
-            - routing
-            - ios
+            - laravel
+            - docker
+    - 2008-2014:
+        - company: "DiscoAzul S.L."
+          roles:
+            - "Developer"
+            - "Sysadmin"
+          competences:
+            - frontend-dev
+            - backend-dev
+            - php
+            - hmvc
+            - kohana
+            - code-igniter
+            - mysql
+            - apache
+            - nginx
+            - sphinx-search
+            - postfix
+            - dovecot
+            - linux
+    - 2002-2008:
+        - company: "Interdix Galicia S.L."
+          roles:
+            - "Main developer"
+            - "Sysadmin"
+          competences:
+            - frontend-dev
+            - backend-dev
+            - php
+            - mysql
+            - apache
+            - php
+            - postfix
+            - bind
+            - linux
+            - bsd
+            - other-services-as-local-isp
+    - 2000-2002:
+        - company: "Himafel S.A."
+          roles:
+            - "Junior developer"
+          competences:
+            - visual-basic
+            - sql-server
+            - windows-nt
+            - active-directory
+
+projects:
+    - name: "Wikingo"
+      description: "Personal wiki to start learning GoLang"
+      url: https://github.com/oscarmlage/wikingo
+      competences:
+        - go
+    - name: "Twitch channel"
+      description: "Sharing my way of working since 2021"
+      competences:
+        - learning
+        - get-away-from-comfort-zone
+    - name: "django-cruds-adminlte"
+      description: "Django admin replacement"
+      url: https://github.com/oscarmlage/django-cruds-adminlte/
+      competences:
+        - python
+        - django
+    - name: "oscarmlage.com"
+      description: "This webpage"
+      url: https://github.com/oscarmlage/oscarmlagecom
+      competences:
+        - hugo
+        - static-content-generator
+
+studies:
+    - 2004-2006:
+        - name: "Linux Advanced Sysadmin"
+          institution: "Universidad Santiago de Compostela"
+    - 2001-2002:
+        - name: "CCNA: CISCO Network Academy"
+          institution: "CISCO"
+    - 1997-1999:
+        - name: "Ciclo superior: Administración de sistemas informáticos"
+          institution: "IE (Instituto de Empresa) FP"
 
 hobbies:
-    - sports:
-        - name: "Brazilian Jiu Jitsu"
-        - range: NaN
+    - name: "Brazilian Jiu Jitsu"
+      range: NaN-grade1
+    - name: "Woodworking"
+      range: amateur
 ```
 
 

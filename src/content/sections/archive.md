@@ -5,4 +5,4 @@ draft: false
 layout: archive
 ---
 
-Here is the list of all the articles that have been published by year.
+Here is the list of all the articles that have been published grouped by year.
