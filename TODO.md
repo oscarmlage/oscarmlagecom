@@ -38,3 +38,4 @@
 - [ ] Import some other posts from other years
 - [ ] Support some thing like microposting (as bebu does)
 - [ ] Setup info?
+- [ ] @adrianmg suggested webp optimization
