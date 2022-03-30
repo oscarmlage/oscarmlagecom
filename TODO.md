@@ -20,6 +20,7 @@
 - [x] Review pending texts (off-screen)
     - [x] Index
     - [x] About, Colophon, CV...
+- [ ] RSS
 - [ ] General review + Clean some stuff here and there
 - [ ] Some images contains a `<p>`, get rid of it.
     - Images with p in the post content (as it is html now)
