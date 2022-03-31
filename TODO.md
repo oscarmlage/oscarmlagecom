@@ -20,7 +20,11 @@
 - [x] Review pending texts (off-screen)
     - [x] Index
     - [x] About, Colophon, CV...
+- [x] Add dotfiles to the resume
+- [x] Add segun to the colophon
 - [ ] RSS
+- [ ] Take a look to the twitter-card/og for the index page
+- [ ] Add vim + productivity to "hobbies" or "tools" section
 - [ ] General review + Clean some stuff here and there
 - [ ] Some images contains a `<p>`, get rid of it.
     - Images with p in the post content (as it is html now)
