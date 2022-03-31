@@ -5,6 +5,7 @@ services:
   build:
     # image: klakegg/hugo:0.88.0-ext-alpine
     image: oscarmlage/hugo:0.88.0-ext-alpine
+    command: build
     volumes:
       - "${PWD}/src:/src"
 
