@@ -9,7 +9,7 @@ layout: about
 
 A software developer living in Lugo, a small and beautiful city in the *Northwest* of Spain.
 
-I've been working in different areas: sysadmin, web development, front-end and back-end... At the moment I'm writing a lot of back-end Python.
+Since I've started this journey, I've been working in different areas: sysadmin, web dev, front and back, data analysis... and right now I'm writing a lot Python backend code (and enjoying while learning Go).
 
 If you would like to get in touch, you can use any of those:
 
@@ -127,6 +127,7 @@ experience:
             - php
             - laravel
             - docker
+            - ansible
     - 2008-2014:
         - company: "DiscoAzul S.L."
           roles:
@@ -184,18 +185,47 @@ projects:
       competences:
         - learning
         - get-away-from-comfort-zone
-    - name: "django-cruds-adminlte"
-      description: "Django admin replacement"
-      url: https://github.com/oscarmlage/django-cruds-adminlte/
-      competences:
-        - python
-        - django
     - name: "oscarmlage.com"
-      description: "This webpage"
+      description: "This web"
       url: https://github.com/oscarmlage/oscarmlagecom
       competences:
         - hugo
         - static-content-generator
+    - name: "Dockerized Matrix stack (Synapse)"
+      description: "Dockerized Synapse + Elementweb + Bridging"
+      urls:
+        - https://github.com/oscarmlage/matrix-stack
+      competences:
+        - matrix
+        - docker
+    - name: "GOGS 2 Gitlab"
+      description: "Migration script from GOGS repos to a GitLab instance"
+      urls:
+        - https://github.com/oscarmlage/gogs2gitlab-python
+      competences:
+        - go
+        - rust
+        - python
+    - name: "GST"
+      description: "Cli command that consumes a remote API for timestamps"
+      url: https://github.com/oscarmlage/rust-gst
+      competences:
+        - rust
+        - tokio
+        - serde
+        - reqwest
+    - name: "dotfiles"
+      description: "My vim dotfiles"
+      url: https://github.com/oscarmlage/vimrc
+      competences:
+        - vim
+        - tmux
+    - name: "django-cruds-adminlte"
+      description: "Django admin replacement"
+      url: https://github.com/oscarmlage/django-cruds-adminlte
+      competences:
+        - python
+        - django
 
 studies:
     - 2004-2006:
@@ -213,8 +243,17 @@ hobbies:
       range: NaN-grade1
     - name: "Woodworking"
       range: amateur
+    - name: "Only text mode"
+      range: always-learning
 ```
 
 
 ## Colophon
-*This page is under construction for ever. Some data may be outdated*.
+
+This site has been built on top of [Hugo](https://gohugo.io), [Vim](https://www.vim.org), [Twitch](https://twitch.tv/oscarmlage) (did almost everything live!, since the Hugo research to the last fill of text placeholders) And of course, ❤️ and ☕. Oh! and [the repo](https://github.com/oscarmlage/oscarmlagecom) is public now.
+
+**Let me specially highlight that all of this was possible because [Segundo Fdez](https://www.segundofdez.com) gifted me his best gift: time, effort and the knowledge to make this great interface you're looking at. Thank you so much ❤️**
+
+---
+
+*This page is under construction for ever. Some data may be outdated*. If you find something wrong, feel free to [fill an issue](https://github.com/oscarmlage/oscarmlagecom/issues).

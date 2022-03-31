@@ -5,5 +5,5 @@ draft: false
 image: avatar2.jpg
 ---
 
-Welcome to my place. I love development - in general - techie world and try new things. Hope you enjoy the content here! ❤️ ☕
+Welcome to my place. I love development - in general - techie world and to try new things. Hope you enjoy the content here! ❤️ ☕
 
