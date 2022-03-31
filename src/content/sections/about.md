@@ -96,14 +96,14 @@ If you would like to get in touch, you can use any of those:
         </ul>
 </div>
 
-## Skills
+## Resume
 
 ```yaml
 about_me:
     - profile:
       name: "Óscar M. Lage Guitián"
       location: "Lugo, Galicia, ES."
-      date-of-bird: "now()-1978"
+      age-of-empires: "now()-1978"
       links:
         - https://oscarmlage.com
         - https://github.com/oscarmlage
