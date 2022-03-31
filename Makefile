@@ -12,6 +12,7 @@ bash:
 shell:
 	docker-compose -f docker-compose.yml run build shell
 
+deploy: up
 sync: up
 up: build
 	rsync -e ssh --progress --delete -lprtvvzog src/public/ me:/home/www/oscarmlage.com/www/
