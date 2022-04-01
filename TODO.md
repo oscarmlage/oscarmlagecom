@@ -24,6 +24,7 @@
 - [x] Add segun to the colophon
 - [x] Take a look to the twitter-card/og for the index page
 - [x] RSS + referencee it in header
+- [ ] Tags not appearing in posts
 - [ ] Add vim + productivity to "hobbies" or "tools" section
 - [ ] General review + Clean some stuff here and there
 - [ ] Some images contains a `<p>`, get rid of it.

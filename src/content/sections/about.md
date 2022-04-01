@@ -11,7 +11,7 @@ A software developer living in Lugo, a small and beautiful city in the *Northwes
 
 Since I've started this journey, I've been working in different areas: sysadmin, web dev, front and back, data analysis... and right now I'm writing a lot Python backend code (and enjoying while learning Go).
 
-If you would like to get in touch, you can use any of those:
+If you would like to get in touch, you can <a href="mailto://info@oscarmlage.com">✉️ drop me an email</a> or use any of those:
 
  <div class="social">
     <ul>
