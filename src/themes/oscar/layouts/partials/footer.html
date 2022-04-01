@@ -6,6 +6,10 @@
 		<li><a href="">twitter</a></li>
 		<li><a href="">instagram</a></li>
 		<li><a href="">twich</a></li>
-		<li><a href="mailto:info@oscarmlage">info@oscarmlage.com</a></li>
+        {{ with .OutputFormats.Get "rss" -}}
+        <li><a href="{{ .RelPermalink }}">rss</a></li>
+        {{ end -}}
+        <li><a href="mailto:info@oscarmlage">info@oscarmlage.com</a></li>
+
 	</ul>
 </footer>
