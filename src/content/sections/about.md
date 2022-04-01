@@ -7,9 +7,9 @@ layout: about
 
 # ¡Hola!, I'm Óscar
 
-A software developer living in Lugo, a small and beautiful city in the *Northwest* of Spain.
+A software developer living in Lugo, a small and beautiful city in the *Northwest* of Spain, surrounded by Roman Walls and lush forests.
 
-Since I've started this journey, I've been working in different areas: sysadmin, web dev, front and back, data analysis... and right now I'm writing a lot Python backend code (and enjoying while learning Go).
+Since I've started this journey, I've been working in different areas: sysadmin, operations, web dev, front and back, data analysis... and right now I'm writing a lot Python backend code (and enjoying while learning Go).
 
 If you would like to get in touch, you can <a href="mailto://info@oscarmlage.com">✉️ drop me an email</a> or use any of those:
 
@@ -108,14 +108,15 @@ about_me:
         - https://oscarmlage.com
         - https://github.com/oscarmlage
         - https://twitch.tv/oscarmlage
+        - https://linkedin.com/in/oscarmlage/
 
 experience:
     - 2012-now():
         - company: "Freelance"
           roles:
             - "Analyst"
-            - "Developer"
-            - "Sysadmin"
+            - "Full Stack Developer"
+            - "Sysadmin and devops"
           competences:
             - frontend-dev
             - backend-dev
@@ -128,10 +129,11 @@ experience:
             - laravel
             - docker
             - ansible
+            - aws
     - 2008-2014:
         - company: "DiscoAzul S.L."
           roles:
-            - "Developer"
+            - "Full Stack Developer"
             - "Sysadmin"
           competences:
             - frontend-dev
@@ -179,7 +181,10 @@ projects:
       description: "Personal wiki to start learning GoLang"
       url: https://github.com/oscarmlage/wikingo
       competences:
-        - go
+        - go-lang
+        - gorm
+        - echo
+        - blackfriday
     - name: "Twitch channel"
       description: "Sharing my way of working since 2021"
       competences:
@@ -198,19 +203,21 @@ projects:
       competences:
         - matrix
         - docker
-    - name: "GOGS 2 Gitlab"
-      description: "Migration script from GOGS repos to a GitLab instance"
+    - name: "GOGS 2 Gitlab scripts"
+      description: "Migration scripts from GOGS repos to a GitLab instance"
       urls:
         - https://github.com/oscarmlage/gogs2gitlab-python
+        - https://github.com/oscarmlage/gogs2gitlab-rust
+        - https://github.com/oscarmlage/gogs2gitlab-go
       competences:
-        - go
-        - rust
+        - go-lang
+        - rust-lang
         - python
     - name: "GST"
       description: "Cli command that consumes a remote API for timestamps"
       url: https://github.com/oscarmlage/rust-gst
       competences:
-        - rust
+        - rust-lang
         - tokio
         - serde
         - reqwest
@@ -241,9 +248,9 @@ studies:
 hobbies:
     - name: "Brazilian Jiu Jitsu"
       range: NaN-grade1
-    - name: "Woodworking"
-      range: amateur
-    - name: "Only text mode"
+    - name: "Wood Working"
+      range: amateur-having-fun
+    - name: "Console and only text mode for everything"
       range: always-learning
 ```
 
@@ -252,7 +259,7 @@ hobbies:
 
 This site has been built on top of [Hugo](https://gohugo.io), [Vim](https://www.vim.org), [Twitch](https://twitch.tv/oscarmlage) (did almost everything live!, since the Hugo research to the last fill of text placeholders) And of course, ❤️ and ☕. Oh! and [the repo](https://github.com/oscarmlage/oscarmlagecom) is public now.
 
-**Let me specially highlight that all of this was possible because [Segundo Fdez](https://www.segundofdez.com) gifted me his best gift: time, effort and the knowledge to make this great interface you're looking at. Thank you so much ❤️**
+**Let me specially highlight that all of this was possible because [Segundo Fdez](https://www.segundofdez.com) has given me his best gift: time, effort and the knowledge to make this great interface you're looking at. Thank you so much ❤️**
 
 ---
 
