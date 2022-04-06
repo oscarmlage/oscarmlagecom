@@ -7,7 +7,7 @@ image:
 ---
 
 <p style="text-align: center;">
-	<img alt="" src="gallery/campeones-del-mundo.jpg" style="width: 400px; height: 253px;" /></p>
+	<img alt="Campeones del Mundo, 2010" src="http://static.userlinux.net/userlinux/campeones-del-mundo.jpg" /></p>
 <p>
 	Me compraste mi primer bal&oacute;n, mi primera equipaci&oacute;n, me ense&ntilde;aste a jugar limpio, a vivir los partidos con entusiasmo, con emoci&oacute;n pero con serenidad, a creer siempre en el buen f&uacute;tbol, en la humildad, en los buenos jugadores. Sab&iacute;as que alg&uacute;n d&iacute;a llegar&iacute;a, ten&iacute;a que llegar despu&eacute;s de tantos partidos, de tanto sufrimiento, de tantos palos. Nunca perdiste la esperanza.</p>
 <p>
