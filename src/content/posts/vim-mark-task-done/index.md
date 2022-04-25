@@ -21,7 +21,7 @@ nnoremap <Leader><Enter> :norm 0<CR>:.s/\[ ]/\[x]/g<CR>:.s/$/ ✅ /g<CR>:.s/$/\=
 nnoremap <Leader>w :norm 0<CR>:.s/\[ ]/\[ ] 🚧️/g<CR>:nohl<CR>
 ```
 
-If I press `<Leader><Enter>` the task is marked as done. And for the same price I've added `<Leader>w` to mark the task visually as WIP *work-in-proccess* with the nice hoarding emoji. And that's how it looks like in `vim`:
+If I press `<Leader><Enter>` the task is marked as done. And for the same price I've added `<Leader>w` to mark the task visually as WIP *work-in-proccess* with the nice hoarding emoji. That's how it looks like in `vim`:
 
 ![Vim Mark task Done](gallery/vim-mark-task-done.gif)
 
