@@ -2,7 +2,9 @@
     .highlight {
         margin-bottom: var(--spacing-8);
         pre {
-            background-color: transparent !important;
+            padding: var(--spacing-3);
+            overflow-x: auto;
+            border-radius: 10px;
         }
     }
 }

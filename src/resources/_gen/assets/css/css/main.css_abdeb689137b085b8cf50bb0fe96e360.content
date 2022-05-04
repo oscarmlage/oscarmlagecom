@@ -711,7 +711,9 @@ i, em {
         margin-bottom: var(--spacing-8);
     }
 .about .highlight pre {
-            background-color: transparent !important;
+            padding: var(--spacing-3);
+            overflow-x: auto;
+            border-radius: 10px;
         }
 .pagination {
     border-top: 1px solid var(--color-main-medium);
