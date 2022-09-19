@@ -6,7 +6,7 @@ tags: []
 image: 
 ---
 
-After reading some stuff here and there, playing around with the new shinny languages that seems to be the fashion ones nowadays and thinking so much about "what's next", my friend [Juanjo](https://usebox.net) friendly *pushed* me to write something with real specs in... [Go](https://go.dev).
+After reading some stuff here and there, playing around with the new shinny languages that seems to be the fashion ones nowadays and thinking so much about "what's next", my friend [Juanjo](https://www.usebox.net) friendly *pushed* me to write something with real specs in... [Go](https://go.dev).
 
 I've been working for years with *PHP* and - still - *Python* but lately I'm really tempted to test the smell of compile things again, care about typed variables and think different regarding to data structures, etc...
 
