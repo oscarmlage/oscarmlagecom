@@ -9,7 +9,17 @@ layout: about
 
 A software developer living in Lugo, a small and beautiful city in the *Northwest* of Spain, surrounded by Roman Walls and lush forests.
 
-Since I've started this journey, I've been working in different areas: sysadmin, operations, web dev, front and back, data analysis... and right now I'm writing a lot Python backend code (and enjoying while learning Go).
+Since I've started this journey, I've been working in different areas: sysadmin, operations, web dev, front and back, data analysis... Right now I'm writing a lot Python backend code and enjoying while learning Go, Rust and some other exciting new tools that passes through my hands.
+
+- 💻 Freelance full-stack dev
+- ♥️ mosh+tmux+nvim
+- 🏡 selfhosting+homelab+diy
+- 🐧 foss+nix+deb
+- 🐳 docker+ansible+tech
+- ⚙️ automation+productivity
+- 🌟 woodworking+gardening
+- 🚐 vanlife+remotework
+- 👬🏻 dad-of-twi
 
 If you would like to get in touch, you can <a href="mailto:info@oscarmlage.com">✉️ drop me an email</a> or use any of those:
 
