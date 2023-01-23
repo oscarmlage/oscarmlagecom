@@ -1,0 +1,24 @@
+{{ define "main" }}
+
+<main class="main wrapper">
+    <h1>Microposts</h1>
+    {{ .Content }}
+    <div class="posts-container">
+        <hr />
+        {{ range (.Paginate (where .Pages "Type" "microposts")).Pages }}
+            <div class="post-detail">
+                <div class="post-detail-info">
+                    <time datetime="{{ .PublishDate }}" class="post-item-date">{{ i18n "publishdate" . }}</time>
+                </div>
+                {{ .Content }}
+            </div>
+            <hr />
+        {{ end }}
+    </div>
+    <div class="pagination">
+        {{ partial "pagination.html" . }}
+    </div>
+</main>
+
+{{ end }}
+
