@@ -3,7 +3,7 @@ title: "Postfix: Deal with a cracked email account"
 date: 2014-05-23T12:01:47Z
 draft: false
 tags: [  ]
-image: hack.jpg
+image:
 ---
 
 <p>This is a tipical friday story on sysadmin world, starting with a common <em>Munin</em> alert email and ending fighting against a cracked email account due a weak password. The alert referred to a weird problem with inodes outside range in / partition:</p>

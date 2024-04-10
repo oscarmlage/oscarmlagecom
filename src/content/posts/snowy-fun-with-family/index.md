@@ -8,7 +8,7 @@ image:
 
 This past weekend was one for the books! My wife and I took our children on their first trip to the snow and it was an absolute blast. We live about an hour away from the nearest "snow spot", so it was a short but sweet trip.
 
-Once we arrived, we quickly bundled up and headed outside to play in the snow. The kids were so excited to see all of the snow and they couldn't wait to try out the sleds we had brought with us. We spent hours going down the hill, laughing and having a great time. In the afternoon, we found a familiar restaurant and decided to go for a delicious lunch at a nearby restaurant. It was great to catch up with them and share in the fun of the day.
+Once we arrived, we quickly bundled up and headed outside to play in the snow. The kids were so excited to see all of the snow and they couldn't wait to try out the sleds we had brought with us. We spent hours going down the hill, laughing and having a great time. In the afternoon, we found a familiar restaurant and decided to go for a delicious lunch. It was great to catch up with them and share in the fun of the day.
 
 As the day came to a close and we headed back home, I couldn't help but reflect on how much fun we had as a family. This trip reminded me of the importance of spending quality time together and cherishing the moments we have with our loved ones.
 
