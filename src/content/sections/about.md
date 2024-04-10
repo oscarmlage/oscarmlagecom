@@ -112,6 +112,17 @@ about_me:
         - https://linkedin.com/in/oscarmlage/
 
 experience:
+    - 202302-now():
+        - company: "Greenwatt 360"
+          roles:
+            - "System Engineer"
+          competences:
+            - frontend-dev
+            - backend-dev
+            - go-lang
+            - devops
+            - docker
+            - ocpp
     - 2012-now():
         - company: "Freelance"
           roles:
