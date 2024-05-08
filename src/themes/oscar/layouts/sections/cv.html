@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>oscarmlage - Resume</title>
+    <meta charset="UTF-8">
+    <meta name="author" content="Ham Vocke">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+    .icon[data-astro-cid-patnjmll] {
+        stroke: currentColor;
+        stroke-width: 1.5;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        fill: none;
+        display: inline-block;
+        height: 1.2em;
+        vertical-align: text-bottom;
+        width: 1.2em
+    }
+
+    :root {
+        --white: 214 20% 93%;
+        --dark: 214 33% 15%;
+        --pink:345 80% 40%;
+        --pink2:345 80% 20%;
+    }
+
+    html {
+        background: #1a25331a;
+        background: hsl(var(--dark) /.1);
+        color: #1a2533;
+        color: hsl(var(--dark));
+        margin: 0;
+        padding:0
+    }
+
+    body {
+        background: #eaedf1;
+        background: hsl(var(--white));
+        border: 1px solid rgba(26, 37, 51, .15);
+        border: 1px solid hsl(var(--dark) /.15);
+        border-radius: 1rem;
+        box-shadow: 0 .5rem .5rem #1a25331a;
+        box-shadow: 0 .5rem .5rem hsl(var(--dark) /.1);
+        font-family: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, sans-serif;
+        font-size: 90%;
+        line-height: 1.5rem;
+        margin: 1rem auto;
+        max-width: min(100%, 80ch);
+        padding: .5rem 1.5rem;
+        position:relative
+    }
+
+    p {
+        margin:0 0 1.5rem
+    }
+
+    h1 {
+        line-height: 1em;
+        margin-bottom: .8rem;
+        text-align:center
+    }
+
+    h2 {
+        color: #b8143d;
+        color: hsl(var(--pink));
+        font-size: 1rem;
+        font-weight: 900;
+        margin-top: 1.5rem;
+        text-transform:uppercase
+    }
+
+    h3 {
+        font-size: 1rem;
+        margin-top: .3rem;
+        position:relative;
+        color: hsl(var(--pink2));
+    }
+
+    h3 em {
+        color: hsl(var(--dark));
+    }
+
+    h3, h4 {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-bottom:.3rem
+    }
+
+    h4 {
+        margin-top:0
+    }
+
+    ul {
+        padding-inline-start: 25px;
+        margin-block-start: 10px;
+        margin-block-end: 10px;
+    }
+
+    ol {
+        display: flex;
+        flex-wrap: wrap;
+        gap: .5rem;
+        list-style: none;
+        margin: 0;
+        padding:0
+    }
+
+    ol > li {
+        background: #1a2533;
+        background: hsl(var(--dark));
+        border: 1px solid #1a2533;
+        border: 1px solid hsl(var(--dark));
+        border-radius: .25rem;
+        color: #fff;
+        font-size: .9rem;
+        font-weight: 700;
+        padding:.1rem .4rem
+    }
+
+    .spread {
+        display: flex;
+        flex-wrap: wrap;
+        gap: .5rem;
+        justify-content: space-between;
+        margin-bottom:1.5rem
+    }
+
+    .spread span {
+        word-wrap:normal
+    }
+
+    .email b {
+        display:none
+    }
+
+    ul.contact {
+        margin: 0;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    ul.contact li {
+        list-style: none;
+    }
+
+    footer {
+        font-size: .8rem;
+        text-align:right
+    }
+
+    a {
+        color: #1a2533;
+        color: hsl(var(--dark));
+        text-decoration-color: #b8143d;
+        text-decoration-color: hsl(var(--pink));
+        text-decoration-thickness:2px
+    }
+
+    a:focus, a:hover, h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+        -webkit-text-decoration: none;
+        text-decoration:none
+    }
+
+    .print-btn {
+        background: #1a25330d;
+        background: hsl(var(--dark) /.05);
+        border: 1px solid rgba(26, 37, 51, .3);
+        border: 1px solid hsl(var(--dark) /.3);
+        border-radius: .25rem;
+        cursor: pointer;
+        font-size: 1rem;
+        padding: .5rem;
+        position: absolute;
+        right: 1.5rem;
+        top:1.5rem
+    }
+
+    .print {
+        display:none
+    }
+
+    @media print {
+        html {
+            padding:0
+        }
+
+        body, html {
+            background: #fff;
+            color: #000;
+            margin:0
+        }
+
+        body {
+            border: none;
+            border-radius: 0;
+            box-shadow: none;
+            padding:1rem
+        }
+
+        .print {
+            display:inherit
+        }
+
+        .noprint {
+            display:none
+        }
+
+        footer {
+            display: none
+        }
+
+        h2, h3, h4 {
+            -moz-column-break-after: avoid;
+            break-after: avoid-page;
+            color: #000;
+            page-break-after:avoid
+        }
+
+        a {
+            color: #000;
+            text-decoration-color:#000
+        }
+
+        .break {
+            -moz-column-break-after: page;
+            break-after: page;
+            page-break-after:always
+        }
+
+        .print-link:after {
+            content: " (" attr(href) ")"
+        }
+    }
+    </style>
+</head>
+
+<body>
+    <button onclick="window.print();" class="print-btn noprint">
+        <svg class="icon" data-astro-cid-patnjmll>
+            <use href="/heros/feather-sprite.svg#printer" data-astro-cid-patnjmll></use>
+        </svg>
+    </button>
+
+        {{ .Content }}
+
+        <footer>Last update: {{ .Date.Format "January 2, 2006" }} </footer>
+</body>
+</html>
+

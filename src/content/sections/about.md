@@ -7,25 +7,23 @@ layout: about
 
 # ¡Hola!, I'm Óscar
 
-A software developer living in Lugo, a small and beautiful city in the *Northwest* of Spain, surrounded by Roman Walls and lush forests.
-
-Since I've started this journey, I've been working in different areas: sysadmin, operations, web dev, front and back, data analysis... Right now I'm writing a lot Python backend code and enjoying while learning Go, Rust and some other exciting new tools that passes through my hands.
+I'm an experienced professional in system engineering and software development based in *Lugo*, Spain. I'm committed to leveraging automation to enhance efficiency, primarily focusing on systems, backend development and always exploring new tools for continuous learning and growth. I'm passionate about the console, a black-and-white terminal to rule the world.
 
 - 💻 Freelance full-stack dev
-- ♥️ mosh+tmux+nvim
+- ♥️  mosh+tmux+nvim
 - 🏡 selfhosting+homelab+diy
 - 🐍 python+js+php
-- 🦀 rust+go+learning
 - 🐧 foss+nix+deb
 - 🐳 docker+ansible+tech
-- ⚙️ automation+productivity
+- ⚙️  automation+productivity+documentation
 - 🌟 woodworking+gardening
 - 🚐 vanlife+remotework
-- 👬🏻 dad-of-twi
+- 👬 dad-of-twins
 
+Want to see more? <a href="/cv/">📄 Check out my CV</a>.
 If you would like to get in touch, you can <a href="mailto:info@oscarmlage.com">✉️ drop me an email</a> or use any of those:
 
- <div class="social">
+ <div class="social" style="margin-top: var(--spacing-4); margin-bottom: var(--spacing-4)">
     <ul>
         <li>
             <a href="https://www.youtube.com/c/oscarmlage">
@@ -97,6 +95,7 @@ If you would like to get in touch, you can <a href="mailto:info@oscarmlage.com">
         </ul>
 </div>
 
+<!--
 ## Resume
 
 ```yaml
@@ -265,7 +264,14 @@ hobbies:
     - name: "Console and only text mode for everything"
       range: always-learning
 ```
+-->
 
+## Now
+
+Here is what keeps me busy at the moment...
+
+<br />
+<br />
 
 ## Colophon
 
