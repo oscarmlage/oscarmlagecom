@@ -69,8 +69,8 @@
 }
 .post .social,
 .social {
-    margin-top: var(--spacing-7);
-    margin-bottom: calc(var(--spacing-8) * 2);
+    margin-top: var(--spacing-4);
+    margin-bottom: var(--spacing-4);
     ul {
         list-style-type: none;
         padding: 0;

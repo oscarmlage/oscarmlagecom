@@ -1,4 +1,8 @@
 /* POST LIST  */
+.index .posts-container {
+    margin-top: calc(var(--spacing-8) * 2);
+}
+
 .posts-container {
 }
 

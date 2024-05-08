@@ -16,6 +16,7 @@
 @import 'assets/css/modules/footer.css';
 
 /* Specific pages */
+@import 'assets/css/pages/about.css';
 
 /* Utilities */
 @import 'assets/css/utilities/visibility.css';
