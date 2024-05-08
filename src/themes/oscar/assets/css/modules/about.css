@@ -1,4 +1,6 @@
 .about {
+    color: #a3a3a3;
+    h1, h2, h3, h4 { color: #fff; }
     .highlight {
         margin-bottom: var(--spacing-8);
         pre {

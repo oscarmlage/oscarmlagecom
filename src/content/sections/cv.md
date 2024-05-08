@@ -1,6 +1,6 @@
 ---
 title: "CV"
-date: 2024-05-05T20:35:54Z
+date: 2024-05-08
 draft: false
 layout: cv
 ---

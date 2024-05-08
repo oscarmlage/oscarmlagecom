@@ -710,6 +710,10 @@ i, em {
             margin-bottom: var(--spacing-6);
 
         }
+.about {
+    color: #a3a3a3;
+}
+.about h1, .about h2, .about h3, .about h4 { color: #fff; }
 .about .highlight {
         margin-bottom: var(--spacing-8);
     }
