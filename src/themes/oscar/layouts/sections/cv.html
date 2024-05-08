@@ -246,6 +246,18 @@
         {{ .Content }}
 
         <footer>Last update: {{ .Date.Format "January 2, 2006" }} </footer>
+    <h2 id="work-experience">Work experience</h2>
+
+    {{range sort (where .Site.Pages "Type" "=" "work") ".Params.order" "desc" }} 
+        <h3>
+            {{ .Params.title }}
+            <em>{{ .Params.job }}</em>
+            <em>{{ .Params.start }}-{{ .Params.end }}</em>
+        </h3>
+        <ul>
+            {{ range .Params.goals }}<li>{{ . }}</li>{{ end }}
+        </ul>
+    {{ end }}
 </body>
 </html>
 

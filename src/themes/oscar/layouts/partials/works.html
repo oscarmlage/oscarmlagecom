@@ -1,0 +1,17 @@
+<div class="breakout">
+    <header><p id="work-history">Work history, in a brief</p></header>
+    {{range sort (where .Site.Pages "Type" "=" "work") ".Params.order" "desc" }} 
+    <div class="columns">
+        <div class="column is-one-quarter has-text-right date"><p>{{ .Params.start }}-<br />{{ .Params.end }}</p></div>
+        <div class="column">
+            <ul>
+                <li><strong>{{ .Params.job }}</strong></li>
+                <li>{{ .Params.title }} <small>({{ .Params.location }})</small></li>
+                <li class="tags">{{ range .Params.tags }}<span class="tag">{{ . }}</span>{{ end }}</li>
+            </ul>
+        </div>
+    </div>
+    {{ end }}
+    <div class="footer"><p>Want to see more? <a href="/cv/">📄 Check out my
+        CV</a></p></div>
+</div>
