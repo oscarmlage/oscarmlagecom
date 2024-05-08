@@ -562,8 +562,8 @@ i, em {
         }
 .post .social,
 .social {
-    margin-top: var(--spacing-7);
-    margin-bottom: calc(var(--spacing-8) * 2);
+    margin-top: var(--spacing-4);
+    margin-bottom: var(--spacing-4);
 }
 .post .social ul, .social ul {
         list-style-type: none;
@@ -602,6 +602,9 @@ i, em {
             stroke-width: 1.25px;
         }
 /* POST LIST  */
+.index .posts-container {
+    margin-top: calc(var(--spacing-8) * 2);
+}
 .posts-container {
 }
 .post-item {
@@ -777,6 +780,86 @@ i, em {
     flex-wrap: wrap;
 }
 /* Specific pages */
+h2 small {
+    margin: 0 20px;
+    font-size: .6em;
+}
+.breakout {
+    border: 1px solid #888;
+    border-radius: 1rem;
+    margin-bottom: 1.5rem;
+    overflow: hidden;
+}
+.breakout > header {
+    align-items: center;
+    display: flex;
+    gap: .5rem;
+    justify-content: center;
+    padding: 1rem;
+}
+.breakout > header p {
+    font-size: 1.2rem;
+    font-weight: 900;
+}
+.breakout > .footer {
+    display: block;
+    background: hsla(0, 0%, 17.65%, 1);
+    border-top: 1px solid #888;
+    padding: 1rem;
+    text-align: center;
+}
+.breakout > .footer p {
+    text-align: center;
+}
+.columns {
+    display: flex;
+}
+.has-text-right {
+    text-align: right !important;
+}
+.is-one-quarter {
+    flex: none;
+    width: 25%;
+}
+.date p {
+    font-weight: 900;
+}
+.column {
+    display: block;
+    padding: 0 .75rem;
+}
+.column ul {
+    padding: 0 10px;
+}
+.column ul li {
+    list-style: none;
+    color: #888;
+}
+.column ul li strong {
+    color: #dedede;
+}
+.tags {
+    align-items: center;
+    color: #dedede;
+    display: flex;
+    flex-wrap: wrap;
+    gap: .5rem;
+    justify-content: flex-start;
+    margin-top: 10px;
+}
+.tag {
+    align-items: center;
+    background-color: color(srgb 0.1921 0.1922 0.1922);
+    border-radius: 8px;
+    color: #888;
+    display: inline-flex;
+    height: 2em;
+    justify-content: center;
+    line-height: 1.5;
+    padding-left: .75em;
+    padding-right: .75em;
+    white-space: nowrap;
+}
 /* Utilities */
 /* Available for screen readers */
 .sr-only {
