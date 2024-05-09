@@ -8,7 +8,7 @@ tags: ["Visual Basic", "SQL Server", "Active Directory"]
 type: work
 order: 10
 goals:
-  - Experience with Windows systems, Visual Basic, SQL Server, and Active Directory.
-  - Responsible of management software for accounting, stock control, and banking records.
+  - Managed with Windows systems, Visual Basic, SQL Server, and Active Directory.
+  - Responsible of management software for inventory, accounting and finances.
 ---
 

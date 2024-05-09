@@ -8,8 +8,8 @@ tags: [CTO, Infra, CI/CD, OCPP, Docker, Ansible, Go, Echo Server, Gorm, PHP, Lar
 type: work
 order: 50
 goals:
-  - Built and maintained the infrastructure architecture through Ansible, Docker and automation tools.
-  - Developed central system for EV chargers, users, payments, and metrics in Go (OCPP protocol).
-  - Built the API (Go) that provides the data for the mobile apps and internal (PHP) administrative tools.
+  - Built and managed infrastructure with Ansible, Docker, and automation tools.
+  - Developed a centralized OCPP system for EV chargers, users, payments, and metrics (Go).
+  - Developed an API (Go) to supply data for mobile apps and internal administrative tools (PHP).
 ---
 

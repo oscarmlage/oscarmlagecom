@@ -8,8 +8,8 @@ tags: [Infra, Apache, Nginx, MTA, Postfix, Dovecot, MySQL, PHP, CodeIgniter, Koh
 type: work
 order: 30
 goals:
-  - Responsible for company infrastructure and environments.
-  - Server management with Linux, Debian and tools like Apache, Nginx, Sphinx, MTA, MySQL
-  - Contributed to the dev team with PHP and JS.
+  - Managed, monitored and built the Linux infrastructure, as well as the different environments.
+  - Configured and monitored all the servers, as well as their web services, databases and MTAs.
+  - Developed an ecommerce system, CMSs and several APIs using PHP and Javascript.
 ---
 
