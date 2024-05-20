@@ -402,6 +402,11 @@ i, em {
     margin-top: var(--spacing-6);
     padding: var(--spacing-3);
 }
+@media (min-width: 320px) {
+.main {
+        margin-top: var(--spacing-1)
+}
+    }
 .back-forms {
     position: fixed;
     inset: 0 0 0 0;
@@ -509,6 +514,11 @@ i, em {
         justify-content: flex-start
 }
     }
+@media (min-width: 320px) {
+.header {
+        display: block
+}
+    }
 .logo {
     margin: 0;
 }
@@ -518,6 +528,11 @@ i, em {
 .logo svg > * {
             stroke: currentColor;
         }
+@media (min-width: 320px) {
+.logo {
+        padding: 5vw 0
+}
+    }
 @media (min-width: 960px) {
 .main-nav {
         margin-left: 20vw
@@ -774,6 +789,16 @@ i, em {
             content: '|';
             opacity: .4;
         }
+@media (min-width: 320px) {
+.footer span::after {
+                opacity: 0
+        }
+            }
+@media (min-width: 320px) {
+.footer {
+        justify-content: center
+}
+    }
 .footer-contact {
     font: var(--font-caption);
     list-style-type: none;
@@ -783,6 +808,11 @@ i, em {
     gap: var(--spacing-2);
     flex-wrap: wrap;
 }
+@media (min-width: 320px) {
+.footer-contact {
+        justify-content: center
+}
+    }
 /* Specific pages */
 h2 small {
     margin: 0 20px;

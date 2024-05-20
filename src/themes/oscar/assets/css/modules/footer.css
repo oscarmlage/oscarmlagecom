@@ -9,7 +9,13 @@
         &::after {
             content: '|';
             opacity: .4;
+            @media (--screen-xxs) {
+                opacity: 0;
+            }
         }
+    }
+    @media (--screen-xxs) {
+        justify-content: center;
     }
 }
 .footer-contact {
@@ -20,4 +26,7 @@
     display: flex;
     gap: var(--spacing-2);
     flex-wrap: wrap;
+    @media (--screen-xxs) {
+        justify-content: center;
+    }
 }

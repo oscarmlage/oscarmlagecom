@@ -12,6 +12,9 @@
     @media (--screen-m) {
         justify-content: flex-start;
     }
+    @media (--screen-xxs) {
+        display: block;
+    }
 }
 .logo {
     margin: 0;
@@ -20,6 +23,9 @@
         > * {
             stroke: currentColor;
         }
+    }
+    @media (--screen-xxs) {
+        padding: 5vw 0;
     }
 }
 .main-nav {
