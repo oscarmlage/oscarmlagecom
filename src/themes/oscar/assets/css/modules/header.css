@@ -3,12 +3,10 @@
     justify-content: space-between;
     align-items: flex-end;
     padding: var(--spacing-1) var(--spacing-3);
-    @media (--screen-s) {
         position: sticky;
         top: 0;
         z-index: 1;
         background: var(--background-main);
-    }
     @media (--screen-m) {
         justify-content: flex-start;
     }

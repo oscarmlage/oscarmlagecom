@@ -399,7 +399,6 @@ i, em {
 }
     }
 .main {
-    margin-top: var(--spacing-6);
     padding: var(--spacing-3);
 }
 @media (min-width: 480px) {
@@ -500,15 +499,11 @@ i, em {
     justify-content: space-between;
     align-items: flex-end;
     padding: var(--spacing-1) var(--spacing-3);
-}
-@media (min-width: 768px) {
-.header {
         position: sticky;
         top: 0;
         z-index: 1;
-        background: var(--background-main)
+        background: var(--background-main);
 }
-    }
 @media (min-width: 960px) {
 .header {
         justify-content: flex-start
