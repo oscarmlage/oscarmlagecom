@@ -44,7 +44,7 @@ i, em {
 .wrapper {
     max-width: 800px;
     margin-inline: auto;
-    @media (--screen-m) {
+    @media (--screen-ml) {
         margin-left: calc(20vw + var(--logo-width));
     }
 }
@@ -52,7 +52,7 @@ i, em {
 .main {
     margin-top: var(--spacing-6);
     padding: var(--spacing-3);
-    @media (--screen-xxs) {
+    @media (--screen-xs) {
         margin-top: var(--spacing-1);
     }
 }

@@ -393,7 +393,7 @@ i, em {
     max-width: 800px;
     margin-inline: auto;
 }
-@media (min-width: 960px) {
+@media (min-width: 1024px) {
 .wrapper {
         margin-left: calc(20vw + var(--logo-width))
 }
@@ -402,7 +402,7 @@ i, em {
     margin-top: var(--spacing-6);
     padding: var(--spacing-3);
 }
-@media (min-width: 320px) {
+@media (min-width: 480px) {
 .main {
         margin-top: var(--spacing-1)
 }
@@ -499,7 +499,7 @@ i, em {
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
-    padding: var(--spacing-3);
+    padding: var(--spacing-1) var(--spacing-3);
 }
 @media (min-width: 768px) {
 .header {
@@ -520,7 +520,7 @@ i, em {
 }
     }
 .logo {
-    margin: 0;
+    margin-left: 25vw;
 }
 .logo svg {
         vertical-align: middle;
@@ -530,12 +530,17 @@ i, em {
         }
 @media (min-width: 320px) {
 .logo {
-        padding: 5vw 0
+        margin-left: 0
 }
     }
-@media (min-width: 960px) {
+@media (min-width: 1024px) {
+.logo {
+        margin-left: 25vw
+}
+    }
+@media (min-width: 1024px) {
 .main-nav {
-        margin-left: 20vw
+        margin-left: 25vw
 }
     }
 .main-nav ul {
