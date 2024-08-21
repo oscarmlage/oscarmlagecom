@@ -12,9 +12,10 @@
         {{ .Content }}
         {{ end }}
 
-        <h2 id="reachout">Reach out</h2>
-        <p>If you would like to get in touch, you can <a href="mailto:info@oscarmlage.com">✉️ drop me an email</a> or use any of those:</p>
-        {{ partial "social.html" . }}
+        {{range where .Site.Pages "Type" "=" "nope"}}
+        <h2 id="{{ .Slug }}">{{ .Title }}</h2>
+        {{ .Content }}
+        {{ end }}
 
         {{range where .Site.Pages "Type" "=" "colophon"}}
         <h2 id="{{ .Slug }}">{{ .Title }}</h2>

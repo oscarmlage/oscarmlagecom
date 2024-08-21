@@ -13,7 +13,6 @@
         {{ end }}
         {{ end }}
     </div>
-    {{ partial "social.html" . }}
 
     <div class="posts-container">
         {{ range first 5 (where .Site.RegularPages "Type" "posts") }}
