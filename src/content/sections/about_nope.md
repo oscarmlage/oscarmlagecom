@@ -12,6 +12,6 @@ List of things that I don't like or I don't want to do. At the risk of a negativ
 - The internet as we know it today, full of ads and pop-ups everywhere.
 - Changing the context too often.
 - Using a computer without a proper keyboard/monitor, I recently discovered this.
-- Overly verbose talks about biking, crossfit or running stuff.
+- Overly verbose talks about biking, *crossfit* or running stuff.
 - WhatsApp.
 - People not keeping their promises in any kind of context.
