@@ -1,0 +1,23 @@
+            <a href="{{ .Params.Link }}" title="{{ .Title }}">
+              <div class="item-wrapper">
+                <div class="meta-text"><div class="gridheader">{{ .Title }}</div>
+                <div class="subheader">
+                  {{ $rate := .Params.Rate }}
+                  {{ range $i, $e := (slice 0 1 2 3 4) }}{{ if lt $i $rate }}⭐{{ end }}{{ end }}
+                </div>
+              </div>
+              <img srcset="
+                        listening/_assets/{{ .Params.Image }} 200w,
+                        listening/_assets/{{ .Params.Image }} 400w,
+                        listening/_assets/{{ .Params.Image }} 800w
+                    "
+                    sizes="
+                        (max-width: 450px) 200px,
+                        (max-width: 850px) 400px,
+                        (max-width: 1000px) 800px,
+                        800px
+                    "
+                    src="listening/_assets/{{ .Params.Image }}"
+                    alt="{{ .Title }}" loading="lazy" decoding="async" />
+              </div>
+            </a>

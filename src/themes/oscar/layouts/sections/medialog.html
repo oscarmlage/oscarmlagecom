@@ -1,0 +1,47 @@
+{{ define "main" }}
+
+<main class="main wrapper">
+    <h1>{{ .Title }}</h1>
+
+    {{ .Content }}
+
+    {{ if .Site.Taxonomies.tags.watching }}
+    <h2>Watching</h2>
+    <div class="media-grid horizontal">
+        {{ range (.Site.Taxonomies.tags.watching).Pages }}
+            {{ partial "medialog/watching.html" . }}
+        {{ end }}
+    </div>
+    {{ end }}
+
+    {{ if .Site.Taxonomies.tags.reading }}
+    <h2>Reading</h2>
+    <div class="media-grid vertical">
+        {{ range (.Site.Taxonomies.tags.reading).Pages }}
+            {{ partial "medialog/reading.html" . }}
+        {{ end }}
+    </div>
+    {{ end }}
+
+    {{ if .Site.Taxonomies.tags.listening }}
+    <h2>Listening</h2>
+    <div class="media-grid square">
+        {{ range (.Site.Taxonomies.tags.listening).Pages }}
+            {{ partial "medialog/listening.html" . }}
+        {{ end }}
+    </div>
+    {{ end }}
+
+    {{ if .Site.Taxonomies.tags.playing }}
+    <h2>Playing</h2>
+    <div class="media-grid horizontal">
+        {{ range (.Site.Taxonomies.tags.playing).Pages }}
+            {{ partial "medialog/playing.html" . }}
+        {{ end }}
+    </div>
+    {{ end }}
+
+</main>
+
+{{ end }}
+

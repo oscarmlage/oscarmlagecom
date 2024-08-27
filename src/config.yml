@@ -23,6 +23,9 @@ markup:
 author:
   name: "oscarmlage"
 
+taxonomies:
+  tag: "tags"
+
 permalinks:
   sections: "/:slug/"
 
@@ -33,10 +36,15 @@ menu:
       title: "Posts"
       url: "/posts/"
       weight: 10
-    - identifier: "microposts"
-      name: "Social"
-      title: "Social"
+    - identifier: "Log"
+      name: "Log"
+      title: "Log"
       url: "/microposts/"
+      weight: 20
+    - identifier: "medialog"
+      name: "Medialog"
+      title: "Medialog"
+      url: "/medialog/"
       weight: 20
     - identifier: "archive"
       name: "Archive"
