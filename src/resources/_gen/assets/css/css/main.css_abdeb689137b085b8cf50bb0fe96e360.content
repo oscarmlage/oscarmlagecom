@@ -300,6 +300,15 @@ template {
     --color-main-medium: #535353;
     --color-link: #0161f0;
     --color-link-hover:#575757;
+    --white: #fff;
+    --black: #000;
+    --accent-color-hover: var(--color-link-hover);
+    --gray-50: #f6f7f8;
+    --color-lightest: var(--gray-50);
+    --font-size-sm: .85rem;
+    --font-weight-bold: 600;
+    --border-default: 1px solid var(--color-link);
+    --transition-ease-in-out: cubic-bezier(.4, 0, .2, 1);
 
 
  /* ==========================================================================
@@ -336,6 +345,34 @@ template {
     ========================================================================== */
     --logo-width: 102px;
 
+
+ /* ==========================================================================
+    Media grid
+    ========================================================================== */
+    --sizing-xs: .25rem;
+    --sizing-sm: .5rem;
+    --sizing-md: .75rem;
+    --sizing-lg: 1rem;
+    --sizing-base: 1.5rem;
+    --sizing-xl: 1.75rem;
+    --sizing-2xl: 2rem;
+    --sizing-3xl: 2.25rem;
+    --sizing-svg-sm: 18px;
+    --sizing-svg-base: 24px;
+    --grid-square: repeat(2, minmax(0, 1fr));
+    --grid-horizontal: repeat(2, minmax(0, 1fr));
+    --grid-vertical:repeat(3, minmax(0, 1fr));
+    --aspect-ratio-square: 1/1;
+    --aspect-ratio-vertical: 2/3;
+    --aspect-ratio-horizontal: 3/2;
+    --aspect-ratio-banner: 3/2;
+}
+@media screen and (min-width: 768px) {
+    :root {
+        --grid-horizontal: repeat(3, minmax(0, 1fr));
+        --grid-square: repeat(4, minmax(0, 1fr));
+        --grid-vertical:repeat(4, minmax(0, 1fr))
+    }
 }
 /* Dark theme */
 @media (prefers-color-scheme: dark) {
@@ -812,6 +849,94 @@ i, em {
 .footer-contact {
         justify-content: center
 }
+    }
+.media-grid {
+        gap: var(--sizing-sm);
+        margin-bottom: var(--sizing-base);
+        display:grid
+    }
+.media-grid.no-pagination {
+        margin-bottom:0
+    }
+/* square */
+.media-grid.square {
+        grid-template-columns:var(--grid-square)
+    }
+.media-grid.square a {
+        aspect-ratio:var(--aspect-ratio-square)
+    }
+.media-grid.square img {
+        width: 100%;
+        height:100%
+    }
+/* vertical */
+.media-grid.vertical {
+        grid-template-columns:var(--grid-vertical)
+    }
+.media-grid.vertical a {
+        aspect-ratio:var(--aspect-ratio-vertical)
+    }
+.media-grid.vertical img {
+        width: 100%;
+        height:auto
+    }
+/* horizontal */
+.media-grid.horizontal {
+        grid-template-columns:var(--grid-horizontal)
+    }
+.media-grid.horizontal a {
+        aspect-ratio:var(--aspect-ratio-horizontal)
+    }
+.media-grid .item-wrapper {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        position: relative;
+        overflow:hidden
+    }
+.media-grid .item-wrapper.shadow:after {
+        content: "";
+        box-shadow: inset 0 -85px 60px -60px var(--black);
+        width: calc(100% - 2px);
+        height: calc(100% - 1px);
+        position: absolute;
+        top: 0;
+        left:1px
+    }
+.media-grid a:hover img, .media-grid a:active img {
+        border-color:var(--accent-color-hover)
+    }
+.media-grid a:focus img, .media-grid a:focus-within img {
+        border:0
+    }
+.media-grid a:focus .shadow:after, .media-grid a:focus-within .shadow:after {
+        width: 100%;
+        height: 100%;
+        left:0
+    }
+.media-grid .meta-text {
+        padding: 0 var(--sizing-sm);
+        bottom: var(--sizing-sm);
+        box-sizing: border-box;
+        width: 100%;
+        position: absolute;
+    }
+.media-grid .meta-text .gridheader, .media-grid .meta-text .subheader {
+        color: var(--color-lightest);
+        font-size: var(--font-size-sm);
+        text-shadow: var(--black) 0px 0px 10px;
+        line-height:1.5
+    }
+.media-grid .meta-text .gridheader {
+        font-weight:var(--font-weight-bold);
+        background-color: rgba(0, 0, 0, 0.5);
+        padding: 2px 8px;
+    }
+.media-grid img {
+        border: var(--border-default);
+        transition-property: border-color;
+        transition-timing-function: var(--transition-ease-in-out);
+        transition-duration:.3s
     }
 /* Specific pages */
 h2 small {
