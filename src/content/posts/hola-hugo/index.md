@@ -18,4 +18,9 @@ On one hand I wanted to thank [Django](https://djangoproject.com) for all the fi
 
 On the other hand I would like to thank **and remark** that this site wouldn't be possible without the time, effort and knowledge of my great friend [Segun](https://segundofdez.com), that did pretty much everything you're watching now. ❤️
 
+### Gallery
+{{< gallery match="gallery/*" sortOrder="asc" rowHeight="150" margins="5" thumbnailResizeOptions="600x600 q90 Lanczos" previewType="blur" embedPreview="true" >}}
 
+### Related posts
+
+- [Small tweaks in the blog](/posts/small-tweaks-in-the-blog/)

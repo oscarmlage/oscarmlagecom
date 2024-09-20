@@ -13,4 +13,4 @@ tags: listening
 # Ricky Hombre Libre
 
 Music Group description
-![[_assets/ricky-hombre-libre.png]]
+
