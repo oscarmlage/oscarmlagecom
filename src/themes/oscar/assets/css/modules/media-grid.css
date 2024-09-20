@@ -103,5 +103,6 @@
         border: var(--border-default);
         transition-property: border-color;
         transition-timing-function: var(--transition-ease-in-out);
-        transition-duration:.3s
+        transition-duration:.3s;
+        width: 100%;
     }

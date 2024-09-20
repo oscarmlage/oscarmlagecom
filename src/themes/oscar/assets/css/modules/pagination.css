@@ -1,6 +1,6 @@
 .pagination {
-    border-top: 1px solid var(--color-main-medium);
-    border-bottom: 1px solid var(--color-main-medium);
+    border-top: 1px solid var(--color-main-dark);
+    border-bottom: 1px solid var(--color-main-dark);
     padding-block: var(--spacing-3);
     font: var(--font-caption);
     display: flex;

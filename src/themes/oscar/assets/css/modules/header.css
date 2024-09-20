@@ -8,14 +8,14 @@
         z-index: 1;
         background: var(--background-main);
     @media (--screen-m) {
-        justify-content: flex-start;
+        /* justify-content: flex-start; */
     }
     @media (--screen-xxs) {
-        display: block;
+        /* display: block; */
     }
 }
 .logo {
-    margin-left: 25vw;
+    /* margin-left: 25vw; */
     svg {
         vertical-align: middle;
         > * {
@@ -26,12 +26,12 @@
         margin-left: 0;
     }
     @media (--screen-ml) {
-        margin-left: 25vw;
+        /* margin-left: 25vw; */
     }
 }
 .main-nav {
     @media (--screen-ml) {
-        margin-left: 25vw;
+        /* margin-left: 25vw; */
     }
     ul {
         list-style-type: none;
@@ -53,9 +53,15 @@
     div {
         display: none;
     }
-    .hero-title {
-        font-size: clamp(var(--font-size-3), 2.5vw, var(--font-size-4));
+    .hero-title, .hero-title p {
+        font-size: clamp(var(--font-size-2), 2.5vw, var(--font-size-3));
         color: var(--color-main);
+        strong {
+            background-color: var(--color-link);
+            border-radius: var(--border-radius-slight);
+            color: var(--color-lightest);
+            padding: var(--spacing-xs);
+        }
     }
     .hero-img {
         display: inline-block;

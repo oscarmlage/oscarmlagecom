@@ -44,9 +44,6 @@ i, em {
 .wrapper {
     max-width: 800px;
     margin-inline: auto;
-    @media (--screen-ml) {
-        margin-left: calc(20vw + var(--logo-width));
-    }
 }
 
 .main {

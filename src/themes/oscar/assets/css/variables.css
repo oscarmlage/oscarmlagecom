@@ -32,6 +32,16 @@
     --border-default: 1px solid var(--color-link);
     --transition-ease-in-out: cubic-bezier(.4, 0, .2, 1);
 
+ /* ==========================================================================
+    Icon colors
+    ========================================================================== */
+    .color-red { color: #ff4500; }
+    .color-green { color: #32cd32; }
+    .color-purple { color: #9370db; }
+    .color-orange { color: orange; }
+    .color-pink { color: orchid; }
+    .color-rss { color: #f26522; }
+    .color-mastodon { color: #6364ff;}
 
  /* ==========================================================================
     Font sizes
@@ -51,8 +61,19 @@
     --font-caption: var(--font-size-1) / 1.5 var(--font-brand);
 
  /* ==========================================================================
+    Borders
+    ========================================================================== */
+    --border-radius-none: 0;
+    --border-radius-slight: 4px;
+    --border-radius-medium: 8px;
+    --border-radius-large: 15px;
+    --border-radius-rounded: 50px;
+    --border-radius-full: 9999px;
+
+ /* ==========================================================================
     Spacing
     ========================================================================== */
+    --spacing-xs: calc(1rem / 4);
     --spacing-1: calc(1rem / 2);
     --spacing-2: 1rem;
     --spacing-3: 1.5rem;
