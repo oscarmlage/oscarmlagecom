@@ -310,27 +310,58 @@ template {
     --border-default: 1px solid var(--color-link);
     --transition-ease-in-out: cubic-bezier(.4, 0, .2, 1);
 
-
  /* ==========================================================================
     Font sizes
     ========================================================================== */
 
     /* Font sizes  https://www.modularscale.com/?16,14&px&1.5 */
+
+    /* Font sizes names */
+
+ /* ==========================================================================
+    Borders
+    ========================================================================== */
+
+ /* ==========================================================================
+    Spacing
+    ========================================================================== */
+
+ /* ==========================================================================
+    Size
+    ========================================================================== */
+
+
+ /* ==========================================================================
+    Media grid
+    ========================================================================== */
+}
+/* ==========================================================================
+    Icon colors
+    ========================================================================== */
+:root .color-red { color: #ff4500; }
+:root .color-green { color: #32cd32; }
+:root .color-purple { color: #9370db; }
+:root .color-orange { color: orange; }
+:root .color-pink { color: orchid; }
+:root .color-rss { color: #f26522; }
+:root .color-mastodon { color: #6364ff;}
+:root{
     --font-size-1: 14px;
     --font-size-2: 17px;
     --font-size-3: 24px;
     --font-size-4: 36px;
     --font-size-5: 54px;
-
-    /* Font sizes names */
     --font-title: var(--fw-bold) var(--font-size-4) / 1.25 var(--font-brand);
     --font-heading: var(--fw-bold) var(--font-size-3) / 1.25 var(--font-brand);
     --font-body: var(--font-size-2) / 1.6 var(--font-ui);
     --font-caption: var(--font-size-1) / 1.5 var(--font-brand);
-
- /* ==========================================================================
-    Spacing
-    ========================================================================== */
+    --border-radius-none: 0;
+    --border-radius-slight: 4px;
+    --border-radius-medium: 8px;
+    --border-radius-large: 15px;
+    --border-radius-rounded: 50px;
+    --border-radius-full: 9999px;
+    --spacing-xs: calc(1rem / 4);
     --spacing-1: calc(1rem / 2);
     --spacing-2: 1rem;
     --spacing-3: 1.5rem;
@@ -339,16 +370,7 @@ template {
     --spacing-6: 3rem;
     --spacing-7: 4rem;
     --spacing-8: 5rem;
-
- /* ==========================================================================
-    Size
-    ========================================================================== */
     --logo-width: 102px;
-
-
- /* ==========================================================================
-    Media grid
-    ========================================================================== */
     --sizing-xs: .25rem;
     --sizing-sm: .5rem;
     --sizing-md: .75rem;
@@ -430,11 +452,6 @@ i, em {
     max-width: 800px;
     margin-inline: auto;
 }
-@media (min-width: 1024px) {
-.wrapper {
-        margin-left: calc(20vw + var(--logo-width))
-}
-    }
 .main {
     padding: var(--spacing-3);
 }
@@ -543,17 +560,15 @@ i, em {
 }
 @media (min-width: 960px) {
 .header {
-        justify-content: flex-start
+        /* justify-content: flex-start; */
 }
     }
 @media (min-width: 320px) {
 .header {
-        display: block
+        /* display: block; */
 }
     }
-.logo {
-    margin-left: 25vw;
-}
+/* margin-left: 25vw; */
 .logo svg {
         vertical-align: middle;
     }
@@ -567,12 +582,12 @@ i, em {
     }
 @media (min-width: 1024px) {
 .logo {
-        margin-left: 25vw
+        /* margin-left: 25vw; */
 }
     }
 @media (min-width: 1024px) {
 .main-nav {
-        margin-left: 25vw
+        /* margin-left: 25vw; */
 }
     }
 .main-nav ul {
@@ -592,10 +607,16 @@ i, em {
     .hero div {
         display: none;
     }
-.hero .hero-title {
-        font-size: clamp(var(--font-size-3), 2.5vw, var(--font-size-4));
+.hero .hero-title, .hero .hero-title p {
+        font-size: clamp(var(--font-size-2), 2.5vw, var(--font-size-3));
         color: var(--color-main);
     }
+.hero .hero-title strong, .hero .hero-title p strong {
+            background-color: var(--color-link);
+            border-radius: var(--border-radius-slight);
+            color: var(--color-lightest);
+            padding: var(--spacing-xs);
+        }
 .hero .hero-img {
         display: inline-block;
         width: 100%;
@@ -655,20 +676,20 @@ i, em {
         }
 /* POST LIST  */
 .index .posts-container {
-    margin-top: calc(var(--spacing-8) * 2);
+    margin-top: calc(var(--spacing-6) * 2);
 }
 .posts-container {
 }
 .post-item {
     display: block;
-    margin-bottom: var(--spacing-7);
+    margin-bottom: var(--spacing-4);
 }
 .post-item::after {
         display: block;
         content: "";
-        width: var(--spacing-3);
+        /* width: var(--spacing-3); */
         height: 1px;
-        background-color: var(--color-main-medium);
+        background-color: var(--color-main-dark);
     }
 .post-item .post-item-title {
         transition: ease-in-out 200ms;
@@ -734,6 +755,14 @@ i, em {
 .post-detail li {
         margin-bottom: var(--spacing-1);
     }
+/* Microposts */
+.micropost-container {
+    margin-top: 30px;
+}
+.micropost-detail {
+    border-bottom: 1px solid var(--color-main-dark);
+    padding: 20px 0 10px 0;
+}
 /* Archive */
 .post h2 {
         margin: 0;
@@ -775,8 +804,8 @@ i, em {
             border-radius: 10px;
         }
 .pagination {
-    border-top: 1px solid var(--color-main-medium);
-    border-bottom: 1px solid var(--color-main-medium);
+    border-top: 1px solid var(--color-main-dark);
+    border-bottom: 1px solid var(--color-main-dark);
     padding-block: var(--spacing-3);
     font: var(--font-caption);
     display: flex;
@@ -936,7 +965,8 @@ i, em {
         border: var(--border-default);
         transition-property: border-color;
         transition-timing-function: var(--transition-ease-in-out);
-        transition-duration:.3s
+        transition-duration:.3s;
+        width: 100%;
     }
 /* Specific pages */
 h2 small {
