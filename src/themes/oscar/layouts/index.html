@@ -9,8 +9,8 @@
             <img src="heros/{{ .Params.image }}"
                 alt="{{ .Content | plainify | htmlUnescape | truncate 50 }}" />
         </div>
-        <h2 class="hero-title">{{ .Params.text }}</h2>
         {{ end }}
+        <h2 class="hero-title">{{ .Content }}</h2>
         {{ end }}
     </div>
 

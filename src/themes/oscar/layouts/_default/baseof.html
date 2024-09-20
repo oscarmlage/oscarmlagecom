@@ -2,17 +2,8 @@
 <html lang="{{ .Site.LanguageCode | default "en" }}">
     {{ partial "metas.html" . }}
     <body>
-        <div class="back-forms">
-            <svg class="back-circle" width="357" height="357" viewBox="0 0 357 357" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <circle cx="178.5" cy="178.5" r="178.5" fill="white"/>
-            </svg>
-            <svg class="back-triangle" width="333" height="333" viewBox="0 0 333 333" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M0 0L333 333H0V0Z" fill="white"/>
-            </svg>
-            <svg class="back-square" width="357" height="357" viewBox="0 0 357 357" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <rect width="357" height="357" fill="white"/>
-            </svg>
-        </div>
+        {{ partial "background.html" . }}
+
         {{ partial "header.html" . }}
         {{ block "main" . }}{{ end }}
         {{ partial "footer.html" . }}
