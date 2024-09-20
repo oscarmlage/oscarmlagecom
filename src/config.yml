@@ -35,24 +35,39 @@ menu:
       name: "Posts"
       title: "Posts"
       url: "/posts/"
+      params: 
+        svg: "svg/posts.html"
+        color: "blue"
       weight: 10
     - identifier: "Log"
       name: "Log"
       title: "Log"
       url: "/microposts/"
+      params: 
+        svg: "svg/log.html"
+        color: "green"
       weight: 20
     - identifier: "medialog"
       name: "Medialog"
       title: "Medialog"
       url: "/medialog/"
+      params: 
+        svg: "svg/media.html"
+        color: "purple"
       weight: 20
     - identifier: "archive"
       name: "Archive"
       title: "Archive"
       url: "/archive/"
+      params: 
+        svg: "svg/archive.html"
+        color: "pink"
       weight: 30
     - identifier: "about"
       name: "About"
       title: "About"
       url: "/about/"
+      params: 
+        svg: "svg/about.html"
+        color: "orange"
       weight: 40
