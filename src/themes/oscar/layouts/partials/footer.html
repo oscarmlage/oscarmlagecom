@@ -1,13 +1,16 @@
 <footer class="footer wrapper">
-	<span>
-		© <time datetime="{{ now }}">{{ now.Format "2006" }}</time> {{ .Site.Author.name }}
-	</span>
 	<ul class="footer-contact">
-		<li><a href="https://mastodon.bofhers.es/@oscarmlage">mastodon</a></li>
+        <li><a href="mailto:info@oscarmlage.com" class="color-red">
+            {{ partial "svg/email.html" . }}
+        </a></li>
+		<li><a href="https://mastodon.bofhers.es/@oscarmlage" class="color-mastodon">
+            {{ partial "svg/mastodon.html" . }}
+        </a></li>
         {{ with .OutputFormats.Get "rss" -}}
-        <li><a href="{{ .RelPermalink }}">rss</a></li>
+        <li><a href="{{ .RelPermalink }}" class="color-rss">
+            {{ partial "svg/rss.html" . }}
+        </a></li>
         {{ end -}}
-        <li><a href="mailto:info@oscarmlage.com">info@oscarmlage.com</a></li>
 
 	</ul>
 </footer>
