@@ -35,7 +35,7 @@ menu:
       name: "Posts"
       title: "Posts"
       url: "/posts/"
-      params: 
+      params:
         svg: "svg/posts.html"
         color: "blue"
       weight: 10
@@ -43,7 +43,7 @@ menu:
       name: "Log"
       title: "Log"
       url: "/microposts/"
-      params: 
+      params:
         svg: "svg/log.html"
         color: "green"
       weight: 20
@@ -51,7 +51,7 @@ menu:
       name: "Medialog"
       title: "Medialog"
       url: "/medialog/"
-      params: 
+      params:
         svg: "svg/media.html"
         color: "purple"
       weight: 20
@@ -59,7 +59,7 @@ menu:
       name: "Archive"
       title: "Archive"
       url: "/archive/"
-      params: 
+      params:
         svg: "svg/archive.html"
         color: "pink"
       weight: 30
@@ -67,7 +67,7 @@ menu:
       name: "About"
       title: "About"
       url: "/about/"
-      params: 
+      params:
         svg: "svg/about.html"
         color: "orange"
       weight: 40
