@@ -2,14 +2,36 @@
               <div class="item-wrapper">
                 <div class="meta-text"><div class="gridheader">{{ .Title }}</div>
                 <div class="subheader">
-                  {{ $rate := .Params.Rate }}
-                  {{ range $i, $e := (slice 0 1 2 3 4) }}{{ if lt $i $rate }}⭐{{ end }}{{ end }}
+                <!-- Stars -->
+                  {{ $rate := div .Params.Rate 2 }}
+
+                  <div class="stars">
+                    {{ $fullStars := int $rate }}
+                    {{ $decimal := sub $rate $fullStars }}
+                    {{ $halfStar := gt $decimal 0.25 }}
+                    {{ $emptyStars := sub 5 (add $fullStars (cond $halfStar 1 0)) }}
+
+                    {{ range seq 1 $fullStars }}
+                      <span class="star full">★</span>
+                    {{ end }}
+
+                    {{ if $halfStar }}
+                      <span class="star half">★</span>
+                    {{ end }}
+
+                    {{ if gt $emptyStars 0 }}
+                      {{ range seq 1 $emptyStars }}
+                        <span class="star empty">★</span>
+                      {{ end }}
+                    {{ end }}
+                  </div>
                 </div>
+
               </div>
               <img srcset="
-                        listening/_assets/{{ .Params.Image }} 200w,
-                        listening/_assets/{{ .Params.Image }} 400w,
-                        listening/_assets/{{ .Params.Image }} 800w
+                        /medialog/listening/_assets/{{ .Params.Image }} 200w,
+                        /medialog/listening/_assets/{{ .Params.Image }} 400w,
+                        /medialog/listening/_assets/{{ .Params.Image }} 800w
                     "
                     sizes="
                         (max-width: 450px) 200px,
@@ -17,7 +39,7 @@
                         (max-width: 1000px) 800px,
                         800px
                     "
-                    src="listening/_assets/{{ .Params.Image }}"
+                    src="/medialog/listening/_assets/{{ .Params.Image }}"
                     alt="{{ .Title }}" loading="lazy" decoding="async" />
               </div>
             </a>

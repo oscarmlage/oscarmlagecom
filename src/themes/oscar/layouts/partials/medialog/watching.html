@@ -1,16 +1,59 @@
             <a href="{{ .Params.Link }}" title="{{ .Title }}">
               <div class="item-wrapper">
-                <div class="meta-text"><div class="gridheader">{{ .Title }}</div>
+                <div class="meta-text">
+                    <div class="gridheader">{{ .Title }}
+                    {{ if .Params.Year }}<small>({{ .Params.Year }})</small>{{ end }}
+                    </div>
+
                 <div class="subheader">
-                  {{ $rate := .Params.Rate }}
-                  {{ range $i, $e := (slice 0 1 2 3 4) }}{{ if lt $i $rate }}⭐{{ end }}{{ end }}
-                  {{ if .Params.Subtitle }}({{ .Params.Subtitle }}){{ end }}
+                <!-- Stars -->
+                  {{ $rate := div .Params.Rate 2 }}
+
+                  <div class="stars">
+                    {{ $fullStars := int $rate }}
+                    {{ $decimal := sub $rate $fullStars }}
+                    {{ $halfStar := gt $decimal 0.25 }}
+                    {{ $emptyStars := sub 5 (add $fullStars (cond $halfStar 1 0)) }}
+
+                    {{ range seq 1 $fullStars }}
+                      <span class="star full">★</span>
+                    {{ end }}
+
+                    {{ if $halfStar }}
+                      <span class="star half">★</span>
+                    {{ end }}
+
+                    {{ if gt $emptyStars 0 }}
+                      {{ range seq 1 $emptyStars }}
+                        <span class="star empty">★</span>
+                      {{ end }}
+                    {{ end }}
+                  </div>
                 </div>
+
+                {{ if .Params.Progress }}
+                    <!-- Barra de progreso -->
+                    <div class="subheader">
+                      {{ if eq .Params.Progress "100%" }}
+                        <span class="check-complete">
+                          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="green">
+                            <path d="M9 16.17l-4.17-4.17L3 13.83 9 20l12-12-1.41-1.41L9 16.17z"/>
+                          </svg>
+                        </span>
+                      {{ else }}
+                        <div class="progress-bar">
+                          <div class="progress" style="width: {{ .Params.Progress }};"></div>
+                        </div>
+                        {{ if .Params.Episode }} ({{ .Params.Episode }}){{ end }}
+                      {{ end }}
+                    </div>
+                {{ end }}
+
               </div>
               <img srcset="
-                        watching/_assets/{{ .Params.Image }} 200w,
-                        watching/_assets/{{ .Params.Image }} 400w,
-                        watching/_assets/{{ .Params.Image }} 800w
+                        /medialog/watching/_assets/{{ index .Params "background-image" }} 200w,
+                        /medialog/watching/_assets/{{ index .Params "background-image" }} 400w,
+                        /medialog/watching/_assets/{{ index .Params "background-image" }} 800w
                     "
                     sizes="
                         (max-width: 450px) 200px,
@@ -18,7 +61,7 @@
                         (max-width: 1000px) 800px,
                         800px
                     "
-                    src="watching/_assets/{{ .Params.Image }}"
+                    src="/medialog/watching/_assets/{{ index .Params "background-image" }}"
                     alt="{{ .Title }}" loading="lazy" decoding="async" />
               </div>
             </a>

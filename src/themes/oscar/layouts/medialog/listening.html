@@ -1,0 +1,19 @@
+{{ define "main" }}
+
+<main class="main wrapper">
+    <h1>{{ .Title }}</h1>
+
+    <p>Check out what I'm listening to right now, featuring my latest Spotify albums and tracks.</p>
+
+    {{ if .Site.Taxonomies.tags.listening }}
+    <div class="media-grid square">
+        {{ range sort (.Site.Taxonomies.tags.listening).Pages ".Params.Date" "desc" }}
+            {{ partial "medialog/listening.html" . }}
+        {{ end }}
+    </div>
+    {{ end }}
+
+</main>
+
+{{ end }}
+

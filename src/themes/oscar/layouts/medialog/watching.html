@@ -1,0 +1,20 @@
+{{ define "main" }}
+
+<main class="main wrapper">
+    <h1>{{ .Title }}</h1>
+
+    <p>Discover all the TV shows and movies I've been watching, neatly organized for easy browsing and updates.
+</p>
+
+    {{ if .Site.Taxonomies.tags.watching }}
+    <div class="media-grid horizontal">
+        {{ range sort (.Site.Taxonomies.tags.watching).Pages ".Params.Date" "desc" }}
+            {{ partial "medialog/watching.html" . }}
+        {{ end }}
+    </div>
+    {{ end }}
+
+</main>
+
+{{ end }}
+
