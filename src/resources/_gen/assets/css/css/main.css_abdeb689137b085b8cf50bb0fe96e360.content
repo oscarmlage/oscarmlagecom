@@ -309,6 +309,8 @@ template {
     --font-weight-bold: 600;
     --border-default: 1px solid var(--color-link);
     --transition-ease-in-out: cubic-bezier(.4, 0, .2, 1);
+    --color-stars: #f39c12;
+    --color-stars-off: #e0e0e0;
 
  /* ==========================================================================
     Font sizes
@@ -383,7 +385,7 @@ template {
     --sizing-svg-base: 24px;
     --grid-square: repeat(2, minmax(0, 1fr));
     --grid-horizontal: repeat(2, minmax(0, 1fr));
-    --grid-vertical:repeat(3, minmax(0, 1fr));
+    --grid-vertical:repeat(2, minmax(0, 1fr));
     --aspect-ratio-square: 1/1;
     --aspect-ratio-vertical: 2/3;
     --aspect-ratio-horizontal: 3/2;
@@ -601,6 +603,13 @@ i, em {
 .main-nav a.is-active {
         color: var(--color-main);
         border-bottom: 1px solid var(--color-main);
+    }
+/* intro */
+.intro strong {
+        background-color: var(--color-link);
+        border-radius: var(--border-radius-slight);
+        color: var(--color-lightest);
+        padding: var(--spacing-xs);
     }
 /* promo hero */
 .hero .is-active,
@@ -944,8 +953,9 @@ i, em {
         left:0
     }
 .media-grid .meta-text {
-        padding: 0 var(--sizing-sm);
-        bottom: var(--sizing-sm);
+        background-color: rgba(0, 0, 0, 0.5);
+        padding: 5px 0 5px 5px;
+        bottom: 0;
         box-sizing: border-box;
         width: 100%;
         position: absolute;
@@ -958,9 +968,11 @@ i, em {
     }
 .media-grid .meta-text .gridheader {
         font-weight:var(--font-weight-bold);
-        background-color: rgba(0, 0, 0, 0.5);
-        padding: 2px 8px;
+        padding: 1px 5px;
     }
+.media-grid .meta-text .gridheader small {
+            color: var(--color-main-medium);
+        }
 .media-grid img {
         border: var(--border-default);
         transition-property: border-color;
@@ -1064,4 +1076,55 @@ h2 small {
 .hide {
     display: none;
 }
+.progress-bar {
+    width: 100px;
+    height: 10px;
+    background-color: #e0e0e0;
+    border-radius: 5px;
+    overflow: hidden;
+    display: inline-block;
+    margin-right: 10px;
+}
+.progress {
+    height: 100%;
+    background-color: var(--color-link);
+    border-radius: 5px;
+}
+.rating {
+    font-size: 14px;
+    font-weight: bold;
+}
+.check-complete {
+  color: green;
+  font-size: 20px;
+  margin-left: 10px;
+  position: absolute;
+  right: 5px;
+  bottom: 0;
+  display: inline-block;
+}
+.stars {
+    display: flex; /* Alineación horizontal */
+    gap: 4px; /* Espaciado entre las estrellas */
+  }
+.star {
+    font-size: 20px; /* Tamaño de las estrellas */
+    color: var(--color-stars-off);
+  }
+.star.full {
+    color: var(--color-stars);
+  }
+.star.half {
+    position: relative;
+    display: inline-block;
+    color: var(--color-stars-off);
+  }
+.star.half::before {
+    content: "★";
+    position: absolute;
+    left: 0;
+    width: 50%; /* Mostrar solo media estrella */
+    overflow: hidden;
+    color: var(--color-stars);
+  }
 /* Vendors */
