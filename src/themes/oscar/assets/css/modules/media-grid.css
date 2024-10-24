@@ -79,8 +79,9 @@
     }
 
     .media-grid .meta-text {
-        padding: 0 var(--sizing-sm);
-        bottom: var(--sizing-sm);
+        background-color: rgba(0, 0, 0, 0.5);
+        padding: 5px 0 5px 5px;
+        bottom: 0;
         box-sizing: border-box;
         width: 100%;
         position: absolute;
@@ -95,8 +96,10 @@
 
     .media-grid .meta-text .gridheader {
         font-weight:var(--font-weight-bold);
-        background-color: rgba(0, 0, 0, 0.5);
-        padding: 2px 8px;
+        padding: 1px 5px;
+        small {
+            color: var(--color-main-medium);
+        }
     }
 
     .media-grid img {

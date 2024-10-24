@@ -31,6 +31,8 @@
     --font-weight-bold: 600;
     --border-default: 1px solid var(--color-link);
     --transition-ease-in-out: cubic-bezier(.4, 0, .2, 1);
+    --color-stars: #f39c12;
+    --color-stars-off: #e0e0e0;
 
  /* ==========================================================================
     Icon colors
@@ -104,7 +106,7 @@
     --sizing-svg-base: 24px;
     --grid-square: repeat(2, minmax(0, 1fr));
     --grid-horizontal: repeat(2, minmax(0, 1fr));
-    --grid-vertical:repeat(3, minmax(0, 1fr));
+    --grid-vertical:repeat(2, minmax(0, 1fr));
     --aspect-ratio-square: 1/1;
     --aspect-ratio-vertical: 2/3;
     --aspect-ratio-horizontal: 3/2;

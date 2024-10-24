@@ -1,0 +1,28 @@
+  .stars {
+    display: flex; /* Alineación horizontal */
+    gap: 4px; /* Espaciado entre las estrellas */
+  }
+
+  .star {
+    font-size: 20px; /* Tamaño de las estrellas */
+    color: var(--color-stars-off);
+  }
+
+  .star.full {
+    color: var(--color-stars);
+  }
+
+  .star.half {
+    position: relative;
+    display: inline-block;
+    color: var(--color-stars-off);
+  }
+
+  .star.half::before {
+    content: "★";
+    position: absolute;
+    left: 0;
+    width: 50%; /* Mostrar solo media estrella */
+    overflow: hidden;
+    color: var(--color-stars);
+  }

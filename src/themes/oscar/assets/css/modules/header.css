@@ -47,6 +47,16 @@
     }
 }
 
+/* intro */
+.intro {
+    strong {
+        background-color: var(--color-link);
+        border-radius: var(--border-radius-slight);
+        color: var(--color-lightest);
+        padding: var(--spacing-xs);
+    }
+}
+
 /* promo hero */
 .hero {
     .is-active,

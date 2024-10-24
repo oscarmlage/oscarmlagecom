@@ -22,5 +22,7 @@
 
 /* Utilities */
 @import 'assets/css/utilities/visibility.css';
+@import 'assets/css/utilities/progressbars.css';
+@import 'assets/css/utilities/stars.css';
 
 /* Vendors */

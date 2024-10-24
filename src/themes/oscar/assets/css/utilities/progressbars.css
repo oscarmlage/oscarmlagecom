@@ -1,0 +1,31 @@
+
+.progress-bar {
+    width: 100px;
+    height: 10px;
+    background-color: #e0e0e0;
+    border-radius: 5px;
+    overflow: hidden;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.progress {
+    height: 100%;
+    background-color: var(--color-link);
+    border-radius: 5px;
+}
+
+.rating {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.check-complete {
+  color: green;
+  font-size: 20px;
+  margin-left: 10px;
+  position: absolute;
+  right: 5px;
+  bottom: 0;
+  display: inline-block;
+}
