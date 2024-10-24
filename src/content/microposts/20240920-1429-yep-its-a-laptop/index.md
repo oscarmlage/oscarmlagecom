@@ -1,3 +1,6 @@
+
+
+
 ---
 title: yep-its-a-laptop
 date: 2024-09-03 14:12:28  +0200

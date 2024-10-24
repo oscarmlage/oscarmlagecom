@@ -8,7 +8,7 @@ image: digital-nomad-summber-basics-2017.jpg
 
 <p>Most of us, people that works on digital services (<em>developers</em>, <em>sysadmins</em>, <em>devops</em>...), have a great privilege: work remotely. And I say "<em>most</em>" because not everyone is allowed to that way of work. For me it's like a dream come true.</p>
 <p>To be honest, I'm working from remote most of the time because all the friends and mates we're working with are around the world, but the ability to move myself with the family in summer makes the year much much better.</p>
-<p>The other years I've "<em>implemented</em>" this "<strong>summer digital nomad</strong>" stuff I've thought that <a href="../../../../work-anywhere.html">just carrying the laptop on was good enough</a> but, somehow, I was wrong. In fact you will probably need some other gadgets too. These are my basic things:</p>
+<p>The other years I've "<em>implemented</em>" this "<strong>summer digital nomad</strong>" stuff I've thought that <a href="/posts/work-anywhere/">just carrying the laptop on was good enough</a> but, somehow, I was wrong. In fact you will probably need some other gadgets too. These are my basic things:</p>
 <ul>
 <li><strong>Laptop</strong>, of course, you just can't work without it, it's the main piece of this puzzle.</li>
 <li><strong>MiFi + Data Plan</strong>. MiFi is the gadget that shares the 3G/4G with your laptop mostly v&iacute;a WIFI. You should find a good data plan that fits your needs. Last year I've took, IIRC, 3Gb/month and it was not enough. This year I took 25Gb and it was too much (I've consumed the 48% approx), so, in fact, it depends on you.</li>

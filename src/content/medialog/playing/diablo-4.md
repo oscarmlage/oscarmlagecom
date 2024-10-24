@@ -1,15 +1,22 @@
 ---
 title: "Diablo 4"
-link: https://en.wikipedia.org/wiki/Diablo_IV
-subtitle: 2023
+link: "https://www.igdb.com/games/diablo-iv"
+subtitle: "2023"
 year: 2023
-rate: 3
-image: diablo-4.png
-date: 2023-12-20T08:44:54Z
+rate: 8.5
+progress: "100%"
+image: diablo-4.jpg
+poster-image: diablo-4-poster.jpg
+background-image: diablo-4-background.jpg
+date: 2024-07-21
 draft: false
 tags: playing
 ---
 
 # Diablo 4
 
-Videogame description
+## Overview
+
+
+
+## My thoughts

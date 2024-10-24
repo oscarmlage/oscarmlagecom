@@ -1,15 +1,21 @@
 ---
 title: "Videogames Soundtracks"
-link: https://open.spotify.com/playlist/7cg3EZOIJdKBZNtToZDRrO?si=057144be39744a41&nd=1&dlsi=fc55a458a2364757
-subtitle: 2012
-year: 2012
-rate: 3
-image: videogames-soundtracks.png
-date: 2024-09-06T10:44:54Z
+link: "https://api.spotify.com/v1/albums/5e7s0a6yhdIrn5WeMTz0L4"
+subtitle: "2024"
+artist: "lofi gaming"
+year: 2024
+rate: 6.5
+image: videogames-soundtracks.jpg
+tracks: 10
+date: 2024-09-09
 draft: false
 tags: listening
 ---
 
 # Videogames Soundtracks
 
-Music Group description
+## Overview
+
+
+
+## My thoughts

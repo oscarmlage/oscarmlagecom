@@ -1,15 +1,21 @@
 ---
 title: "Lofi [No copyright]"
-link: https://open.spotify.com/playlist/0g7MoJYEpZGNkqI2yYaVWo?si=832176abfde3461f
-subtitle: 2024
-year: 2024
-rate: 2
-image: lofi-no-copyright.png
-date: 2024-07-11T10:44:54Z
+link: "https://api.spotify.com/v1/albums/4EaRK0QfPIDlpxkME6LFcT"
+subtitle: "2022"
+artist: "Copyright Free Lofi"
+year: 2022
+rate: 5.5
+image: lofi-no-copyright.jpg
+tracks: 7
+date: 2022-05-20
 draft: false
 tags: listening
 ---
 
 # Lofi [No copyright]
 
-Musi Group description
+## Overview
+
+
+
+## My thoughts
