@@ -6,7 +6,6 @@
     <p>Explore the video games I'm currently playing, as I strive to conquer new challenges and adventures.</p>
 
     {{ if .Site.Taxonomies.tags.playing }}
-    <h2><a href="/medialog/playing/">Playing</a></h2>
     <div class="media-grid vertical">
         {{ range (sort (.Site.Taxonomies.tags.playing).Pages ".Params.Date" "desc") }}
             {{ partial "medialog/playing.html" . }}
