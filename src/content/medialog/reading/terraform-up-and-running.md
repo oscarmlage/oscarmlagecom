@@ -8,7 +8,10 @@ rate: 7.0
 pages: 205
 progress: "35%"
 image: terraform-up-and-running.jpg
-date: 2024-10-11
+image320: terraform-up-and-running-320.jpg
+image640: terraform-up-and-running-640.jpg
+image1024: terraform-up-and-running-1024.jpg
+date: "2024-10-22"
 draft: false
 tags: reading
 ---

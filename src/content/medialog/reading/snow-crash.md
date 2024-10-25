@@ -8,7 +8,10 @@ rate: 5.0
 pages: 362
 progress: "100%"
 image: snow-crash.jpg
-date: 2024-10-02
+image320: snow-crash-320.jpg
+image640: snow-crash-640.jpg
+image1024: snow-crash-1024.jpg
+date: "2024-10-02"
 draft: false
 tags: reading
 ---

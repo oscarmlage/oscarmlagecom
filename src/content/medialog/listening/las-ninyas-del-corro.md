@@ -6,6 +6,9 @@ artist: "Foyone"
 year: 2021
 rate: 8
 image: las-ninyas-del-corro.jpg
+image320: las-ninyas-del-corro-320.jpg
+image640: las-ninyas-del-corro-640.jpg
+image1024: las-ninyas-del-corro-1024.jpg
 tracks: 50
 date: 2021-11-12
 draft: false
