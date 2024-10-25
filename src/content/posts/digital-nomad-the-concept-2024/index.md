@@ -1,6 +1,6 @@
 ---
 title: "Digital Nomad, the concept (2024)"
-date: 2024-10-23T18:16:01+02:00
+date: 2024-10-25T12:16:01+02:00
 draft: false
 tags: []
 ---
@@ -44,7 +44,7 @@ It’s possible that my *essentials* have changed a bit this year. While I no lo
 
 ### Related posts
 
-- [Work anywhere, 2016 · oscarmlage](https://oscarmlage.com/posts/work-anywhere/)
-- [Digital Nomad: summer basics, 2017 · oscarmlage](https://oscarmlage.com/posts/digital-nomad-summer-basics-2017/)
+- [Work anywhere, 2016](https://oscarmlage.com/posts/work-anywhere/)
+- [Digital Nomad: summer basics, 2017](https://oscarmlage.com/posts/digital-nomad-summer-basics-2017/)
 
 Yep, you're right dear reader, I’ve talked about this before on the blog, but it’s interesting to see how daily essentials evolve over time :)
