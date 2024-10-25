@@ -29,9 +29,9 @@
 
               </div>
               <img srcset="
-                        /medialog/listening/_assets/{{ .Params.Image }} 200w,
-                        /medialog/listening/_assets/{{ .Params.Image }} 400w,
-                        /medialog/listening/_assets/{{ .Params.Image }} 800w
+                        /medialog/listening/_assets/{{ .Params.Image320 }} 200w,
+                        /medialog/listening/_assets/{{ .Params.Image640 }} 400w,
+                        /medialog/listening/_assets/{{ .Params.Image1024 }} 800w
                     "
                     sizes="
                         (max-width: 450px) 200px,
@@ -39,7 +39,7 @@
                         (max-width: 1000px) 800px,
                         800px
                     "
-                    src="/medialog/listening/_assets/{{ .Params.Image }}"
+                    src="/medialog/listening/_assets/{{ .Params.Image320 }}"
                     alt="{{ .Title }}" loading="lazy" decoding="async" />
               </div>
             </a>

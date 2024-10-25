@@ -51,9 +51,9 @@
 
               </div>
               <img srcset="
-                        /medialog/watching/_assets/{{ index .Params "background-image" }} 200w,
-                        /medialog/watching/_assets/{{ index .Params "background-image" }} 400w,
-                        /medialog/watching/_assets/{{ index .Params "background-image" }} 800w
+                        /medialog/watching/_assets/{{ index .Params "background-image320" }} 200w,
+                        /medialog/watching/_assets/{{ index .Params "background-image640" }} 400w,
+                        /medialog/watching/_assets/{{ index .Params "background-image1024" }} 800w
                     "
                     sizes="
                         (max-width: 450px) 200px,
@@ -61,7 +61,7 @@
                         (max-width: 1000px) 800px,
                         800px
                     "
-                    src="/medialog/watching/_assets/{{ index .Params "background-image" }}"
+                    src="/medialog/watching/_assets/{{ index .Params "background-image320" }}"
                     alt="{{ .Title }}" loading="lazy" decoding="async" />
               </div>
             </a>
