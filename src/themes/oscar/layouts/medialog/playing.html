@@ -5,6 +5,13 @@
 
     <p>Explore the video games I'm currently playing, as I strive to conquer new challenges and adventures.</p>
 
+    <p class="banner-rss">
+        <a href="/medialog/playing/index.xml" class="color-rss">
+            {{ partial "svg/rss.html" . }}
+            Subscribe to my playing feed.
+        </a>
+    </p>
+
     {{ if .Site.Taxonomies.tags.playing }}
     <div class="media-grid vertical">
         {{ range (sort (.Site.Taxonomies.tags.playing).Pages ".Params.Date" "desc") }}

@@ -12,8 +12,15 @@ summarylength: 30
 timeout: 60000
 params:
   galleryLoadJQuery: true
+  author:
+    email: info@oscarmlage.com
+    name: oscarmlage
 
 defaultContentLanguage: "en"
+
+services:
+  rss:
+    limit: 42
 
 markup:
   goldmark:

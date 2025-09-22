@@ -40,6 +40,21 @@ i, em {
     font-style: italic;
 }
 
+.banner-rss {
+    border: 1px solid var(--color-rss);
+    border-radius: 0.25rem;
+    padding: 12px;
+    a {
+        font-size: 14px;
+        text-underline-offset: 0.25rem;
+    }
+}
+.color-rss svg {
+    width: 16px;
+    height: 16px;
+    vertical-align: middle;
+}
+
 /* TODO: move this  */
 .wrapper {
     max-width: 800px;

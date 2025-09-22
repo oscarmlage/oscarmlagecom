@@ -33,7 +33,7 @@ Also, I’d like to mention some optional items that, while not strictly necessa
 
 1. **A powerbank**
     Running out of battery is quite common when you're not "plugged in" all the time. A high-capacity power bank ensures that your devices can stay charged no matter where you are.
-5. **Optional: A VPN**
+5. **A VPN**
     For many of us working in tech or other remote-access jobs, a secure VPN is non-negotiable. It not only keeps your data safe on public networks but also allows you to connect to the necessary remote servers and hosts to get your work done securely.
 
 ### Adapting to the new essentials

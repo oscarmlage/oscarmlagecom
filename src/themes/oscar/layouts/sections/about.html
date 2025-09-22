@@ -13,6 +13,11 @@
         {{ .Content }}
         {{ end }}
 
+        {{range where .Site.Pages "Type" "=" "uses"}}
+        <h2 id="{{ .Slug }}">{{ .Title }} <small>(updated {{ .Params.date.Format "2006-01-02" }})</small></h2>
+        {{ .Content }}
+        {{ end }}
+
         {{range where .Site.Pages "Type" "=" "nope"}}
         <h2 id="{{ .Slug }}">{{ .Title }}</h2>
         {{ .Content }}

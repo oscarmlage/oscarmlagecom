@@ -5,6 +5,13 @@
 
     <p>Check out what I'm listening to right now, featuring my latest Spotify albums and tracks.</p>
 
+    <p class="banner-rss">
+        <a href="/medialog/listening/index.xml" class="color-rss">
+            {{ partial "svg/rss.html" . }}
+            Subscribe to my listening feed.
+        </a>
+    </p>
+
     {{ if .Site.Taxonomies.tags.listening }}
     <div class="media-grid square">
         {{ range sort (.Site.Taxonomies.tags.listening).Pages ".Params.Date" "desc" }}

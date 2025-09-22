@@ -311,6 +311,7 @@ template {
     --transition-ease-in-out: cubic-bezier(.4, 0, .2, 1);
     --color-stars: #f39c12;
     --color-stars-off: #e0e0e0;
+    --color-rss: rgb(242, 101, 34);
 
  /* ==========================================================================
     Font sizes
@@ -357,6 +358,7 @@ template {
     --font-heading: var(--fw-bold) var(--font-size-3) / 1.25 var(--font-brand);
     --font-body: var(--font-size-2) / 1.6 var(--font-ui);
     --font-caption: var(--font-size-1) / 1.5 var(--font-brand);
+    --border-radius: 4px;
     --border-radius-none: 0;
     --border-radius-slight: 4px;
     --border-radius-medium: 8px;
@@ -448,6 +450,20 @@ p code {
 }
 i, em {
     font-style: italic;
+}
+.banner-rss {
+    border: 1px solid var(--color-rss);
+    border-radius: 0.25rem;
+    padding: 12px;
+}
+.banner-rss a {
+        font-size: 14px;
+        text-underline-offset: 0.25rem;
+    }
+.color-rss svg {
+    width: 16px;
+    height: 16px;
+    vertical-align: middle;
 }
 /* TODO: move this  */
 .wrapper {
@@ -957,8 +973,11 @@ i, em {
         padding: 5px 0 5px 5px;
         bottom: 0;
         box-sizing: border-box;
-        width: 100%;
         position: absolute;
+        max-width: calc(100% - (var(--spacing-1)*2));
+        bottom: var(--spacing-1);
+        left: var(--spacing-1);
+        border-radius: var(--border-radius);
     }
 .media-grid .meta-text .gridheader, .media-grid .meta-text .subheader {
         color: var(--color-lightest);
@@ -978,7 +997,8 @@ i, em {
         transition-property: border-color;
         transition-timing-function: var(--transition-ease-in-out);
         transition-duration:.3s;
-        width: 100%;
+        width: 99%;
+        border-radius: var(--border-radius);
     }
 /* Specific pages */
 h2 small {

@@ -3,6 +3,13 @@
 <main class="main wrapper">
     <h1>Log</h1>
 
+    <p class="banner-rss">
+        <a href="/microposts/index.xml" class="color-rss">
+            {{ partial "svg/rss.html" . }}
+            Subscribe to my medialog feed.
+        </a>
+    </p>
+
     <div class="posts-container micropost-container">
         {{ range (.Paginate (where .Pages "Type" "microposts")).Pages }}
             <div class="post-detail micropost-detail">

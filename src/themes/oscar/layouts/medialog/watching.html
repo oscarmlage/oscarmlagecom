@@ -5,6 +5,13 @@
 
     <p>Discover all the TV shows and movies I've been watching, neatly organized for easy browsing and updates.</p>
 
+    <p class="banner-rss">
+        <a href="/medialog/watching/index.xml" class="color-rss">
+            {{ partial "svg/rss.html" . }}
+            Subscribe to my watching feed.
+        </a>
+    </p>
+
     {{ if .Site.Taxonomies.tags.watching }}
     <div class="media-grid horizontal">
         {{ range sort (.Site.Taxonomies.tags.watching).Pages ".Params.Date" "desc" }}

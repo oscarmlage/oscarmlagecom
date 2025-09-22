@@ -33,6 +33,7 @@
     --transition-ease-in-out: cubic-bezier(.4, 0, .2, 1);
     --color-stars: #f39c12;
     --color-stars-off: #e0e0e0;
+    --color-rss: rgb(242, 101, 34);
 
  /* ==========================================================================
     Icon colors
@@ -65,6 +66,7 @@
  /* ==========================================================================
     Borders
     ========================================================================== */
+    --border-radius: 4px;
     --border-radius-none: 0;
     --border-radius-slight: 4px;
     --border-radius-medium: 8px;

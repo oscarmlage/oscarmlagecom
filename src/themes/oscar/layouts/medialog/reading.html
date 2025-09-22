@@ -5,6 +5,13 @@
 
     <p>Here’s what I’m currently reading, with the aim of growing my reading list year after year.</p>
 
+    <p class="banner-rss">
+        <a href="/medialog/reading/index.xml" class="color-rss">
+            {{ partial "svg/rss.html" . }}
+            Subscribe to my reading feed.
+        </a>
+    </p>
+
     {{ if .Site.Taxonomies.tags.reading }}
     <div class="media-grid vertical">
         {{ range (sort (.Site.Taxonomies.tags.reading).Pages ".Params.Date" "desc") }}

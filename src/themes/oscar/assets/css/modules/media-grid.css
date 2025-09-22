@@ -83,8 +83,11 @@
         padding: 5px 0 5px 5px;
         bottom: 0;
         box-sizing: border-box;
-        width: 100%;
         position: absolute;
+        max-width: calc(100% - (var(--spacing-1)*2));
+        bottom: var(--spacing-1);
+        left: var(--spacing-1);
+        border-radius: var(--border-radius);
     }
 
     .media-grid .meta-text .gridheader, .media-grid .meta-text .subheader {
@@ -107,5 +110,6 @@
         transition-property: border-color;
         transition-timing-function: var(--transition-ease-in-out);
         transition-duration:.3s;
-        width: 100%;
+        width: 99%;
+        border-radius: var(--border-radius);
     }
