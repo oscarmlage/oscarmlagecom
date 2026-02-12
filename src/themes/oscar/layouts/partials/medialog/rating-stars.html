@@ -1,0 +1,28 @@
+{{/*
+  Partial: rating-stars.html
+  Usage: {{ partial "medialog/rating-stars.html" . }}
+  Expects: .Params.Rate (0-10)
+*/}}
+{{ if .Params.Rate }}
+    {{ $rate := div .Params.Rate 2 }}
+    <div class="stars">
+      {{ $fullStars := int $rate }}
+      {{ $decimal := sub $rate $fullStars }}
+      {{ $halfStar := gt $decimal 0.25 }}
+      {{ $emptyStars := sub 5 (add $fullStars (cond $halfStar 1 0)) }}
+
+      {{ range seq 1 $fullStars }}
+        <span class="star full">★</span>
+      {{ end }}
+
+      {{ if $halfStar }}
+        <span class="star half">★</span>
+      {{ end }}
+
+      {{ if gt $emptyStars 0 }}
+        {{ range seq 1 $emptyStars }}
+          <span class="star empty">★</span>
+        {{ end }}
+      {{ end }}
+    </div>
+{{ end }}

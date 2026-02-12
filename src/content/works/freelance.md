@@ -3,10 +3,10 @@ title: Freelance
 job: Analyst, DevOps and Software Engineer
 location: Remote
 start: 2012
-end: present
+end: 2025
 tags: [Python, Flask, Pyramid, ZODB, Django, Go, Gorm, PHP, Laravel, CI/CD, Ansible, Docker, Falcon, Swagger, Git, Zabbix, Munin, Monit, RRD, Fabric, Paramiko]
 type: work
-order: 50
+order: 40
 goals:
   - Provided professional expertise in Python, Go, and PHP development to diverse clientele.
   - Built and maintained projects written in various libraries, environments, and stacks.

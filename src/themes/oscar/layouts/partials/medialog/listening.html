@@ -3,35 +3,14 @@
                 <div class="meta-text"><div class="gridheader">{{ .Title }}</div>
                 <div class="subheader">
                 <!-- Stars -->
-                  {{ $rate := div .Params.Rate 2 }}
-
-                  <div class="stars">
-                    {{ $fullStars := int $rate }}
-                    {{ $decimal := sub $rate $fullStars }}
-                    {{ $halfStar := gt $decimal 0.25 }}
-                    {{ $emptyStars := sub 5 (add $fullStars (cond $halfStar 1 0)) }}
-
-                    {{ range seq 1 $fullStars }}
-                      <span class="star full">★</span>
-                    {{ end }}
-
-                    {{ if $halfStar }}
-                      <span class="star half">★</span>
-                    {{ end }}
-
-                    {{ if gt $emptyStars 0 }}
-                      {{ range seq 1 $emptyStars }}
-                        <span class="star empty">★</span>
-                      {{ end }}
-                    {{ end }}
-                  </div>
+                  {{ partial "medialog/rating-stars.html" . }}
                 </div>
 
               </div>
               <img srcset="
-                        /medialog/listening/_assets/{{ .Params.Image320 }} 200w,
-                        /medialog/listening/_assets/{{ .Params.Image640 }} 400w,
-                        /medialog/listening/_assets/{{ .Params.Image1024 }} 800w
+                        /{{ .File.Dir }}_assets/{{ .Params.img_square }} 200w,
+                        /{{ .File.Dir }}_assets/{{ .Params.img_square }} 400w,
+                        /{{ .File.Dir }}_assets/{{ .Params.img_square }} 800w
                     "
                     sizes="
                         (max-width: 450px) 200px,
@@ -39,7 +18,7 @@
                         (max-width: 1000px) 800px,
                         800px
                     "
-                    src="/medialog/listening/_assets/{{ .Params.Image320 }}"
+                    src="/{{ .File.Dir }}_assets/{{ .Params.img_square }}"
                     alt="{{ .Title }}" loading="lazy" decoding="async" />
               </div>
             </a>

@@ -1,0 +1,14 @@
+{{/*
+  Partial: progress-bar.html
+  Usage: {{ partial "medialog/progress-bar.html" . }}
+  Expects: .Params.Progress (string, e.g. "80%" or "100%")
+*/}}
+{{ if .Params.Progress }}
+  <div class="subheader">
+    {{ if not (eq .Params.Progress 100) }}
+      <div class="progress-bar">
+        <div class="progress" style="width: {{ .Params.Progress }}%;"></div>
+      </div>
+    {{ end }}
+  </div>
+{{ end }}

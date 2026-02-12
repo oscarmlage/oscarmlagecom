@@ -1,5 +1,5 @@
 ---
-title: "Reading"
-layout: "reading"
+title: Reading
+layout: reading
 ---
 
