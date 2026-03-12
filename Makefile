@@ -20,3 +20,6 @@ up: build
 buildall: build
 	cp -r src/public/ root@151.80.35.190:/root/docker/docker-static-nginx-oscarmlage/_data/
 
+clean-ds:
+	find . -name '.DS_Store' -type f -delete
+
