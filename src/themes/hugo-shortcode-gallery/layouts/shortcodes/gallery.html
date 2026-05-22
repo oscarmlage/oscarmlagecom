@@ -83,11 +83,13 @@ Ordinal: {{ .Ordinal}}
 -->
 {{ $galleryId := (printf "gallery-%v-%v" .Page.File.UniqueID .Ordinal)}}
 {{ $galleryWrapperId := (printf "gallery-%v-%v-wrapper" .Page.File.UniqueID .Ordinal)}}
+{{ $supportedSubTypes := slice "avif" "bmp" "gif" "jpeg" "jpg" "png" "tiff" "webp" }}
 
 <div id="{{ $galleryWrapperId }}" class="gallery-wrapper">
 <div id="{{ $galleryId }}" class="justified-gallery">
 	{{ range $original := sort $images "Name" $sortOrder}}
 		{{ if eq $original.ResourceType "image" }}
+			{{ if in $supportedSubTypes $original.MediaType.SubType }}
 		
 			{{/* Get metadata from sidecar file, if present. Else an empty dictionary is used. */}}	
 			{{ $metaFileName := print $original.Name ".meta"}}
@@ -99,13 +101,11 @@ Ordinal: {{ .Ordinal}}
 				{{ $metadata = dict }}
 			{{ end }}
 
-			{{/* If the image has exif informations, those are merged together with the metadata from the file */}}
-			{{ if in "jpg jpeg tiff" $original.MediaType.SubType }}
-				{{ with $original.Exif }}
-					{{ $metadata = merge .Tags $metadata }}
+			{{ with $original.Exif }}
+				{{ with .Tags.Orientation }}
+					{{ $metadata = merge (dict "Orientation" .) $metadata }}
 				{{ end }}
 			{{ end }}
-
 
 			{{/* Compute rotation to correct orientation of thumbnail (and downscaled gallery images) in case the exif contains a value for orientation. See issue #22. */}}
 			{{ $rotation := "" }}
@@ -191,6 +191,7 @@ Ordinal: {{ .Ordinal}}
 					>
 				</a>
 			</div>
+			{{ end }}
 		{{ end }}
 	{{ end }}
 </div>
