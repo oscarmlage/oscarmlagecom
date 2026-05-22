@@ -1,0 +1,66 @@
+{{ define "main" }}
+
+<main class="main wrapper">
+    <h1>Medialog</h1>
+
+    <p class="intro"><strong>This is my medialog</strong>, where you can find the most recent TV shows, movies, books, music, and video games I've been enjoying. This collection is organized for your convenience, making it easy to explore my latest discoveries and favorites.</p>
+
+    {{ if .Site.Taxonomies.tags.watching }}
+    <h2>
+        <a href="/medialog/watching/">Watching</a>
+        <a href="/medialog/watching/index.xml" class="color-rss">
+            {{ partial "svg/rss.html" . }}
+        </a>
+    </h2>
+    <div class="media-grid horizontal">
+        {{ range first 6 (sort (.Site.Taxonomies.tags.watching).Pages ".Params.Date" "desc") }}
+            {{ partial "medialog/watching.html" . }}
+        {{ end }}
+    </div>
+    {{ end }}
+
+    {{ if .Site.Taxonomies.tags.reading }}
+    <h2>
+        <a href="/medialog/reading/">Reading</a>
+        <a href="/medialog/reading/index.xml" class="color-rss">
+            {{ partial "svg/rss.html" . }}
+        </a>
+    </h2>
+    <div class="media-grid vertical">
+        {{ range first 4 (sort (.Site.Taxonomies.tags.reading).Pages ".Params.Date" "desc") }}
+            {{ partial "medialog/reading.html" . }}
+        {{ end }}
+    </div>
+    {{ end }}
+
+    {{ if .Site.Taxonomies.tags.listening }}
+    <h2>
+        <a href="/medialog/listening/">Listening</a>
+        <a href="/medialog/listening/index.xml" class="color-rss">
+            {{ partial "svg/rss.html" . }}
+        </a>
+    </h2>
+    <div class="media-grid square">
+        {{ range first 4 (sort (.Site.Taxonomies.tags.listening).Pages ".Params.Date" "desc") }}
+            {{ partial "medialog/listening.html" . }}
+        {{ end }}
+    </div>
+    {{ end }}
+
+    {{ if .Site.Taxonomies.tags.playing }}
+    <h2>
+        <a href="/medialog/playing/">Playing</a>
+        <a href="/medialog/playing/index.xml" class="color-rss">
+            {{ partial "svg/rss.html" . }}
+        </a>
+    </h2>
+    <div class="media-grid vertical">
+        {{ range first 4 (sort (.Site.Taxonomies.tags.playing).Pages ".Params.Date" "desc") }}
+            {{ partial "medialog/playing.html" . }}
+        {{ end }}
+    </div>
+    {{ end }}
+
+</main>
+
+{{ end }}
