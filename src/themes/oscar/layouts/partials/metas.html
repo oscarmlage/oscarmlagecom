@@ -10,9 +10,8 @@
 		<title>{{- if .IsHome }}{{ .Site.Title }}{{- else }}{{ .Title }} &middot; {{ .Site.Title }}{{- end }}</title>
 
 		<!-- CSS -->
-		{{- $inServerMode := .Site.IsServer }}
         {{ $options := dict "config" "assets/css/postcss.config.js" }}
-		{{ $style := resources.Get "css/main.css" | resources.PostCSS $options }}
+		{{ $style := resources.Get "css/main.css" | css.PostCSS $options }}
 		<link rel="stylesheet" href="{{ $style.RelPermalink }}">
 		{{ range .Site.Params.css -}}
 			<link rel="stylesheet" href="{{ . | relURL }}">
@@ -36,13 +35,13 @@
         <meta itemprop="description" content="{{ .Content | plainify | htmlUnescape | truncate 100 }}">
         <meta name="description" content="{{ .Content | plainify | htmlUnescape | truncate 100 }}">
         <meta itemprop="name" content="{{ .Title }}">
-        <meta itemprop="url" content="{{ .URL | absURL }}">
+        <meta itemprop="url" content="{{ .Permalink }}">
         <meta itemprop="datePublished" content="{{ .PublishDate }}">
         <meta itemprop="dateModified" content=" {{ .Lastmod }}">
         {{ if eq .Name "oscarmlage" }}
-        <meta itemprop="image" content="{{ .URL | absURL }}apple-touch-icon-png">
+        <meta itemprop="image" content="{{ .Permalink }}apple-touch-icon-png">
         {{- else }}
-        <meta itemprop="image" content="{{ .URL | absURL }}{{ .Params.image }}">
+        <meta itemprop="image" content="{{ .Permalink }}{{ .Params.image }}">
         {{- end }}
 
         <!-- Open Graph -->
@@ -50,22 +49,22 @@
         <meta property="og:site_name" content="{{ .Site.Title }}">
         <meta property="og:title" content="{{ .Title }}">
         <meta property="og:description" content="{{ .Content | plainify | htmlUnescape | truncate 100 }}">
-        <meta property="og:url" content="{{ .URL | absURL }}">
+        <meta property="og:url" content="{{ .Permalink }}">
         {{- if eq .Name "oscarmlage" }}
-        <meta property="og:image" content="{{ .URL | absURL }}apple-touch-icon.png">
+        <meta property="og:image" content="{{ .Permalink }}apple-touch-icon.png">
         {{- else }}
-        <meta property="og:image" content="{{ .URL | absURL }}{{ .Params.image }}">
+        <meta property="og:image" content="{{ .Permalink }}{{ .Params.image }}">
         {{- end }}
 
         <!-- Twitter card -->
         <meta name="twitter:card" content="summary">
-        <meta name="twitter:url" content="{{ .URL | absURL }}">
+        <meta name="twitter:url" content="{{ .Permalink }}">
         <meta name="twitter:site" content="{{ .Site.Title }}">
         <meta name="twitter:title" content="{{ .Title }}">
         <meta name="twitter:description" content="{{ .Content | plainify | htmlUnescape | truncate 100 }}">
         {{- if eq .Name "oscarmlage" }}
-        <meta name="twitter:image" content="{{ .URL | absURL }}apple-touch-icon.png">
+        <meta name="twitter:image" content="{{ .Permalink }}apple-touch-icon.png">
         {{- else }}
-        <meta name="twitter:image" content="{{ .URL | absURL }}{{ .Params.image }}">
+        <meta name="twitter:image" content="{{ .Permalink }}{{ .Params.image }}">
         {{- end }}
 	</head>

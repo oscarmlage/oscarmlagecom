@@ -3,7 +3,7 @@
     {{- if .Params.Author }}
         {{ .Params.Author }}
     {{- else }}
-        {{ .Site.Author.name }}
+        {{ .Site.Params.author.name | default "oscarmlage" }}
     {{- end }}
 
     {{- if .PublishDate }}
