@@ -1,0 +1,10 @@
+FROM ghcr.io/gohugoio/hugo:v0.160.1
+
+USER root
+
+RUN apk add --no-cache nodejs npm \
+    && npm install -g postcss postcss-cli postcss-import postcss-custom-media postcss-nested
+
+ENV NODE_PATH=/usr/local/lib/node_modules
+
+USER hugo

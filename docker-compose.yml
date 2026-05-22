@@ -1,18 +1,22 @@
-version: "3.1"
-
 services:
 
   build:
-    # image: klakegg/hugo:0.88.0-ext-alpine
-    image: oscarmlage/hugo:0.88.0-ext-alpine
+    image: oscarmlage/hugo:v0.160.1-node
+    build:
+      context: .
+      dockerfile: Dockerfile.hugo
     command: build
+    working_dir: /src
     volumes:
       - "${PWD}/src:/src"
 
   serve:
-    # image: klakegg/hugo:0.88.0-ext-alpine
-    image: oscarmlage/hugo:0.88.0-ext-alpine
-    command: server -vv
+    image: oscarmlage/hugo:v0.160.1-node
+    build:
+      context: .
+      dockerfile: Dockerfile.hugo
+    command: server --bind 0.0.0.0 --port 1313
+    working_dir: /src
     volumes:
       - "${PWD}/src:/src"
     ports:
