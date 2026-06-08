@@ -1,6 +1,6 @@
 .DEFAULT_GOAL := help
 
-.PHONY: all help build serve bash shell deploy sync up buildall clean-ds
+.PHONY: all help build serve bash shell deploy sync up buildall clean-ds medialog-add medialog-add-deploy
 
 all: build ## Alias for build
 
@@ -29,3 +29,23 @@ buildall: build ## Build and copy to remote server
 
 clean-ds: ## Remove .DS_Store files
 	find . -name '.DS_Store' -type f -delete
+
+medialog-add: ## Add/enrich/export a medialog item, then build [category title rate date]
+	cd ../medialog && $(MAKE) medialog-add-hugo \
+		category="$(category)" \
+		title="$(title)" \
+		rate="$(rate)" \
+		date="$(date)" \
+		released="$(released)" \
+		progress="$(progress)" \
+		episode="$(episode)" \
+		thoughts="$(thoughts)" \
+		link="$(link)" \
+		no_fill="$(no_fill)" \
+		no_export="$(no_export)" \
+		overwrite_images="$(overwrite_images)" \
+		force_new="$(force_new)"
+	$(MAKE) build
+
+medialog-add-deploy: medialog-add ## Add a medialog item, build and deploy
+	$(MAKE) up
