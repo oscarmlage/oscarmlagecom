@@ -2,8 +2,8 @@
 title: "Daemon"
 link: "https://en.wikipedia.org/wiki/Daemon_(novel)"
 released: 2020-01-01 00:00:00
-date: 2025-09-03
-rate: 7.50
+date: 2025-09-03 00:00:00
+rate: 7.00
 progress: 40
 img_portrait: daemon-web-portrait.jpg
 img_landscape: daemon-web-landscape.jpg
