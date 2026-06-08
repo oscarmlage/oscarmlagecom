@@ -15,7 +15,7 @@ services:
     build:
       context: .
       dockerfile: Dockerfile.hugo
-    command: server --bind 0.0.0.0 --port 1313
+    command: server --bind 0.0.0.0 --port 1313 --baseURL http://localhost:1313
     working_dir: /src
     volumes:
       - "${PWD}/src:/src"
