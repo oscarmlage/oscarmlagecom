@@ -2,9 +2,9 @@
 title: "Hollow Knight"
 link: "https://www.igdb.com/games/hollow-knight"
 released: 2017-02-24 00:00:00
-date: 2025-10-10
+date: 2025-10-10 00:00:00
 rate: 9.00
-progress: 40
+progress: 14
 img_portrait: hollow-knight-web-portrait.jpg
 img_landscape: hollow-knight-web-landscape.jpg
 img_square: hollow-knight-web-square.jpg
