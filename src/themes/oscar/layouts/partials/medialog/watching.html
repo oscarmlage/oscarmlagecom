@@ -10,7 +10,11 @@
                   {{ partial "medialog/rating-stars.html" . }}
                 </div>
 
-                {{ partial "medialog/progress-bar.html" . }}
+                {{ if .Params.episode }}
+                  {{ partial "medialog/episode-badge.html" . }}
+                {{ else }}
+                  {{ partial "medialog/progress-bar.html" . }}
+                {{ end }}
 
               </div>
               <img srcset="

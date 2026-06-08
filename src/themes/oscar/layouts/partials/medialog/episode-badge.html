@@ -1,0 +1,10 @@
+{{/*
+  Partial: episode-badge.html
+  Usage: {{ partial "medialog/episode-badge.html" . }}
+  Expects: .Params.episode / .Params.Episode, e.g. S02E11
+*/}}
+{{ with .Params.episode }}
+  <div class="subheader">
+    <span class="episode-badge">{{ . }}</span>
+  </div>
+{{ end }}
