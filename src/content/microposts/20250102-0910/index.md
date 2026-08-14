@@ -4,6 +4,7 @@ date: Thu, 02 Jan 2025 09:10:54 +0000
 draft: false
 tags: [hny, yawn]
 image: 
+micropost_type: thought
 ---
 
 I'm late, but [#HNY](https://mastodon.bofhers.es/tags/HNY) everyone [#yawn](https://mastodon.bofhers.es/tags/yawn)

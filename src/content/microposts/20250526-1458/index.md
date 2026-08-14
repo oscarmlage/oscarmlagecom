@@ -4,6 +4,7 @@ date: Mon, 26 May 2025 14:58:30 +0000
 draft: false
 tags: []
 image: 
+micropost_type: thought
 ---
 
 Lately things have been a bit... exciting: instability, workplace nonsense, imposter syndrome flaring up. Too many uncontrollable variables teaming up to make life more \*interesting\*.

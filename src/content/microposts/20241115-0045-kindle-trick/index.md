@@ -3,6 +3,7 @@ title: kindle-trick
 date: 2024-11-15 00:45:52  +0200
 draft: false
 tags: micropost
+micropost_type: til
 ---
 
 [#Kindle](https://mastodon.bofhers.es/tags/Kindle) Book, tap near the top of the page to open up the Menu. Then, tap on the “Aa” symbol.  

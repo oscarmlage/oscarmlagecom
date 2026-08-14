@@ -4,6 +4,7 @@ date: Tue, 07 Jan 2025 21:42:04 +0000
 draft: false
 tags: []
 image: 
+micropost_type: thought
 ---
 
 And the day came when a part of the magic and innocence of Christmas was broken. 12 years old, and it feels like something inside me has been torn away.

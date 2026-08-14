@@ -3,6 +3,7 @@ title: 20230331-1800
 date: 2023-03-31 18:00:29 +00:00
 draft: false
 tags: [micropost]
+micropost_type: pic
 image:
 ---
 

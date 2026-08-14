@@ -3,6 +3,7 @@ title: 20231004-1453
 date: 2023-10-04 14:53:56 +00:00
 draft: false
 tags: [micropost]
+micropost_type: pic
 image:
 ---
 

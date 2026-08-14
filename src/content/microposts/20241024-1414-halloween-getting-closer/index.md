@@ -3,6 +3,7 @@ title: halloween-getting-closer
 date: 2024-10-23 09:09:34  +0200
 draft: false
 tags: micropost
+micropost_type: pic
 ---
 
 Halloween is getting closer

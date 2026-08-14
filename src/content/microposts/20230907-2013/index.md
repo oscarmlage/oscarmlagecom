@@ -3,6 +3,7 @@ title: 20230907-2013
 date: 2023-09-07 20:13:52 +00:00
 draft: false
 tags: [micropost]
+micropost_type: thought
 image:
 ---
 

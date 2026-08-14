@@ -3,6 +3,7 @@ title: 20221108-1945
 date: 2022-11-08 19:45:45 +00:00
 draft: false
 tags: [micropost]
+micropost_type: pic
 image:
 ---
 

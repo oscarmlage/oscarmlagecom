@@ -3,6 +3,7 @@ title: 20230925-1906
 date: 2023-09-25 19:06:43 +00:00
 draft: false
 tags: [micropost]
+micropost_type: til
 image:
 ---
 

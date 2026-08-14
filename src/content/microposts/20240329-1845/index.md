@@ -3,6 +3,7 @@ title: 20240329-1845
 date: Fri, 29 Mar 2024 18:45:32 +0000
 draft: false
 tags: [retrogaming, micropost, vintagefun]
+micropost_type: pic
 image: 
 ---
 

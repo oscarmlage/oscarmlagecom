@@ -4,6 +4,7 @@ date: Thu, 18 Sep 2025 11:09:18 +0000
 draft: false
 tags: []
 image: 
+micropost_type: thought
 ---
 
 Are you telling me Hackers (the movie) got 30?!

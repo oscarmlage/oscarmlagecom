@@ -3,6 +3,7 @@ title: gardening
 date: 2024-09-09 12:48:29  +0200
 draft: false
 tags: micropost
+micropost_type: pic
 ---
 
 It’s been a while since the last [#gardening](https://mastodon.bofhers.es/tags/gardening) session due to the construction work, but it finally happened yesterday.

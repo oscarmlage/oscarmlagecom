@@ -3,6 +3,7 @@ title: friends-joy
 date: 2024-11-16 11:46:44  +0200
 draft: false
 tags: micropost
+micropost_type: thought
 ---
 
 I feel like we closed a door yesterday that had been open for six years. Grateful for everything I’ve learned and sad because I fear it will be a while before we can actively work together again.

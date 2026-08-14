@@ -3,6 +3,7 @@ title: 20221010-1815
 date: 2022-10-10 18:15:42 +00:00
 draft: false
 tags: [micropost]
+micropost_type: til
 image:
 ---
 

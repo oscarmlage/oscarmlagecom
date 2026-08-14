@@ -4,6 +4,7 @@ date: Thu, 23 Jan 2025 12:26:13 +0000
 draft: false
 tags: []
 image: 
+micropost_type: thought
 ---
 
 I’m convinced that —at least in my case— sleeping well and getting proper rest are fundamental factors for my mood. And if there’s some sunshine too, that’s the cherry on top \\o/

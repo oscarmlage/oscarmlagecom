@@ -4,6 +4,7 @@ date: Tue, 04 Feb 2025 12:01:11 +0000
 draft: false
 tags: []
 image: 
+micropost_type: til
 ---
 
 Oh, I was missing the smoking gun.

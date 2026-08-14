@@ -3,6 +3,7 @@ title: 20231013-1625
 date: 2023-10-13 16:25:36 +00:00
 draft: false
 tags: [micropost]
+micropost_type: pic
 image:
 ---
 

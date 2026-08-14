@@ -3,6 +3,7 @@ title: 20230112-1101
 date: 2023-01-12 11:01:35 +00:00
 draft: false
 tags: [micropost]
+micropost_type: thought
 image:
 ---
 

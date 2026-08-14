@@ -3,6 +3,7 @@ title: 20231029-1834
 date: 2023-10-29 18:34:05 +00:00
 draft: false
 tags: [micropost]
+micropost_type: pic
 image:
 ---
 

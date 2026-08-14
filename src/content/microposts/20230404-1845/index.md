@@ -3,6 +3,7 @@ title: 20230404-1845
 date: 2023-04-04 18:45:04 +00:00
 draft: false
 tags: [micropost]
+micropost_type: pic
 image:
 ---
 

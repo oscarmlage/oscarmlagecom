@@ -3,6 +3,7 @@ title: 20230510-1956
 date: 2023-05-10 19:56:50 +00:00
 draft: false
 tags: [micropost]
+micropost_type: thought
 image:
 ---
 

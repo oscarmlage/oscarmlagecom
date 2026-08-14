@@ -3,6 +3,7 @@ title: 20230127-2126
 date: 2023-01-27 21:26:18 +00:00
 draft: false
 tags: [micropost]
+micropost_type: pic
 image:
 ---
 

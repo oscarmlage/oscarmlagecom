@@ -3,6 +3,7 @@ title: 20240408-1103
 date: Mon, 08 Apr 2024 11:03:31 +0000
 draft: false
 tags: [micropost, hugo]
+micropost_type: thought
 image: 
 ---
 

@@ -3,6 +3,7 @@ title: 20231201-1940
 date: 2023-12-01 19:40:50 +00:00
 draft: false
 tags: [micropost]
+micropost_type: til
 image:
 ---
 

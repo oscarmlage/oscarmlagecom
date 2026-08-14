@@ -3,6 +3,7 @@ title: 20221118-2224
 date: 2022-11-18 22:24:02 +00:00
 draft: false
 tags: [micropost]
+micropost_type: til
 image:
 ---
 

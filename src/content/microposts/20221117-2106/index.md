@@ -3,6 +3,7 @@ title: 20221117-2106
 date: 2022-11-17 21:06:44 +00:00
 draft: false
 tags: [micropost]
+micropost_type: til
 image:
 ---
 

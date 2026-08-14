@@ -3,6 +3,7 @@ title: 20221202-0924
 date: 2022-12-02 09:24:59 +00:00
 draft: false
 tags: [micropost]
+micropost_type: thought
 image:
 ---
 

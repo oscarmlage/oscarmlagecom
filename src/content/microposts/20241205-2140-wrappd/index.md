@@ -3,6 +3,7 @@ title: wrappd
 date: 2024-12-05 21:40:54  +0200
 draft: false
 tags: micropost
+micropost_type: til
 ---
 
 Everyone has the right to have their own [#wrapped](https://mastodon.bofhers.es/tags/wrapped) and us console-lovers can't be left behind.

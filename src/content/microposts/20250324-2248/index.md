@@ -4,6 +4,7 @@ date: Mon, 24 Mar 2025 22:48:21 +0000
 draft: false
 tags: []
 image: 
+micropost_type: thought
 ---
 
 “Es que Debian usa binarios precompilados y eso no es nada óptimo mimimi”. ¡Madre mía qué gilipollas éramos cuando éramos gilipollas principiantes!.

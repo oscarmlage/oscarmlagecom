@@ -3,6 +3,7 @@ title: 20230918-1534
 date: 2023-09-18 15:34:55 +00:00
 draft: false
 tags: [micropost]
+micropost_type: til
 image:
 ---
 

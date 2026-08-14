@@ -3,6 +3,7 @@ title: construction-work
 date: 2024-06-27 13:09:28  +0200
 draft: false
 tags: micropost
+micropost_type: pic
 ---
 
 Being my first experience in something like this, I didn't realize how difficult construction work could be. Tough times.

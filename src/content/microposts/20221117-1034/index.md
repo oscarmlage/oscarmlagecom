@@ -3,6 +3,7 @@ title: 20221117-1034
 date: 2022-11-17 10:34:33 +00:00
 draft: false
 tags: [micropost]
+micropost_type: pic
 image:
 ---
 

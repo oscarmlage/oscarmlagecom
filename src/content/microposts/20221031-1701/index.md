@@ -3,6 +3,7 @@ title: 20221031-1701
 date: 2022-10-31 17:01:40 +00:00
 draft: false
 tags: [micropost]
+micropost_type: pic
 image:
 ---
 

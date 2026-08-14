@@ -3,6 +3,7 @@ title: fluorescent-tube-vs-bulbs
 date: 2024-05-20 19:18:27  +0200
 draft: false
 tags: micropost
+micropost_type: til
 ---
 
 Today I learned how to modify a fluorescent tube ceiling light to replace it with two LED bulbs.

@@ -3,6 +3,7 @@ title: 20230304-1629
 date: 2023-03-04 16:29:28 +00:00
 draft: false
 tags: [micropost]
+micropost_type: pic
 image:
 ---
 

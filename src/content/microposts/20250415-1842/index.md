@@ -4,6 +4,7 @@ date: Tue, 15 Apr 2025 18:42:39 +0000
 draft: false
 tags: []
 image: 
+micropost_type: thought
 ---
 
 I just saw a website with a vscode-style minimap in the sidebar. We truly deserve the world we live in.

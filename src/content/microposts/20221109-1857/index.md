@@ -3,6 +3,7 @@ title: 20221109-1857
 date: 2022-11-09 18:57:35 +00:00
 draft: false
 tags: [micropost]
+micropost_type: thought
 image:
 ---
 

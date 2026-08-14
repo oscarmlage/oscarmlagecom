@@ -4,6 +4,7 @@ date: Tue, 28 Jan 2025 10:49:30 +0000
 draft: false
 tags: []
 image: 
+micropost_type: thought
 ---
 
 Sometimes I feel bad for not being able to keep up with the TL. And it should be the opposite.

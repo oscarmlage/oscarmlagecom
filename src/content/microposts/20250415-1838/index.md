@@ -4,6 +4,7 @@ date: Tue, 15 Apr 2025 18:38:17 +0000
 draft: false
 tags: [thoughts]
 image: 
+micropost_type: thought
 ---
 
 My biggest issue with the iPad is the nonexistent web dev tools. Seriously, how hard could it be to add some basic developer features to Safari on iPad?

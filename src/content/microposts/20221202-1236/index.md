@@ -3,6 +3,7 @@ title: 20221202-1236
 date: 2022-12-02 12:36:28 +00:00
 draft: false
 tags: [micropost]
+micropost_type: pic
 image:
 ---
 

@@ -4,6 +4,7 @@ date: Fri, 28 Mar 2025 22:04:06 +0000
 draft: false
 tags: [nvim]
 image: 
+micropost_type: til
 ---
 
 Finally! [#nvim](https://mastodon.bofhers.es/tags/nvim)

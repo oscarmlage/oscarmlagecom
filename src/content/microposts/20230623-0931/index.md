@@ -3,6 +3,7 @@ title: 20230623-0931
 date: 2023-06-23 09:31:41 +00:00
 draft: false
 tags: [micropost]
+micropost_type: pic
 image:
 ---
 

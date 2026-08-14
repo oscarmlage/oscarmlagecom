@@ -3,6 +3,7 @@ title: instancia-bofhers-mastodon
 date: 2024-11-12 11:31:51  +0200
 draft: false
 tags: micropost
+micropost_type: thought
 ---
 
 En nuestra instancia [#BOFHers](https://mastodon.bofhers.es/tags/BOFHers) de [#Mastodon](https://mastodon.bofhers.es/tags/Mastodon) ([https://mastodon.bofhers.es](https://mastodon.bofhers.es/ "https://mastodon.bofhers.es/")) buscamos soluciones para mantener la actividad. Con 80 usuarios y 300+ GB de disco, en una VM de 8 GB RAM y 8 vCPUs, las actualizaciones son cada vez más complicadas, requiriendo casi el doble de espacio en disco, a pesar de nuestras tareas programadas para reducir cachés, assets y previews.

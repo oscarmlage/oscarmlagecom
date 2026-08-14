@@ -3,6 +3,7 @@ title: 20240219-1844
 date: 2024-02-19 18:44:52 +00:00
 draft: false
 tags: [micropost]
+micropost_type: pic
 image:
 ---
 

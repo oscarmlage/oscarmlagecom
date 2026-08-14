@@ -3,6 +3,7 @@ title: 20240319-2010
 date: Tue, 19 Mar 2024 20:10:40 +0000
 draft: false
 tags: [micropost, praise]
+micropost_type: thought
 image: 
 ---
 

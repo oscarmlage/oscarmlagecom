@@ -3,6 +3,7 @@ title: obsidian-templater-gitea
 date: 2024-11-11 21:21:50  +0200
 draft: false
 tags: micropost
+micropost_type: til
 ---
 
 [#TIL](https://mastodon.bofhers.es/tags/TIL) that with [#Obsidian](https://mastodon.bofhers.es/tags/Obsidian) and the [#Templater](https://mastodon.bofhers.es/tags/Templater) plugin, it’s possible to automatically create a new note and a related issue in [#Gitea](https://mastodon.bofhers.es/tags/Gitea) or [#Forgejo](https://mastodon.bofhers.es/tags/Forgejo) at the same time. Made my day.

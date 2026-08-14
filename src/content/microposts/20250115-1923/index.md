@@ -4,6 +4,7 @@ date: Wed, 15 Jan 2025 19:23:58 +0000
 draft: false
 tags: []
 image: 
+micropost_type: thought
 ---
 
 I have to say, today hasn’t been a great day around here. Interestingly, rest days tend to be worse overall... but I can’t train 5 days in a row.

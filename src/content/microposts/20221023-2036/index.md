@@ -3,6 +3,7 @@ title: 20221023-2036
 date: 2022-10-23 20:36:18 +00:00
 draft: false
 tags: [micropost]
+micropost_type: pic
 image:
 ---
 

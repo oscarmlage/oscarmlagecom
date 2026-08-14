@@ -4,6 +4,7 @@ date: Mon, 31 Mar 2025 17:32:08 +0000
 draft: false
 tags: [nvim, vim, gruvbox]
 image: 
+micropost_type: thought
 ---
 
 Gruvbox feels like coming home for Christmas.

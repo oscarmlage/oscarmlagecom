@@ -6,6 +6,7 @@ title: yep-its-a-laptop
 date: 2024-09-03 14:12:28  +0200
 draft: false
 tags: micropost
+micropost_type: pic
 ---
 
 Yep, it's a laptop. I'm always wondering whether I should get a desktop instead of a laptop since I use it mainly—95% of the time—at a desk.

@@ -3,6 +3,7 @@ title: 20230327-1945
 date: 2023-03-27 19:45:09 +00:00
 draft: false
 tags: [micropost]
+micropost_type: til
 image:
 ---
 

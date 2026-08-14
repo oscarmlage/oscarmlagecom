@@ -3,6 +3,7 @@ title: 20231220-1111
 date: 2023-12-20 11:11:47 +00:00
 draft: false
 tags: [micropost]
+micropost_type: pic
 image:
 ---
 

@@ -3,6 +3,7 @@ title: 20221126-1153
 date: 2022-11-26 11:53:00 +00:00
 draft: false
 tags: [micropost]
+micropost_type: thought
 image:
 ---
 

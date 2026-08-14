@@ -4,6 +4,7 @@ date: Wed, 18 Dec 2024 23:51:21 +0000
 draft: false
 tags: []
 image: 
+micropost_type: thought
 ---
 
 Today I needed a day off the keyboard, so I took. It wasn’t the best, but I think it worked pretty well.

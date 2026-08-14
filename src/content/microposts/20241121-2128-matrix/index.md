@@ -3,6 +3,7 @@ title: matrix
 date: 2024-11-21 21:28:46  +0200
 draft: false
 tags: micropost
+micropost_type: til
 ---
 
 I’ve set up [#Matrix](https://mastodon.bofhers.es/tags/Matrix) again with all kinds of bridges, just because I couldn’t be bothered to switch apps. Now I have everything at my fingertips in the console.

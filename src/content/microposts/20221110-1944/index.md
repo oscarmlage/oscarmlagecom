@@ -3,6 +3,7 @@ title: 20221110-1944
 date: 2022-11-10 19:44:52 +00:00
 draft: false
 tags: [micropost]
+micropost_type: til
 image:
 ---
 

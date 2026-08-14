@@ -3,6 +3,7 @@ title: fix-the-wheel-chock
 date: 2024-09-20 21:01:47  +0200
 draft: false
 tags: micropost
+micropost_type: pic
 ---
 
 Did a bit of [#woodworking](https://mastodon.bofhers.es/tags/woodworking) this afternoon. I had a wheel chock for the van to prevent the wheel from rubbing against the curb, but it broke, so I had to patch it up.

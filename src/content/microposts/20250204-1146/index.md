@@ -4,6 +4,7 @@ date: Tue, 04 Feb 2025 11:46:10 +0000
 draft: false
 tags: [macos, hammerspoon]
 image: 
+micropost_type: til
 ---
 
 I wanted to install some software to add an identifying border to the active window on [#macOS](https://mastodon.bofhers.es/tags/macOS), but I didn't know I could do it directly with [#hammerspoon](https://mastodon.bofhers.es/tags/hammerspoon).

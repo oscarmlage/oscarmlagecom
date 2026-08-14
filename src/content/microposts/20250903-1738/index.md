@@ -4,6 +4,7 @@ date: Wed, 03 Sep 2025 17:38:10 +0000
 draft: false
 tags: [mastodon]
 image: 
+micropost_type: til
 ---
 
 Instead of TIL, TIR (today I remembered) how easy it is to migrate a dockerized system like [#mastodon](https://mastodon.bofhers.es/tags/mastodon).

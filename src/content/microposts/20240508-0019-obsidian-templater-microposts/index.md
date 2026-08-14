@@ -3,6 +3,7 @@ title: obsidian-templater-microposts
 date: 2024-05-08 00:19:30 +0200
 draft: false
 tags: micropost
+micropost_type: til
 ---
 
 Today I've built a new template for [Obsidian Templater](https://github.com/SilentVoid13/Templater) that allows the microposts creation inside [Hugo](https://gohugo.io) running a simple command:

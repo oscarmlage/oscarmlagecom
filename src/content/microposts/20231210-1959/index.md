@@ -3,6 +3,7 @@ title: 20231210-1959
 date: 2023-12-10 19:59:22 +00:00
 draft: false
 tags: [micropost]
+micropost_type: thought
 image:
 ---
 

@@ -3,6 +3,7 @@ title: 20230419-1042
 date: 2023-04-19 10:42:02 +00:00
 draft: false
 tags: [micropost]
+micropost_type: thought
 image:
 ---
 

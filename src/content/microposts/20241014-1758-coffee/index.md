@@ -3,6 +3,7 @@ title: coffee
 date: 2024-09-27 18:36:56  +0200
 draft: false
 tags: micropost
+micropost_type: pic
 ---
 
 Can you almost smell it?

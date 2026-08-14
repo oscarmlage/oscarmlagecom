@@ -3,6 +3,7 @@ title: 20240131-1122
 date: 2024-01-31 11:22:57 +00:00
 draft: false
 tags: [micropost]
+micropost_type: thought
 image:
 ---
 

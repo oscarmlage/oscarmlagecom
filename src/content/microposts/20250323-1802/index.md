@@ -4,6 +4,7 @@ date: Sun, 23 Mar 2025 18:02:27 +0000
 draft: false
 tags: [omg, LosRatones]
 image: 
+micropost_type: thought
 ---
 
 [#OMG](https://mastodon.bofhers.es/tags/OMG) [#LosRatones](https://mastodon.bofhers.es/tags/LosRatones)

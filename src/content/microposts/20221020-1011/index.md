@@ -3,6 +3,7 @@ title: 20221020-1011
 date: 2022-10-20 10:11:21 +00:00
 draft: false
 tags: [micropost]
+micropost_type: pic
 image:
 ---
 

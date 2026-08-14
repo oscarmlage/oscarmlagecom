@@ -3,6 +3,7 @@ title: 20231102-2018
 date: 2023-11-02 20:18:30 +00:00
 draft: false
 tags: [micropost]
+micropost_type: pic
 image:
 ---
 

@@ -3,6 +3,7 @@ title: context-switching
 date: 2024-09-23 21:16:37  +0200
 draft: false
 tags: micropost
+micropost_type: thought
 ---
 
 And... another grey day in front of the keyboard. Interestingly, in the real world, it's a beautiful day. Let's see if I can take advantage of it and change the mood.

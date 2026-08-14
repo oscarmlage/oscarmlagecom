@@ -4,6 +4,7 @@ date: Sun, 08 Dec 2024 18:09:43 +0000
 draft: false
 tags: [wrapped]
 image: 
+micropost_type: thought
 ---
 
 I’m glad my new bathroom doesn’t —afaik— have anything that does tracking, because I’m sure it would also do the [#wrapped](https://mastodon.bofhers.es/tags/wrapped) thing:

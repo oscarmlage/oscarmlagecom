@@ -4,6 +4,7 @@ date: Tue, 02 Sep 2025 11:32:23 +0000
 draft: false
 tags: [macos, hammerspoon]
 image: 
+micropost_type: thought
 ---
 
 Not quite a tiling experience, but almost. On [#macos](https://mastodon.bofhers.es/tags/macos). With [#hammerspoon](https://mastodon.bofhers.es/tags/hammerspoon)

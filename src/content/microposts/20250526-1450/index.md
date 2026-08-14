@@ -4,6 +4,7 @@ date: Mon, 26 May 2025 14:50:11 +0000
 draft: false
 tags: []
 image: 
+micropost_type: thought
 ---
 
 I’ve really tried to get into vertical tabs in Firefox, but I think my brain is just too used to moving horizontally. ¯\\\_(ツ)\_/¯

@@ -3,6 +3,7 @@ title: 20230414-1653
 date: 2023-04-14 16:53:28 +00:00
 draft: false
 tags: [micropost]
+micropost_type: thought
 image:
 ---
 

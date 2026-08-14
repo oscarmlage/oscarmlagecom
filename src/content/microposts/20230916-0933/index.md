@@ -3,6 +3,7 @@ title: 20230916-0933
 date: 2023-09-16 09:33:53 +00:00
 draft: false
 tags: [micropost]
+micropost_type: thought
 image:
 ---
 

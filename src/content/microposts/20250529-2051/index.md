@@ -4,6 +4,7 @@ date: Thu, 29 May 2025 20:51:44 +0000
 draft: false
 tags: [hammerspoon, macos]
 image: 
+micropost_type: til
 ---
 
 Hammerspoon lua function to toggle the audio output between my two most frequently used devices.

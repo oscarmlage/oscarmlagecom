@@ -3,6 +3,7 @@ title: 20230314-1114
 date: 2023-03-14 11:14:18 +00:00
 draft: false
 tags: [micropost]
+micropost_type: pic
 image:
 ---
 

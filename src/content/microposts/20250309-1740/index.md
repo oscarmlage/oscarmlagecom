@@ -4,6 +4,7 @@ date: Sun, 09 Mar 2025 17:40:45 +0000
 draft: false
 tags: [gaming, poe2]
 image: 
+micropost_type: til
 ---
 
 Yesterday I ‘finished’ Path of Exile 2. These games don’t have a defined ending, but you either set a limit or they become an endless thing. I wanted to complete an endgame ‘C citadel’ (tier XV with a +1 monsters mod, which should be equivalent to a T.XVI if I’m not wrong). Now, I’ll just wait for the next season.

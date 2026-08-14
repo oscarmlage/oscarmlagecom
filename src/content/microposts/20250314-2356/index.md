@@ -4,6 +4,7 @@ date: Fri, 14 Mar 2025 23:56:44 +0000
 draft: false
 tags: []
 image: 
+micropost_type: thought
 ---
 
 Today I was invited to a dinner for an old video game podcast I collaborated with. I don’t really fit in because I’m—by a huge margin—the least knowledgeable and involved in the topic.

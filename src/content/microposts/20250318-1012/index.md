@@ -4,6 +4,7 @@ date: Tue, 18 Mar 2025 10:12:10 +0000
 draft: false
 tags: [askingforafriend]
 image: 
+micropost_type: thought
 ---
 
 What do you guys do when you just want to throw the keyboard away and take a long break from screens?

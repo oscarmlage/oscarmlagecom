@@ -3,6 +3,7 @@ title: just-a-coffee
 date: 2024-08-11 09:16:32  +0200
 draft: false
 tags: micropost
+micropost_type: pic
 ---
 
 ^_^

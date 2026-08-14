@@ -3,6 +3,7 @@ title: 20240229-2112
 date: Thu, 29 Feb 2024 21:12:18 +0000
 draft: false
 tags: [micropost]
+micropost_type: thought
 image: 
 ---
 

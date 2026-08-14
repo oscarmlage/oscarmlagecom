@@ -3,6 +3,7 @@ title: 20230125-2000
 date: 2023-01-25 20:00:16 +00:00
 draft: false
 tags: [micropost]
+micropost_type: pic
 image:
 ---
 

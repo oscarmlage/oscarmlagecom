@@ -3,6 +3,7 @@ title: 20231128-1539
 date: 2023-11-28 15:39:55 +00:00
 draft: false
 tags: [micropost]
+micropost_type: thought
 image:
 ---
 

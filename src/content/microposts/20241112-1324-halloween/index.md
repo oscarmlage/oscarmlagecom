@@ -3,6 +3,7 @@ title: halloween
 date: 2024-10-31 21:24:36  +0200
 draft: false
 tags: micropost
+micropost_type: pic
 ---
 
 One of my kids wanted to dress up as a mortgage because it’s the most terrifying thing for an adult.

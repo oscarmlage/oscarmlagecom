@@ -3,6 +3,7 @@ title: 20221118-0954
 date: 2022-11-18 09:54:54 +00:00
 draft: false
 tags: [micropost]
+micropost_type: pic
 image:
 ---
 

@@ -3,6 +3,7 @@ title: new-seeds-and-fertilizer-for-the-garden
 date: 2024-05-03 11:11:28 +0200
 draft: false
 tags: micropost
+micropost_type: pic
 ---
 
 New seeds and fertilizer for the garden, hopefully not too late. [#gardening](https://mastodon.bofhers.es/tags/gardening)

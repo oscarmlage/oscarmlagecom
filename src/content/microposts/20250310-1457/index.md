@@ -4,6 +4,7 @@ date: Mon, 10 Mar 2025 14:57:46 +0000
 draft: false
 tags: [bofhers, mastodon]
 image: 
+micropost_type: til
 ---
 
 Instancia [#BOFHers](https://mastodon.bofhers.es/tags/BOFHers) de [#Mastodon](https://mastodon.bofhers.es/tags/Mastodon) actualizada a v4.3.4, con varios sustos debido a un conflicto de versionado en el \`docker-compose.yml\`. Si algo falla ya sabéis a quien hay que quejarse.

@@ -3,6 +3,7 @@ title: docker-irl
 date: 2024-06-20 13:04:28  +0200
 draft: false
 tags: micropost
+micropost_type: pic
 ---
 
 Docker IRL, my first - real - container has been deployed.

@@ -3,6 +3,7 @@ title: 20230210-1020
 date: 2023-02-10 10:20:54 +00:00
 draft: false
 tags: [micropost]
+micropost_type: pic
 image:
 ---
 

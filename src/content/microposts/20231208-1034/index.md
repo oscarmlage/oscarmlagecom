@@ -3,6 +3,7 @@ title: 20231208-1034
 date: 2023-12-08 10:34:41 +00:00
 draft: false
 tags: [micropost]
+micropost_type: pic
 image:
 ---
 

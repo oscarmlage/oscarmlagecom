@@ -3,6 +3,7 @@ title: 20221108-1632
 date: 2022-11-08 16:32:10 +00:00
 draft: false
 tags: [micropost]
+micropost_type: thought
 image:
 ---
 

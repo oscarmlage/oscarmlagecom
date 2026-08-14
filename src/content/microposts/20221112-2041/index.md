@@ -3,6 +3,7 @@ title: 20221112-2041
 date: 2022-11-12 20:41:55 +00:00
 draft: false
 tags: [micropost]
+micropost_type: pic
 image:
 ---
 

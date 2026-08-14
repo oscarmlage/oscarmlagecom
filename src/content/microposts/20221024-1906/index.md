@@ -3,6 +3,7 @@ title: 20221024-1906
 date: 2022-10-24 19:06:56 +00:00
 draft: false
 tags: [micropost]
+micropost_type: pic
 image:
 ---
 

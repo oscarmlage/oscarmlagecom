@@ -3,6 +3,7 @@ title: 20231205-1024
 date: 2023-12-05 10:24:11 +00:00
 draft: false
 tags: [micropost]
+micropost_type: pic
 image:
 ---
 

@@ -3,6 +3,7 @@ title: vanlife
 date: 2024-07-01 13:14:18  +0200
 draft: false
 tags: micropost
+micropost_type: pic
 ---
 
 Sometimes the load feels overwhelming, especially when life throws unexpected challenges your way. It's okay to step back and unplug for a couple of days to recharge. Life's a marathon, not a sprint.

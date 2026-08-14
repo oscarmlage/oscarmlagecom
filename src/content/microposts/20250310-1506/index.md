@@ -4,6 +4,7 @@ date: Mon, 10 Mar 2025 15:06:27 +0000
 draft: false
 tags: [bofhers]
 image: 
+micropost_type: thought
 ---
 
 Leo en mi cuaderno de bitácora que llevamos con la instancia de [#BOFHers](https://mastodon.bofhers.es/tags/BOFHers) desde Abril del 22. Casi 3 años ya. ¡Mastodóntico!.

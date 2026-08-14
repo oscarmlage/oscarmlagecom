@@ -3,6 +3,7 @@ title: things-fediverse
 date: 2024-10-30 11:49:44  +0200
 draft: false
 tags: micropost
+micropost_type: thought
 ---
 
 I just realized that [@things](https://mastodon.bofhers.es/@things@mastodon.online "@things@mastodon.online"), my favorite task management software, has a Mastodon account!

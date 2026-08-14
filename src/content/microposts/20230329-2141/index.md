@@ -3,6 +3,7 @@ title: 20230329-2141
 date: 2023-03-29 21:41:08 +00:00
 draft: false
 tags: [micropost]
+micropost_type: til
 image:
 ---
 

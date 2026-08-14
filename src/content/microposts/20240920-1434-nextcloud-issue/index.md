@@ -3,6 +3,7 @@ title: nextcloud-issue
 date: 2024-09-09 13:36:30  +0200
 draft: false
 tags: micropost
+micropost_type: til
 ---
 
 I've had a small problem with a Nextcloud instance. I'm still not sure why, but it has continuously marked several directories as «locked», and the disk space usage has increased from 300GB to almost 2TB.

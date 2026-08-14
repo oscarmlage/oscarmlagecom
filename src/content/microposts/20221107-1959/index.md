@@ -3,6 +3,7 @@ title: 20221107-1959
 date: 2022-11-07 19:59:08 +00:00
 draft: false
 tags: [micropost]
+micropost_type: thought
 image:
 ---
 

@@ -3,6 +3,7 @@ title: 20221229-1935
 date: 2022-12-29 19:35:32 +00:00
 draft: false
 tags: [micropost]
+micropost_type: thought
 image:
 ---
 

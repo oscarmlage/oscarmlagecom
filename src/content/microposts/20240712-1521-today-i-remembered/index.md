@@ -3,6 +3,7 @@ title: today-i-remembered
 date: 2024-07-12 15:21:31  +0200
 draft: false
 tags: micropost
+micropost_type: thought
 ---
 
 If there is a [#TIL](https://mastodon.bofhers.es/tags/TIL) (Today I Learned), why isn't there a [#TIR](https://mastodon.bofhers.es/tags/TIR) (Today I Remembered)?
