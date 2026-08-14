@@ -1,5 +1,23 @@
 services:
 
+  mastodon-sync:
+    image: golang:1.22-alpine
+    working_dir: /app/utils/mastodon-sync
+    command: go run .
+    volumes:
+      - "${PWD}:/app"
+    environment:
+      MASTODON_INSTANCE: "${MASTODON_INSTANCE:-}"
+      MASTODON_ACCESS_TOKEN: "${MASTODON_ACCESS_TOKEN:-}"
+      MASTODON_RELEASE_DATE: "${MASTODON_RELEASE_DATE:-}"
+      MASTODON_VISIBILITY: "${MASTODON_VISIBILITY:-public}"
+      MASTODON_DRY_RUN: "${MASTODON_DRY_RUN:-}"
+      MASTODON_STRICT: "${MASTODON_STRICT:-}"
+      MASTODON_MAX_CHARS: "${MASTODON_MAX_CHARS:-}"
+      SITE_BASE_URL: "${SITE_BASE_URL:-https://oscarmlage.com}"
+      MASTODON_CONTENT_DIR: "../../src/content"
+      MASTODON_STATE_PATH: "state.json"
+
   build:
     image: oscarmlage/hugo:v0.160.1-node
     build:
@@ -15,7 +33,7 @@ services:
     build:
       context: .
       dockerfile: Dockerfile.hugo
-    command: server --bind 0.0.0.0 --port 1313 --baseURL http://localhost:1313
+    command: server --bind 0.0.0.0 --port 1313 --baseURL http://localhost:1313 --poll 700ms --disableFastRender
     working_dir: /src
     volumes:
       - "${PWD}/src:/src"

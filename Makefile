@@ -1,6 +1,8 @@
 .DEFAULT_GOAL := help
 
-.PHONY: all help build serve bash shell deploy sync up buildall clean-ds medialog-add medialog-add-deploy
+MASTODON_ENV_FILE ?= utils/mastodon-sync/.env
+
+.PHONY: all help build serve bash shell deploy sync up buildall clean-ds medialog-add medialog-add-deploy mastodon-sync
 
 all: build ## Alias for build
 
@@ -23,6 +25,14 @@ deploy: up ## Alias for up deployment
 sync: up ## Alias for up synchronization
 up: build ## Build and sync to remote server
 	rsync -e 'ssh -p 235' --progress --delete -lprtvvzog src/public/ root@151.80.35.190:/root/docker/docker-static-nginx-oscarmlage/_data/
+	$(MAKE) mastodon-sync
+
+mastodon-sync: ## Publish new posts/microposts to Mastodon when configured [ARGS="--from YYYY-MM-DD --dry-run"]
+	@if [ -f "$(MASTODON_ENV_FILE)" ]; then \
+		docker compose --env-file "$(MASTODON_ENV_FILE)" -f docker-compose.yml run --rm mastodon-sync go run . $(ARGS); \
+	else \
+		docker compose -f docker-compose.yml run --rm mastodon-sync go run . $(ARGS); \
+	fi
 
 buildall: build ## Build and copy to remote server
 	cp -r src/public/ root@151.80.35.190:/root/docker/docker-static-nginx-oscarmlage/_data/

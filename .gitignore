@@ -1,2 +1,7 @@
 public
-utils
+.env
+utils/*
+!utils/mastodon-sync/
+!utils/mastodon-sync/**
+utils/mastodon-sync/.env
+utils/mastodon-sync/state.json
