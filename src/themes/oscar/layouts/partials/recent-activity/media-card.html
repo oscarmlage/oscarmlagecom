@@ -1,0 +1,17 @@
+{{ $page := .page }}
+{{ $category := .category }}
+{{ $image := or $page.Params.img_square (or $page.Params.img_portrait $page.Params.img_landscape) }}
+<a class="activity-card activity-card-media activity-{{ $category }}" href="{{ "/medialog/" | relURL }}" title="{{ $page.Title }}">
+    {{ if $image }}
+        <img src="/{{ $page.File.Dir }}_assets/{{ $image }}" alt="{{ $page.Title }}" loading="lazy" decoding="async">
+    {{ end }}
+    <span class="activity-card-overlay">
+        <span class="activity-card-type">{{ $category }}</span>
+        <span class="activity-card-title">{{ $page.Title }}</span>
+        {{ with $page.Params.rate }}
+            <span class="activity-card-meta">{{ partial "medialog/rating-stars.html" $page }}</span>
+        {{ else }}
+            {{ with $page.Params.progress }}<span class="activity-card-meta">{{ . }}%</span>{{ end }}
+        {{ end }}
+    </span>
+</a>

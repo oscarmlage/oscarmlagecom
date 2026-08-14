@@ -11,8 +11,8 @@
 
 		<!-- CSS -->
         {{ $options := dict "config" "assets/css/postcss.config.js" }}
-		{{ $style := resources.Get "css/main.css" | css.PostCSS $options }}
-		<link rel="stylesheet" href="{{ $style.RelPermalink }}">
+		{{ $style := resources.Get "css/main.css" | css.PostCSS $options | fingerprint }}
+		<link rel="stylesheet" href="{{ $style.RelPermalink }}" integrity="{{ $style.Data.Integrity }}">
 		<link rel="stylesheet" href="{{ "/shortcode-gallery/swipebox/css/swipebox.min.css" | relURL }}">
 		<link rel="stylesheet" href="{{ "/shortcode-gallery/justified_gallery/justifiedGallery.min.css" | relURL }}">
 		{{ range .Site.Params.css -}}

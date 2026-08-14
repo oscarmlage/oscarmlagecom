@@ -1,23 +1,27 @@
 {{ define "main" }}
 
 <main class="main wrapper">
-    <h1>Log</h1>
+<h1>Microposts</h1>
+
+    <p class="intro"><strong>Short notes</strong>, mainly with photos, quick thoughts, links, and small updates from my day-to-day.</p>
 
     <p class="banner-rss">
         <a href="/microposts/index.xml" class="color-rss">
             {{ partial "svg/rss.html" . }}
-            Subscribe to my medialog feed.
+            Subscribe to my microposts feed.
         </a>
     </p>
 
     <div class="posts-container micropost-container">
         {{ range (.Paginate (where .Pages "Type" "microposts")).Pages }}
-            <div class="post-detail micropost-detail">
-                <div class="post-detail-info">
-                    <time datetime="{{ .PublishDate }}" class="post-item-date">{{ i18n "publishdate" . }}</time>
-                </div>
-                {{ .Content }}
-            </div>
+            {{ $micropostType := .Params.micropost_type | default "pic" }}
+            {{ if eq $micropostType "til" }}
+                {{ partial "microposts/til.html" . }}
+            {{ else if eq $micropostType "thought" }}
+                {{ partial "microposts/thought.html" . }}
+            {{ else }}
+                {{ partial "microposts/pic.html" . }}
+            {{ end }}
         {{ end }}
     </div>
     <div class="pagination">

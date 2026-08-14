@@ -1,0 +1,27 @@
+{{ $images := .Resources.ByType "image" }}
+{{ $image := false }}
+{{ if $images }}
+    {{ $image = index (sort $images "Name" "asc") 0 }}
+{{ end }}
+{{ $classes := "activity-card activity-card-micropost" }}
+{{ $micropostType := .Params.micropost_type | default "pic" }}
+{{ if $image }}{{ $classes = printf "%s has-image" $classes }}{{ end }}
+{{ $classes = printf "%s is-%s" $classes $micropostType }}
+<a class="{{ $classes }}" href="{{ "/microposts/" | relURL }}" title="{{ .Title }}"{{ with $image }}
+    {{ $rotation := "" }}
+    {{ with .Exif }}
+        {{ with .Tags.Orientation }}
+            {{ if or (eq . 8) (eq . 7) }}
+                {{ $rotation = " r90" }}
+            {{ else if or (eq . 3) (eq . 4) }}
+                {{ $rotation = " r180" }}
+            {{ else if or (eq . 6) (eq . 5) }}
+                {{ $rotation = " r270" }}
+            {{ end }}
+        {{ end }}
+    {{ end }}
+    {{ $thumb := .Fill (printf "600x600 q80 Center%s" $rotation) }} style="background-image: linear-gradient(rgba(0, 0, 0, .45), rgba(0, 0, 0, .78)), url('{{ $thumb.RelPermalink }}');"{{ end }}>
+    <span class="activity-card-type">{{ upper $micropostType }}</span>
+    <span class="activity-card-date">{{ .Date.Format "Jan 2, 2006" }}</span>
+    <span class="activity-card-title">{{ .Content | plainify | htmlUnescape | truncate 120 }}</span>
+</a>

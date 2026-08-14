@@ -14,6 +14,33 @@
         {{ end }}
     </div>
 
+    <section class="recent-activity">
+        <h2>Recent activity</h2>
+        <div class="recent-activity-grid">
+            {{ range first 2 (where .Site.RegularPages "Type" "microposts") }}
+                {{ partial "recent-activity/micropost-card.html" . }}
+            {{ end }}
+
+            {{ with .Site.Taxonomies.tags.watching }}
+                {{ range first 2 (sort .Pages ".Date" "desc") }}
+                    {{ partial "recent-activity/media-card.html" (dict "page" . "category" "watching") }}
+                {{ end }}
+            {{ end }}
+
+            {{ with .Site.Taxonomies.tags.reading }}
+                {{ range first 2 (sort .Pages ".Date" "desc") }}
+                    {{ partial "recent-activity/media-card.html" (dict "page" . "category" "reading") }}
+                {{ end }}
+            {{ end }}
+
+            {{ with .Site.Taxonomies.tags.playing }}
+                {{ range first 2 (sort .Pages ".Date" "desc") }}
+                    {{ partial "recent-activity/media-card.html" (dict "page" . "category" "playing") }}
+                {{ end }}
+            {{ end }}
+        </div>
+    </section>
+
     <div class="posts-container">
         {{ range first 5 (where .Site.RegularPages "Type" "posts") }}
             {{ .Render "summary" }}
