@@ -14,4 +14,4 @@ List of things that I don't like or I don't want to do. At the risk of a negativ
 - Using a computer without a proper keyboard/monitor, I recently discovered this.
 - WhatsApp.
 - People not keeping their promises in any kind of context.
-- WhatsApp` :P
+- WhatsApp `:P`
