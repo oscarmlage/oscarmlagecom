@@ -1,14 +1,18 @@
 const themeDir = __dirname + '/../../';
+const postcssImport = require('postcss-import');
+const postcssCustomMedia = require('postcss-custom-media');
+const postcssNestedModule = require('postcss-nested');
+const postcssNested = postcssNestedModule.default || postcssNestedModule;
 
 module.exports = {
   plugins: [
-    require('postcss-import')({
+    postcssImport({
         path: [themeDir]
     }),
-    require('postcss-custom-media')({
+    postcssCustomMedia({
         path: [themeDir]
     }),
-    require('postcss-nested')({
+    postcssNested({
         path: [themeDir]
     }),
   ]

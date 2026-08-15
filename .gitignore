@@ -1,5 +1,7 @@
 public
 .env
+.ai/
+src/.hugo_build.lock
 utils/*
 !utils/mastodon-sync/
 !utils/mastodon-sync/**
