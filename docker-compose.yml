@@ -33,7 +33,7 @@ services:
     build:
       context: .
       dockerfile: Dockerfile.hugo
-    command: server --bind 0.0.0.0 --port ${HUGO_PORT:-1313} --baseURL ${HUGO_BASEURL:-http://localhost:1313} --appendPort=${HUGO_APPEND_PORT:-true} --poll 700ms --disableFastRender
+    command: server --renderToMemory --bind 0.0.0.0 --port ${HUGO_PORT:-1313} --baseURL ${HUGO_BASEURL:-http://localhost:1313} --appendPort=${HUGO_APPEND_PORT:-true} --poll 700ms --disableFastRender
     working_dir: /src
     volumes:
       - "${PWD}/src:/src"
