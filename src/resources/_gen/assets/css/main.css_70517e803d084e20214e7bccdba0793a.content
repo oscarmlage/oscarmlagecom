@@ -1345,9 +1345,32 @@ i, em {
         border-radius: var(--border-radius);
     }
 
-    /* Specific pages */
+    .matrix-dither-figure {
+  margin: 1.5rem 0;
+}
 
-    h2 small {
+.matrix-dither-figure img.full-width,
+.matrix-dither-figure canvas.full-width {
+  display: block;
+  width: 100%;
+  border-radius: 2px;
+  background: #050805;
+}
+
+.matrix-dither-figure img.matrix-dither {
+  visibility: hidden;
+}
+
+.matrix-dither-figure figcaption {
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+  font-style: italic;
+  text-align: center;
+}
+
+/* Specific pages */
+
+h2 small {
     margin: 0 20px;
     font-size: .6em;
 }

@@ -1,0 +1,14 @@
+{{- $src := .Get "src" -}}
+{{- $alt := .Get "alt" | default "" -}}
+{{- $caption := .Get "caption" -}}
+{{- $img := .Page.Resources.GetMatch $src -}}
+{{- $url := $src -}}
+{{- if $img -}}
+  {{- $url = $img.RelPermalink -}}
+{{- end -}}
+<figure class="matrix-dither-figure">
+  <img src="{{ $url }}" class="matrix-dither full-width" alt="{{ $alt }}" loading="lazy" decoding="async">
+  {{- with $caption }}
+  <figcaption>{{ . | markdownify }}</figcaption>
+  {{- end }}
+</figure>

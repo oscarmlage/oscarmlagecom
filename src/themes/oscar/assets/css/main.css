@@ -16,6 +16,7 @@
 @import 'assets/css/modules/pagination.css';
 @import 'assets/css/modules/footer.css';
 @import 'assets/css/modules/media-grid.css';
+@import 'assets/css/modules/matrix-dither.css';
 
 /* Specific pages */
 @import 'assets/css/pages/about.css';
